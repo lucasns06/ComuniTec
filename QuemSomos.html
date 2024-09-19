@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
     <script src="js/script.js"></script>
     <title>Talk Sync: Quem Somos</title>
 </head>
@@ -13,7 +16,7 @@
         <header>
             <div class="logo">
                 <a href="">
-                <img src="img/logoSound.png" width="50">
+                <img src="img/logoSound.png" width="50" id="ImgLogo">
                 <p>Talk Sync</p>
                 </a>
             </div>
@@ -32,7 +35,7 @@
                         <div class="bar"></div>
                     </div>
                     <a id="toggle-theme" href="#">
-                        <img src="img/light.png" width="28px" height="28px">
+                        <img src="img/light.png" width="28px" height="28px" id="ImgTheme">
                     </a>
                 </ul>
             </nav>
@@ -40,24 +43,56 @@
     </div>
 
 
-    <section>
-        <img src="img/empresa.jpg" width="512px" height="512px" style="border-radius: 30%;">
-        
-        <div class="quemsomos-texto">
-            <h1 style="font-size: 3rem;">Talk Sync Technologies</h1> <br>
-            <p style="color: gray;">Nós somos a Talk Sync, uma empresa de tecnologia de 
-                Desenvolvimento de Softwares, trazemos facilidade para a sua comunicação! </p>
-                    <br><br> <br> <br>
-            <h1>Missão</h1>
-            <p style="color: gray;">Nosso propósito é blablabla</p> <br>
+    <div class="quem-somos">
 
-            <h1>Visão</h1>
-            <p style="color: gray;">Ser a maior empresa de comunicação e acessibilidade</p> <br>
+     <h1 class="TituloQS">Talk Sync Technologies</h1> <br>
+        <p style="color: gray;">Nós somos a Talk Sync, uma
+             empresa de tecnologia de Desenvolvimento
+              de Softwares, trazemos facilidade para a sua comunicação!</p>
 
-            <h1>Valores</h1>
-            <p style="color: gray;">Nossos valores</p> <br>
+    </div>
+    <div class="empresaMissao">
+        <div class="containerproposito" >
+            <img src="img/missaoDark.svg" width="128px" id="iconMissao">
+            <h1>Missão</h1> <br> <br>
+            <p>Facilitar a comunicação e a inclusão de pessoas autistas não 
+                verbais por meio de tecnologia inovadora, proporcionando ferramentas
+                 que promovam a expressão, o entendimento e a conexão com o mundo ao seu redor.</p>
         </div>
- 
-    </section>
+
+        <div class="containerproposito">
+            <img src="img/bandeiraDark.svg" width="128px" id="iconBandeira">
+            <h1>Visão</h1> <br> <br>
+            <p>
+                Ser a referência global em soluções de comunicação para pessoas autistas, 
+                transformando a forma como interagem com o ambiente e entre si, e contribuindo 
+                para uma sociedade mais inclusiva e empática.
+            </p>
+
+        </div>
+        <div class="containerproposito"> 
+            <img src="img/coracaoDark.svg" width="128px" id="iconCoracao"> 
+            <h1>Valores</h1> <br> <br>
+            <ul class="valorUl">
+                <li>
+                    <span style="font-weight: 300;">Inclusão:</span> Acreditamos que todos têm o direito de se 
+                    comunicar e ser ouvidos, independentemente das suas habilidades verbais.
+                </li> <br>
+                <li>
+                    <span style="font-weight: 300;">Inovação:</span> Buscamos constantemente novas tecnologias e 
+                    abordagens para melhorar a comunicação e a qualidade de vida.
+                </li> <br>
+                <li>
+                    <span style="font-weight: 300;">Empatia:</span> Colocamos as necessidades e experiências das pessoas 
+                    autistas no centro de tudo o que fazemos.
+                </li> <br>
+                <li>
+                    <span style="font-weight: 300;">Acessibilidade:</span> Comprometemo-nos a desenvolver produtos que sejam fáceis de usar e disponíveis para todos.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    
 </body>
 </html>

@@ -1,1 +1,5 @@
-Pegar outra imagem da logo para o modo claro 
+organizar melhor as imagens na pasta do site, como separar por dark e light
+
+arrumar a animação da .bar e a cor no estado hover da nav a;
+
+arrumar os nomes das variaveis de imagem no codigo java script para facil entendimento
