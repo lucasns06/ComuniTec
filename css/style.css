@@ -10,7 +10,7 @@
 }
 .kanit-thin {
     font-family: "Kanit", sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
 }
 :root{ /* TEMA ESCURO */
@@ -38,7 +38,7 @@ body{
 a, p, h1, li{
     color: var(--cor-texto);
     text-decoration: none;
-    font-family: "Oswald", sans-serif;
+    font-family: "Kanit", sans-serif;
     font-weight: bold;
 }
 button{
@@ -77,6 +77,7 @@ button:hover{
     width: 100%;
 }
 .container {
+    margin-right: 42px;
     position: relative;
     display: inline-block;
 }
@@ -104,9 +105,8 @@ ul a{
     position: relative;
     z-index: 1;
     color: var(--cor-texto);
-    margin-right: 42px;
     font-size: 22px;
-    img{cursor: pointer;};
+    img{transform: translate(0, 4.5px)};
 }
 ul a:hover{
     color: rgb(86, 93, 226);
@@ -176,7 +176,7 @@ section{
     width: 300px;
     p, li{  
         font-size: 20px;
-      font-family: "Kanit";
+        font-family: "Kanit";
         font-weight: 200;}
 }
 .containerproposito img{

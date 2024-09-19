@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateImages(theme) {
         if (theme === 'light') {
-            image1.src = 'img/logoSoundDark.svg'; 
-            image1.alt = 'Tema Escuro Theme';
+            image1.src = 'img/logoGifDark.gif'; 
+            image1.alt = 'Tema Gif Escuro';
 
             image2.src = 'img/dark.svg'; 
             image2.alt = 'Tema Escuro Logo';
@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
             image5.alt = "Tema valores Escuro";
             
         } else {
-            image1.src = 'img/logoSound.png'; 
-            image1.alt = 'Tema Claro 1';
+            image1.src = 'img/logoGifLight.gif'; 
+            image1.alt = 'Tema Gif Claro 1';
 
             image2.src = 'img/light.png';
             image2.alt = 'Tema Claro 2';
