@@ -1,5 +1,10 @@
+organizar melhor os códigos de css, para melhor entendimento
+
 organizar melhor as imagens na pasta do site, como separar por dark e light
 
 arrumar a animação da .bar e a cor no estado hover da nav a;
 
 arrumar os nomes das variaveis de imagem no codigo java script para facil entendimento
+
+Pegar uma paleta de cores para o tema claro e escuro.
+

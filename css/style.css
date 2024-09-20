@@ -13,17 +13,20 @@
     font-weight: 400;
     font-style: normal;
 }
+.oswald{
+    font-family: "Oswald", sans-serif;
+}  
 :root{ /* TEMA ESCURO */
-    --cor-fundo: rgb(35, 36, 43);
-    --cor-texto: white;
-    --cor-texto2: rgb(212, 212, 212);
-    --cor-header-fundo: rgb(53, 54, 65);
+    --cor-fundo: rgb(30, 30, 40);
+    --cor-texto: #FFFFFF;
+    --cor-texto2: rgb(180, 180, 180);
+    --cor-header-fundo: rgb(50, 50, 65);
 }
 [data-theme='light'] {
     /* Cores do CLARO */
-    --cor-fundo: rgb(236, 240, 250);
+    --cor-fundo: rgb(245, 248, 255);
     --cor-texto: #000000;
-    --cor-texto2: rgb(68, 68, 68);
+    --cor-texto2: rgb(80, 80, 80);
     --cor-header-fundo: rgb(255, 255, 255);
 }
        
@@ -32,9 +35,7 @@ body{
     color: var(--cor-texto);
     transition: background-color 0.3s, color 0.3s;
 }
-.oswald{
-    font-family: "Oswald", sans-serif;
-}  
+
 a, p, h1, li{
     color: var(--cor-texto);
     text-decoration: none;
@@ -77,7 +78,7 @@ button:hover{
     width: 100%;
 }
 .container {
-    margin-right: 42px;
+    margin-right: 82px;
     position: relative;
     display: inline-block;
 }
@@ -89,7 +90,7 @@ header{
     padding: 8px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
    /* background-color: rgba(0, 0, 0, 0.5);*/
     margin-left: auto;
     margin-right: auto;
@@ -106,23 +107,26 @@ ul a{
     z-index: 1;
     color: var(--cor-texto);
     font-size: 22px;
-    img{transform: translate(0, 4.5px)};
 }
+ul a img
+{
+    transform: translate(0, 4.5px)
+};
 ul a:hover{
     color: rgb(86, 93, 226);
     transition: all 0.3s;
 }
-.logo{
-    a{
+.logo a
+{
         display: flex;
         align-items: center;
-    }
-    p{
+}
+.logo p
+{
         margin-left: 8px;
         font-family: "Baby";
         font-weight: bolder;
         font-size: 22px;
-    }
 }
 .img{
     width: 50px;
@@ -135,23 +139,24 @@ ul a:hover{
 }
 section{
     display: flex;
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
     width: 90rem;
     max-width: 90%;
-   
-    p{font-size: 22px; }
-    button{
-        padding: 16px;
+}
+section p{
         font-size: 22px;
-        width: max-content;
-        border-radius: 1em;
-        font-family: "Baby";
-    }
-    img{
-        transform: translate(80px, -70px);
-    }
+}
+section button{
+    padding: 16px;
+    font-size: 22px;
+    width: max-content;
+    border-radius: 1em;
+    font-family: "Baby";
+}
+section img{
+    transform: translate(80px, -70px);
 }
 .text p{
     color: var(--cor-texto2);
@@ -160,10 +165,12 @@ section{
 .quem-somos{
     padding: 80px;
     text-align: center;
-    h1{
-        font-size: 4.5rem;
-    }
-    p{font-size: 18px;}
+}
+.quem-somos h1{
+    font-size: 4.5rem;
+}
+.quem-somos p{
+    font-size: 18px;
 }
 .empresaMissao{
     display: flex;
@@ -174,10 +181,11 @@ section{
     align-items: center;
     text-align: center;
     width: 300px;
-    p, li{  
-        font-size: 20px;
-        font-family: "Kanit";
-        font-weight: 200;}
+}
+.containerproposito p, li{
+    font-size: 20px;
+    font-family: "Kanit";
+    font-weight: 200;
 }
 .containerproposito img{
     margin-bottom: 8px;
@@ -201,5 +209,35 @@ section{
     100%
     {
         letter-spacing: 0px;
+    }
+}
+/* RESPONSIVIDADE */
+@media (max-width: 1366px) and (max-height: 768px)
+{
+    .Welcome-title{
+        font-size: 2.8rem ;
+    }
+    .gifHome{
+        width: 45%;
+        height: 45%;
+    }
+}
+@media (max-width: 1280px) and (max-height: 720px)
+{
+    .Welcome-title{
+        font-size: 2.8rem ;
+    }
+    .gifHome{
+        width: 40%;
+        height: 40%;
+    }
+}
+@media (max-width: 1024px ) and (max-height: 768px){
+    .Welcome-title{
+        font-size: 2.5rem ;
+    }
+    .gifHome{
+        width: 50%;
+        height: 50%;
     }
 }
