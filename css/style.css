@@ -17,17 +17,17 @@
     font-family: "Oswald", sans-serif;
 }  
 :root{ /* TEMA ESCURO */
-    --cor-fundo: rgb(30, 30, 40);
+    --cor-fundo: #212121;
     --cor-texto: #FFFFFF;
     --cor-texto2: rgb(180, 180, 180);
-    --cor-header-fundo: rgb(50, 50, 65);
+    --cor-header-fundo: rgb(25 25 25);
 }
 [data-theme='light'] {
     /* Cores do CLARO */
-    --cor-fundo: rgb(245, 248, 255);
+    --cor-fundo: rgb(252, 252, 252);
     --cor-texto: #000000;
     --cor-texto2: rgb(80, 80, 80);
-    --cor-header-fundo: rgb(255, 255, 255);
+    --cor-header-fundo: rgb(245, 245, 245);
 }
        
 body{
@@ -40,7 +40,6 @@ a, p, h1, li{
     color: var(--cor-texto);
     text-decoration: none;
     font-family: "Kanit", sans-serif;
-    font-weight: bold;
 }
 button{
     color: rgb(0, 0, 0);
@@ -103,6 +102,7 @@ header ul{
     align-items: center;
 }
 ul a{
+    font-weight: 500;
     position: relative;
     z-index: 1;
     color: var(--cor-texto);
@@ -138,6 +138,8 @@ ul a:hover{
     font-size: 4.5rem;
 }
 section{
+    padding-left: 5rem;
+    padding-right: 5rem;
     display: flex;
     margin-top: 5rem;
     margin-left: auto;
