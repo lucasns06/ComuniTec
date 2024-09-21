@@ -6,16 +6,13 @@
 }
 @font-face {
     font-family: "Baby";
-    src: url(../css/Baby\ Doll.otf);
+    src: url(../fonts/Baby\ Doll.otf);
 }
-.kanit-thin {
-    font-family: "Kanit", sans-serif;
+@font-face {
+    font-family: "Kanit";
+    src: url(../fonts/Kanit-Regular.ttf);
     font-weight: 400;
-    font-style: normal;
 }
-.oswald{
-    font-family: "Oswald", sans-serif;
-}  
 :root{ /* TEMA ESCURO */
     --cor-fundo: #212121;
     --cor-texto: #FFFFFF;
@@ -111,15 +108,15 @@ ul a{
 ul a img
 {
     transform: translate(0, 4.5px)
-};
-ul a:hover{
+}
+a:hover{
     color: rgb(86, 93, 226);
     transition: all 0.3s;
 }
 .logo a
 {
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
 }
 .logo p
 {
@@ -219,7 +216,7 @@ section img{
     .Welcome-title{
         font-size: 2.8rem ;
     }
-    .gifHome{
+    #gifHome{
         width: 45%;
         height: 45%;
     }
@@ -229,7 +226,7 @@ section img{
     .Welcome-title{
         font-size: 2.8rem ;
     }
-    .gifHome{
+    #gifHome{
         width: 40%;
         height: 40%;
     }
@@ -238,7 +235,7 @@ section img{
     .Welcome-title{
         font-size: 2.5rem ;
     }
-    .gifHome{
+    #gifHome{
         width: 50%;
         height: 50%;
     }

@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const image3 = document.getElementById('iconMissao');
     const image4 = document.getElementById('iconBandeira'); 
     const image5 = document.getElementById('iconCoracao'); 
+    const image6 = document.getElementById('gifHome');
     const currentTheme = localStorage.getItem('theme') || 'light';
 
+    // Aplica o tema armazenado ou o padrão (claro)
     document.documentElement.setAttribute('data-theme', currentTheme);
     updateImages(currentTheme);
 
@@ -20,36 +22,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateImages(theme) {
         if (theme === 'light') {
-            image1.src = 'img/logoGifDark.gif'; 
-            image1.alt = 'Tema Gif Escuro';
-
-            image2.src = 'img/dark.svg'; 
-            image2.alt = 'Tema Escuro Logo';
-
-            image3.src = 'img/missaoDark.svg';
-            image3.alt = "Tema Escuro missao";
-
-            image4.src = "img/bandeiraDark.svg";
-            image4.alt = "Tema Bandeira Ecuro";
-
-            image5.src = "img/coracaoDark.svg";
-            image5.alt = "Tema valores Escuro";
-            
+            // Verifica se cada imagem existe antes de modificar
+            if (image1) {
+                image1.src = 'img/logoGifDark.gif'; 
+                image1.alt = 'Tema Gif Escuro';
+            }
+            if (image2) {
+                image2.src = 'img/dark.svg'; 
+                image2.alt = 'Tema Escuro Logo';
+            }
+            if (image3) {
+                image3.src = 'img/missaoDark.svg';
+                image3.alt = "Tema Escuro missao";
+            }
+            if (image4) {
+                image4.src = "img/bandeiraDark.svg";
+                image4.alt = "Tema Bandeira Ecuro";
+            }
+            if (image5) {
+                image5.src = "img/coracaoDark.svg";
+                image5.alt = "Tema valores Escuro";
+            }
+            if (image6) {
+                image6.src = "img/smart.gif";
+                image6.alt = "Tema gif Escuro";
+            }
         } else {
-            image1.src = 'img/logoGifLight.gif'; 
-            image1.alt = 'Tema Gif Claro 1';
-
-            image2.src = 'img/light.png';
-            image2.alt = 'Tema Claro 2';
-        
-            image3.src = "img/missaoLight.svg";
-            image3.alt = "Tema missao Claro";
-
-            image4.src = "img/bandeiralight.svg";
-            image4.alt = "Tema bandeira Claro";
-
-            image5.src = "img/coracaoLight.svg";
-            image5.alt = "Tema valores Claro"; 
+            if (image1) {
+                image1.src = 'img/logoGifLight.gif'; 
+                image1.alt = 'Tema Gif Claro 1';
+            }
+            if (image2) {
+                image2.src = 'img/light.png';
+                image2.alt = 'Tema Claro 2';
+            }
+            if (image3) {
+                image3.src = "img/missaoLight.svg";
+                image3.alt = "Tema missao Claro";
+            }
+            if (image4) {
+                image4.src = "img/bandeiralight.svg";
+                image4.alt = "Tema bandeira Claro";
+            }
+            if (image5) {
+                image5.src = "img/coracaoLight.svg";
+                image5.alt = "Tema valores Claro";
+            }
+            if (image6) {
+                image6.src = "img/smartLight.gif";
+                image6.alt = "Tema gif Claro";
+            }
         }
     }
 });
