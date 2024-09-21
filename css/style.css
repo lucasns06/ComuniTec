@@ -18,6 +18,7 @@
     --cor-texto: #FFFFFF;
     --cor-texto2: rgb(180, 180, 180);
     --cor-header-fundo: rgb(25 25 25);
+    --cor-texto-botao: #000000;
 }
 [data-theme='light'] {
     /* Cores do CLARO */
@@ -25,6 +26,7 @@
     --cor-texto: #000000;
     --cor-texto2: rgb(80, 80, 80);
     --cor-header-fundo: rgb(255, 255, 255);
+    --cor-texto-botao: #ffffff;
 }
        
 body{
@@ -45,7 +47,7 @@ button{
     font-family: sans-serif;
     font-size: 12px;
     background-color: var(--cor-texto);
-    color: var(--cor-fundo);
+    color: var(--cor-texto-botao);
     width: 108px;
     outline: 0;
     border: 0;
@@ -53,7 +55,7 @@ button{
 }
 
 button:hover{
-    background-color: rgb(125, 129, 233);
+    background-color: rgb(119 109 255);
     transition: all 0.3s;
 }
 .HeaderBorder{
@@ -64,22 +66,16 @@ button:hover{
     z-index: 1000;
 }
 .bar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     height: 2px;
-    width: 0;
-    background-color: rgb(86, 93, 226);
+    width: 0; 
+    background-color: rgb(119 109 255);
     transition: width 0.3s ease;
-    z-index: 0;
-}
-.container:hover .bar {
-    width: 100%;
 }
 .container {
     margin-right: 82px;
-    position: relative;
-    display: inline-block;
+}
+.container:hover .bar {
+    width: 100%;
 }
 #toggle-theme:hover{
     transform: translate(0px, -3px);
@@ -110,10 +106,10 @@ ul a{
 }
 ul a img
 {
-    transform: translate(0, 4.5px)
+    transform: translate(0, 4.5px);
 }
 a:hover{
-    color: rgb(86, 93, 226);
+    color: rgb(119 109 255);
     transition: all 0.3s;
 }
 .logo a
@@ -123,6 +119,7 @@ a:hover{
 }
 .logo p
 {
+        color: rgb(119 109 255);
         margin-left: 8px;
         font-family: "Baby";
         font-weight: bolder;
@@ -138,14 +135,14 @@ a:hover{
     font-size: 4.5rem;
 }
 section{
-    padding-left: 5rem;
-    padding-right: 5rem;
+    align-items: center;
     display: flex;
     margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
     width: 90rem;
     max-width: 90%;
+    justify-content: space-around;
 }
 section p{
         font-size: 22px;
@@ -157,9 +154,7 @@ section button{
     border-radius: 1em;
     font-family: "Baby";
 }
-section img{
-    transform: translate(0px, -70px);
-}
+
 .text p{
     color: var(--cor-texto2);
 }
@@ -215,8 +210,9 @@ section img{
     }
 }
 /* RESPONSIVIDADE */
-#gifHome{
-    width: 60%;
+section img{
+    max-width: 300px;
+    width: 90%;
 }
 @media (max-width: 1366px) and (max-height: 768px)
 {
@@ -233,10 +229,6 @@ section img{
 @media (max-width: 1024px ) and (max-height: 768px){
     .Welcome-title{
         font-size: 2.5rem ;
-    }
-    #gifHome{
-        width: 50%;
-        height: 50%;
     }
 }
 /* celular */
@@ -267,10 +259,11 @@ section img{
     section{
         padding: 0;
     }
-    section img{
-        transform: translate(0);
-    }
     .text p{
         font-size: 16px;
+    }
+    section img{
+        max-width: 150px;
+        width: 90%;
     }
 }

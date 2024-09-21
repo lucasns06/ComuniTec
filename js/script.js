@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const image4 = document.getElementById('iconBandeira'); 
     const image5 = document.getElementById('iconCoracao'); 
     const image6 = document.getElementById('gifHome');
+    const image7 = document.getElementById('imgPhone');
     const currentTheme = localStorage.getItem('theme') || 'light';
 
     // Aplica o tema armazenado ou o padrão (claro)
@@ -47,6 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 image6.src = "img/smart.gif";
                 image6.alt = "Tema gif Escuro";
             }
+            if (image7) {
+                image7.src = "img/smartphone.svg";
+                image7.alt = "Tema phone Escuro";
+            }
         } else {
             if (image1) {
                 image1.src = 'img/logoGifLight.gif'; 
@@ -71,6 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (image6) {
                 image6.src = "img/smartLight.gif";
                 image6.alt = "Tema gif Claro";
+            }
+            if (image7) {
+                image7.src = "img/smartphoneLight.svg";
+                image7.alt = "Tema phone Claro";
             }
         }
     }
