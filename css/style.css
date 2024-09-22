@@ -144,7 +144,7 @@ a:hover{
         margin-left: 8px;
         font-family: "Baby";
         font-weight: bolder;
-        font-size: 22px;
+        font-size: var(--texto-header);;
 }
 .img{
     width: 50px;
@@ -199,7 +199,7 @@ a:hover{
 .iconMission:hover .st0
 {
     transition: all 0.2s;
-    stroke: rgb(229, 255, 79);
+    stroke: rgb(255, 203, 108);
 }
 .iconFlag:hover{
     transform: translate(0px, -10px);
@@ -269,6 +269,11 @@ section button{
 }
 .quem-somos p{
     font-size: 24px;
+    padding: 3rem;
+}
+.quem-somos img{
+    max-width: max-content;
+    width: 100%;
 }
 .empresaMissao{
     display: flex;
@@ -315,21 +320,35 @@ section img{
     max-width: 300px;
     width: 90%;
 }
-@media (max-width: 1366px) and (max-height: 768px)
-{
+@media (max-width: 425px ){
     .Welcome-title{
-        font-size: 2.8rem ;
+        font-size: 1.5rem ;
+    }
+    .text p{
+        font-size: 0.8rem;
+    }
+    .text{
+        text-align: center;
+    }
+    section img{
+        display: none;
+    }
+    :root{
+        --texto-header: 10px;
+    }
+    .container{
+        margin-right: 12px;
+    }
+    .quem-somos h1{
+        font-size: 24px;
+    }
+    .quem-somos p{
+        font-size: 18px;
+    }
+    .containerproposito p{
+        font-size: 18px;
+    }
+    .containerproposito:last-child{
+        transform: translate(-120%, 60%);
     }
 }
-@media (max-width: 1280px) and (max-height: 720px)
-{
-    .Welcome-title{
-        font-size: 2.8rem ;
-    }
-}
-@media (max-width: 1024px ) and (max-height: 768px){
-    .Welcome-title{
-        font-size: 2.5rem ;
-    }
-}
-/* celular */
