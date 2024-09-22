@@ -3,8 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const select = document.getElementById('cor-select');
     const image1 = document.getElementById('ImgLogo'); 
     const image2 = document.getElementById('ImgTheme'); 
-    const image3 = document.getElementById('iconMissao');
-    const image4 = document.getElementById('iconBandeira'); 
     const image6 = document.getElementById('gifHome');
     const image7 = document.getElementById('imgPhone');
     const image8 = document.getElementById('configId');
@@ -33,14 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 image2.src = 'img/dark.svg'; 
                 image2.alt = 'Tema Escuro Logo';
             }
-            if (image3) {
-                image3.src = 'img/missaoDark.svg';
-                image3.alt = "Tema Escuro missao";
-            }
-            if (image4) {
-                image4.src = "img/bandeiraDark.svg";
-                image4.alt = "Tema Bandeira Ecuro";
-            }
             if (image6) {
                 image6.src = "img/smart.gif";
                 image6.alt = "Tema gif Escuro";
@@ -61,14 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (image2) {
                 image2.src = 'img/light.png';
                 image2.alt = 'Tema Claro 2';
-            }
-            if (image3) {
-                image3.src = "img/missaoLight.svg";
-                image3.alt = "Tema missao Claro";
-            }
-            if (image4) {
-                image4.src = "img/bandeiralight.svg";
-                image4.alt = "Tema bandeira Claro";
             }
             if (image6) {
                 image6.src = "img/smartLight.gif";

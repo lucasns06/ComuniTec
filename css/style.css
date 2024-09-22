@@ -191,9 +191,32 @@ a:hover{
     width: 22px;
     cursor: pointer;
 }
+
+.iconMission:hover{
+    transform: translate(0px, -10px);
+    transition: all 0.2s;
+}
+.iconMission:hover .st0
+{
+    transition: all 0.2s;
+    stroke: rgb(229, 255, 79);
+}
+.iconFlag:hover{
+    transform: translate(0px, -10px);
+    transition: all 0.2s;
+}
+.iconFlag:hover .iconFlagFill
+{
+    transition: all 0.2s;
+    fill: rgb(79, 81, 255);
+}
 .iconHeart:hover{
+    transform: translate(0px, -10px);
+    transition: all 0.2s;
+}
+.iconHeartFill:hover{
     fill: red;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 #cor-select{
     font-family: 'Kanit';
