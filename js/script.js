@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('toggle-theme');
+    const select = document.getElementById('cor-select');
     const image1 = document.getElementById('ImgLogo'); 
     const image2 = document.getElementById('ImgTheme'); 
     const image3 = document.getElementById('iconMissao');
@@ -83,4 +84,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+    // Carrega a cor salva do localStorage
+    const corSalva = localStorage.getItem('corDestaque');
+    if (corSalva) {
+        document.documentElement.style.setProperty('--cor-destaque', corSalva);
+        select.value = corSalva; // Define o valor selecionado
+    }
+
+    // Atualiza a cor de destaque e salva no localStorage
+    select.addEventListener('change', (event) => {
+        const novaCor = event.target.value;
+        document.documentElement.style.setProperty('--cor-destaque', novaCor);
+        localStorage.setItem('corDestaque', novaCor); // Salva a nova cor
+    });
 });

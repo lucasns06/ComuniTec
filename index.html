@@ -7,7 +7,7 @@
     <script src="js/script.js"></script>
     <title>Talk Sync: Inicio</title>
 </head>
-<body >
+<body>
     <div class="HeaderBorder">
         <header>
             <div class="logo">
@@ -30,6 +30,14 @@
                         <a href="Produto.html">Produto</a>
                         <div class="bar"></div>
                     </div>
+                    <select id="cor-select">
+                        <option value="" disabled selected>Cores</option>
+                        <option value="rgb(104, 240, 202)">Turquesa</option>
+                        <option value="rgb(255, 105, 180)">Rosa</option>
+                        <option value="rgb(255, 215, 0)">Dourado</option>
+                        <option value="rgb(0, 128, 0)">Verde</option>
+                        <option value="rgb(119, 109, 255)">Padrão</option>
+                    </select>
                     <a id="toggle-theme" href="#">
                         <img src="img/light.png" width="28px" height="28px" id="ImgTheme">
                     </a>
@@ -40,12 +48,12 @@
 
     <section>
         <div class="text">
-            <h1 class="Welcome-title">Bem vindo à <br> <span style="color: rgb(119 109 255);">Talk Sync</span></h1> <br>
+            <h1 class="Welcome-title">Bem vindo à <br> <span style="color: var(--cor-destaque);">Talk Sync</span></h1> <br>
             <p>Onde sua comunicação se torna mais acessível! <br>
                 Conheça nossa historia e nossas soluções!! </p>
 
             <br> <br> <br> <br> 
-            <a href="QuemSomos.html">
+            <a href="QuemSomos.html" class="link">
                 <button>Saber Mais</button>
             </a>
         </div>

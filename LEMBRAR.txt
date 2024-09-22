@@ -8,3 +8,4 @@ Pegar uma paleta de cores para o tema claro e escuro.
 
 Adicionar uma animação de entrada das imagens ao entrar na página
 
+criar variaveis no :root para tamanho de texto
