@@ -13,6 +13,12 @@
     src: url(../fonts/Kanit-Regular.ttf);
     font-weight: 400;
 }
+/* Personalizar a largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
 :root{ /* TEMA ESCURO */
     --cor-fundo: #212121;
     --cor-texto: #FFFFFF;
@@ -20,6 +26,8 @@
     --cor-header-fundo: rgb(25 25 25);
     --cor-texto-botao: #000000;
     --cor-destaque: rgb(119 109 255);
+
+    --texto-header: 22px;
 }
 [data-theme='light'] {
     /* Cores do CLARO */
@@ -91,28 +99,12 @@ button:hover{
     background-color: var(--cor-destaque);
     transition: width 0.3s ease;
 }
-#cor-select{
-    outline: 0;
-    text-decoration: none;
-    border: 0;
-    background-color: var(--cor-header-fundo);
-    color: var(--cor-texto);
-    font-size: 22px;
-    cursor: pointer;
-    margin-right: 82px;
-}
-#cor-select:hover{
-    color: var(--cor-destaque);
-}
+
 .container {
     margin-right: 82px;
 }
 .container:hover .bar {
     width: 100%;
-}
-#toggle-theme:hover{
-    transform: translate(0px, -3px);
-    transition: all 0.2s ;
 }
 header{
     padding: 8px;
@@ -135,11 +127,7 @@ ul a{
     position: relative;
     z-index: 1;
     color: var(--cor-texto);
-    font-size: 22px;
-}
-ul a img
-{
-    transform: translate(0, 4.5px);
+    font-size: var(--texto-header);
 }
 a:hover{
     color: var(--cor-destaque);
@@ -163,6 +151,63 @@ a:hover{
     height: 50px;
     border-radius: 100%;
     background-color: white;
+}
+.settings{
+    cursor: pointer;    
+    position: relative;
+}
+.settings:hover .menu-hidden{
+    display: block;
+}
+.mudar-cor:hover #cor-select{
+    display: block;
+}
+.mudar-cor{
+   padding: 4px;
+}
+.mudar-cor span{
+    font-size: var(--texto-header);
+    font-family: "Kanit";
+}
+.menu-hidden{
+    display: none; /* Esconde o menu inicialmente */
+    position: absolute;
+    top: 100%;
+    left: 50%; /* Move o menu 50% do lado esquerdo */
+    transform: translateX(-50%);
+    right: 0;
+    background-color: var(--cor-header-fundo);
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    list-style: none;
+    margin: 0;
+    width: max-content;
+    z-index: 1;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+#ImgTheme{
+    padding-top: 8px;
+    width: 22px;
+    cursor: pointer;
+}
+.iconHeart:hover{
+    fill: red;
+    transition: all 0.3s;
+}
+#cor-select{
+    font-family: 'Kanit';
+    outline: 0;
+    text-decoration: none;
+    border: 0;
+    background-color: var(--cor-header-fundo);
+    color: var(--cor-texto);
+    font-size: var(--texto-header);
+    cursor: pointer;
+    display: none; 
+    background-color: var(--cor-header-fundo);
+    list-style: none;
+    text-align: center;
 }
 .Welcome-title{
     font-size: 4.5rem;
@@ -265,38 +310,3 @@ section img{
     }
 }
 /* celular */
-@media (max-width: 425px )
-{
-    .Welcome-title{
-        font-size: 1.7rem ;
-    }
-    .container a{
-        font-size: 12px;
-    }
-    .logo p{
-        font-size: 12px;
-    }
-
-    .HeaderBorder header{
-        display: block;
-        max-width: 100%;
-        
-    }
-    .logo img{
-        display: block;
-        margin: auto;
-    }
-    .logo p{
-        transform: translate(-136px, 0px);
-    }
-    section{
-        padding: 0;
-    }
-    .text p{
-        font-size: 16px;
-    }
-    section img{
-        max-width: 150px;
-        width: 90%;
-    }
-}

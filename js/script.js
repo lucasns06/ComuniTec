@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const image2 = document.getElementById('ImgTheme'); 
     const image3 = document.getElementById('iconMissao');
     const image4 = document.getElementById('iconBandeira'); 
-    const image5 = document.getElementById('iconCoracao'); 
     const image6 = document.getElementById('gifHome');
     const image7 = document.getElementById('imgPhone');
+    const image8 = document.getElementById('configId');
     const currentTheme = localStorage.getItem('theme') || 'light';
 
     // Aplica o tema armazenado ou o padrão (claro)
@@ -41,10 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 image4.src = "img/bandeiraDark.svg";
                 image4.alt = "Tema Bandeira Ecuro";
             }
-            if (image5) {
-                image5.src = "img/coracaoDark.svg";
-                image5.alt = "Tema valores Escuro";
-            }
             if (image6) {
                 image6.src = "img/smart.gif";
                 image6.alt = "Tema gif Escuro";
@@ -52,6 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (image7) {
                 image7.src = "img/smartphone.svg";
                 image7.alt = "Tema phone Escuro";
+            }
+            if (image8) {
+                image8.src = "img/config.png";
+                image8.alt = "Tema config Escuro";
             }
         } else {
             if (image1) {
@@ -70,10 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 image4.src = "img/bandeiralight.svg";
                 image4.alt = "Tema bandeira Claro";
             }
-            if (image5) {
-                image5.src = "img/coracaoLight.svg";
-                image5.alt = "Tema valores Claro";
-            }
             if (image6) {
                 image6.src = "img/smartLight.gif";
                 image6.alt = "Tema gif Claro";
@@ -81,6 +77,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (image7) {
                 image7.src = "img/smartphoneLight.svg";
                 image7.alt = "Tema phone Claro";
+            }
+            if (image8) {
+                image8.src = "img/configLight.png";
+                image8.alt = "Tema config claro";
             }
         }
     }
