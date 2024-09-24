@@ -69,7 +69,6 @@ button:hover::before {
 button{
     position: relative;
     overflow: hidden;
-    color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 8px;
     font-size: 12px;
@@ -284,6 +283,7 @@ section button{
     align-items: center;
     text-align: center;
     width: 300px;
+    transition: all 2s ease;
 }
 .containerproposito p, li{
     font-size: 20px;
@@ -304,7 +304,22 @@ section button{
 .TituloQS{
     animation: tituloqs 3s infinite ease-in-out;
 }
-
+.hidden{
+    opacity: 0;
+    transform: translateY(100px);
+}
+.show{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.hidden2{
+    opacity: 0;
+    transform: translateX(-200px);
+}
+.show2{
+    opacity: 1;
+    transform: translateY(0px);
+}
 @keyframes tituloqs {
     50%
     {
@@ -315,12 +330,21 @@ section button{
         letter-spacing: 0px;
     }
 }
+.toProduto{
+    font-size: var(--texto-header);
+    margin: auto;
+    text-align: center;
+    padding: 8rem;
+    transition: all 2s ease ;
+    width: max-content;
+}
+
 /* RESPONSIVIDADE */
 section img{
     max-width: 300px;
     width: 90%;
 }
-@media (max-width: 425px ){
+@media (max-width: 512px ){
     .Welcome-title{
         font-size: 1.5rem ;
     }
@@ -342,13 +366,24 @@ section img{
     .quem-somos h1{
         font-size: 24px;
     }
+    .quem-somos{
+        margin-top: 36px;
+        padding: 6px;
+    }
     .quem-somos p{
         font-size: 18px;
     }
-    .containerproposito p{
-        font-size: 18px;
+    .containerproposito p, li{
+        font-size: 0.8rem;
+        list-style-type: none;
     }
-    .containerproposito:last-child{
-        transform: translate(-120%, 60%);
+    .containerproposito h1{
+        font-size: 1rem;
+    }
+    .containerproposito svg{
+        width: 92px;
+    }
+    .containerproposito {
+        padding: 4px;
     }
 }

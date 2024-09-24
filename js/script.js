@@ -79,4 +79,34 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.style.setProperty('--cor-destaque', novaCor);
         localStorage.setItem('corDestaque', novaCor); // Salva a nova cor
     });
+
+    //Codigo do observador
+    const elements = document.querySelectorAll('.containerproposito');
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        } else {
+        entry.target.classList.remove('show');
+        }
+    });
+    });
+    
+    elements.forEach(element => {
+    observer.observe(element);
+    });
+
+    const product = document.querySelector('.toProduto');
+
+    const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('show2');
+        } else {
+        entry.target.classList.remove('show2');
+        }
+    });
+    });
+    
+    observer2.observe(product);
 });
