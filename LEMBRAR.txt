@@ -4,8 +4,6 @@ organizar melhor as imagens na pasta do site, como separar por dark e light
 
 arrumar os nomes das variaveis de imagem no codigo java script para facil entendimento
 
-Pegar uma paleta de cores para o tema claro e escuro.
-
-Adicionar uma animação de entrada das imagens ao entrar na página
-
 criar variaveis no :root para tamanho de texto
+
+https://iconscout.com/free-lottie-animation/developer-discussing-different-options-5148935

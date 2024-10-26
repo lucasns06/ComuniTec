@@ -66,20 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-    // Carrega a cor salva do localStorage
-    const corSalva = localStorage.getItem('corDestaque');
-    if (corSalva) {
-        document.documentElement.style.setProperty('--cor-destaque', corSalva);
-        select.value = corSalva; // Define o valor selecionado
-    }
-
-    // Atualiza a cor de destaque e salva no localStorage
-    select.addEventListener('change', (event) => {
-        const novaCor = event.target.value;
-        document.documentElement.style.setProperty('--cor-destaque', novaCor);
-        localStorage.setItem('corDestaque', novaCor); // Salva a nova cor
-    });
-
     //Codigo do observador
     const elements = document.querySelectorAll('.containerproposito');
     const observer = new IntersectionObserver((entries) => {
