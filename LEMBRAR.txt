@@ -1,9 +1,0 @@
-organizar melhor os códigos de css, para melhor entendimento
-
-organizar melhor as imagens na pasta do site, como separar por dark e light
-
-arrumar os nomes das variaveis de imagem no codigo java script para facil entendimento
-
-criar variaveis no :root para tamanho de texto
-
-https://iconscout.com/free-lottie-animation/developer-discussing-different-options-5148935

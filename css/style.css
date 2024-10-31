@@ -39,7 +39,9 @@
     --cor-header-fundo: rgb(255, 255, 255);
     --cor-texto-botao: #ffffff;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
@@ -382,7 +384,7 @@ li {
 }
 footer{
     padding: 4rem;
-    background: var(--cor-fundo);
+    background: #0000003b;
     height: max-content;
     
 }
