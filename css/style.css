@@ -297,14 +297,16 @@ SECAO DE TEXSTE
 }
 
 section {
-    height: 90vh;
+    /* padding: 10rem; */
+    height: 768px;
     align-items: center;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 90rem;
     max-width: 90%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 4rem;
 }
 
 section p {
@@ -384,27 +386,34 @@ li {
 }
 footer{
     padding: 4rem;
-    background: #0000003b;
+    background: #08080c;
     height: max-content;
     
 }
+footer .logo{
+    padding: 3rem;
+}
 footer .logo a{
     justify-content: center;
+    filter: grayscale(1) brightness(2);
 }
 footer .logo img{
-    width: 100px;
-    
+    width: 100px;   
+}
+.contFooter{
+    width: max-contentf;
+    margin-right: 0;
 }
 .container-texto-footer{
     margin-top: 1rem;
-    border-top: 2px solid #5156AE ;
+    border-top: 2px solid #ffffff;
     display: flex;
     justify-content: space-between;
 }
-.container-texto-footer p, .container-texto-footer nav{
-    margin-top: 1rem; 
-    color: #5156AE;
-    a{color: #5156AE;}
+.container-texto-footer p, .container-texto-footer nav, .container-texto-footer a{
+    /* margin-top: 1rem;  */
+    color: #ffffff;
+    a{color: #ffffff;}
 }
 
  
@@ -466,7 +475,9 @@ footer .logo img{
     margin-right: auto;
     width: 90rem;
     max-width: 90%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem;
 }
 
 .sectionProductImg1{
@@ -541,18 +552,38 @@ section img {
 .text {
     text-align: center;
 }
-@media (max-width: 1150px) {
+@media (max-width: 1400px) {
 
     ul{
         list-style-type: none;
     }
 }
 
+@media (max-width: 900px) {
+    header {
+        justify-content: center;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    .sectionProduct {
+        flex-direction: column;
+
+        img {
+            transform: translate(0);
+        }
+    }
+}
 @media (max-width: 780px) {
 
     .Welcome-title,
     .Product-title {
         font-size: 2rem;
+    }
+    .container-texto-footer{
+        flex-direction: column;
     }
 }
 
@@ -588,6 +619,7 @@ section img {
 
     section img {
         transform: translateY(0px);
+        max-width: 350px;
     }
 
     :root {
@@ -610,7 +642,9 @@ section img {
     .quem-somos p {
         font-size: 18px;
     }
-
+    .quem-somos img{
+        width: 50%;
+    }
     .containerproposito p,
     li {
         font-size: 0.8rem;
@@ -627,23 +661,5 @@ section img {
 
     .containerproposito {
         padding: 4px;
-    }
-}
-
-@media (max-width: 400px) {
-    header {
-        justify-content: center;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .sectionProduct {
-        flex-direction: column;
-
-        img {
-            transform: translate(0);
-        }
     }
 }
