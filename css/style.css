@@ -497,7 +497,16 @@ footer .logo img{
 .ProductText h1 {
     font-size: 3rem;
 }
-
+.sugestaoContainer{
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem
+}
+.sugestaoContainer form label{
+    text-align: left;
+}
 @keyframes productAnima {
     from {
         transform: rotate3d(1, 1, 1, 120deg);
