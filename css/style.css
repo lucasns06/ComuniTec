@@ -451,7 +451,8 @@ footer .logo img{
     font-size: var(--texto-header);
     margin: auto;
     text-align: center;
-    padding: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     transition: all 2s ease;
     width: max-content;
 }
