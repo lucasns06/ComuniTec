@@ -83,7 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const product = document.querySelector('.toProduto');
-
     const observer2 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -95,4 +94,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     observer2.observe(product);
+
+    const formulario = document.querySelector('.sugestaoContainer');
+
+    const observer3 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.classList.add('show2');
+            } else {
+            entry.target.classList.remove('show2');
+            }
+        });
+        });
+        
+        observer3.observe(formulario);
+    
+
 });
