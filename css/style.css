@@ -290,10 +290,9 @@ SECAO DE TEXSTE
     text-align: center;
 }
 
-.Welcome-title {
+.Welcome-title,  .Welcome-title2{
     text-align: center;
     font-size: 3rem;
-
 }
 
 section {
@@ -356,7 +355,6 @@ section button {
     align-items: center;
     text-align: center;
     width: 300px;
-    transition: transform 2s ease-out;
 }
 
 .containerproposito:nth-child(2) {
@@ -426,11 +424,11 @@ footer .logo img{
 }
 
 .toProduto {
-    font-size: var(--texto-header);
+    font-size: 18px;
     margin: auto;
     text-align: center;
-    padding: 8rem;
-    transition: all 2s ease;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     width: max-content;
 }
 
@@ -449,33 +447,25 @@ footer .logo img{
 .sectionProduct {
     align-items: center;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 90rem;
     max-width: 90%;
     justify-content: center;
     gap: 3rem;
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .sectionProductImg1{
     margin-top: 2rem;
-    transition: transform 1s ease;
-    animation: productAnima 2s ease;
-}
-.ProductText{
-    animation: productTextAnima 2s ease;
 }
 .ProductText p {
     font-size: 1.5rem;
-    
 }
-
 .ProductText h1 {
     font-size: 3rem;
 }
 .sugestaoContainer{
-    transition: transform 2.5s ease;
     border-top: solid var(--cor-destaque) 8px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px var(--cor-destaque);
@@ -502,26 +492,6 @@ textarea{
 }
 .sugestaoContainer form button{
     font-size: 1.5rem;
-}
-@keyframes productAnima {
-    from {
-        transform: rotate3d(1, 1, 1, 120deg);
-        scale: 0.4;
-    }
-
-    to {
-        transform: rotate3d(1, 1, 1, 0deg)
-    }
-}
-
-@keyframes productTextAnima {
-    from {
-        transform: translateX(3rem);
-    }
-
-    to {
-        transform: translateX(0rem)
-    }
 }
 .downloadButtons{
     display: flex;
@@ -623,7 +593,7 @@ section img {
     }
 
     section {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     section img {
@@ -671,23 +641,4 @@ section img {
     .containerproposito {
         padding: 4px;
     }
-}
-.hidden {
-    opacity: 0;
-    transform: translateY(100px);
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-.hidden2 {
-    opacity: 0;
-    transform: translateX(-200px);
-}
-
-.show2 {
-    opacity: 1;
-    transform: translateY(0px);
 }
