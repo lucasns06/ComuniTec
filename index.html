@@ -156,16 +156,18 @@
         <p>Tem uma sugestão?</p>
         <p>Agradecemos seu feedback!</p>
         <br>
-        <form action="https://formspree.io/f/myzyedyl" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="41d0ed4f-e2f1-40af-8e7c-9c6aac6f73f8">
             <label>
                 Nome <br>
-                <input type="text" name="name" placeholder="Seu nome">
+                <input type="text" name="name" placeholder="Seu nome" required>
             </label>
             <br> <br>
             <label>
                 Mensagem <br>
-                <textarea name="message" placeholder="Sua mensagem"></textarea>
+                <textarea name="message" placeholder="Sua mensagem" required></textarea>
             </label>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             <br> <br>
             <button type="submit">Enviar</button>
         </form>
