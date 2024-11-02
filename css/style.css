@@ -22,10 +22,10 @@
 
 :root {
     /* TEMA ESCURO */
-    --cor-fundo: #0D0D14;
+    --cor-fundo: #15151c;
     --cor-texto: #fafafa;
     --cor-texto2: rgb(180, 180, 180);
-    --cor-header-fundo: #060608;
+    --cor-header-fundo: #1a1a22;
     --cor-texto-botao: #000000;
     --cor-destaque: #5156AE  !important; 
     --texto-header: 22px;
@@ -466,32 +466,38 @@ footer .logo img{
     font-size: 3rem;
 }
 .sugestaoContainer{
+    background: rgba(0, 0, 0, 0.041);
     border-top: solid var(--cor-destaque) 8px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px var(--cor-destaque);
+    box-shadow: 0px 0px 20px #5156ae4d;
     width: max-content;
     margin: auto;
     text-align: center;
     margin-bottom: 8rem;
-    padding: 2rem;
+    padding: 2rem; 
+}
+.sugestaoContainer form{
+    text-align: left;
 }
 .sugestaoContainer form label{
     text-align: left;
     margin-bottom: 4px;
+    font-family: "Kanit";
 }
 .sugestaoContainer form input, textarea{
     padding: 4px;
-    outline: solid black 1px;
     border: 0;
-    border-radius: 10px;
     margin-top: 8px;
-    /* box-shadow: 0px 0px 10px var(--cor-destaque) */
+    width: 200px;
 }
 textarea{
     height: 100px;
 }
 .sugestaoContainer form button{
     font-size: 1.5rem;
+    text-align: center;
+    display: block;
+    margin: auto;
 }
 .downloadButtons{
     display: flex;
