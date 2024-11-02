@@ -466,10 +466,10 @@ footer .logo img{
     font-size: 3rem;
 }
 .sugestaoContainer{
-    background: rgba(0, 0, 0, 0.041);
+    background: rgba(255, 255, 255, 0.034);
     border-top: solid var(--cor-destaque) 8px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px #5156ae4d;
+    box-shadow: 0px 0px 20px #0000004d;
     width: max-content;
     margin: auto;
     text-align: center;
@@ -489,6 +489,11 @@ footer .logo img{
     border: 0;
     margin-top: 8px;
     width: 200px;
+    border-bottom: solid 2px var(--cor-destaque);
+}
+.sugestaoContainer form input:focus-visible, textarea:focus-visible{
+    box-shadow: 0px 0px 4px #5156ae4d;
+    outline: 0;
 }
 textarea{
     height: 100px;
