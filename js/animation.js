@@ -45,13 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
       /* ABA PRODUTOS*/
-
-        var tl2 = gsap.timeline();
-    //sequenced one-after-the-other
-        gsap.from(".sectionProductImg1", {duration: 1, x: -100})
-        gsap.to(".sectionProductImg1", {duration: 1, x: 0})
-        gsap.from(".ProductText", {duration: 1, y: 100})
-        gsap.to(".ProductText", {duration: 1, y: 0 });
-
-        
+      const productSection = document.querySelector('.sectionProductImg1')
+        if(productSection){
+            var tl2 = gsap.timeline();
+            //sequenced one-after-the-other
+                gsap.from(".sectionProductImg1", {duration: 1, x: -100})
+                gsap.to(".sectionProductImg1", {duration: 1, x: 0})
+                gsap.from(".ProductText", {duration: 1, y: 100})
+                gsap.to(".ProductText", {duration: 1, y: 0 });
+        }
 })
