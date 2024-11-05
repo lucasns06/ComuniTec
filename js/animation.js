@@ -16,8 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
           });
           const timeline2 = gsap.timeline({
             scrollTrigger: {
+              trigger: ".sugestaoContainer",  // elemento que vai ativar a timeline
+            }
+          });
+          const timeline3 = gsap.timeline({
+            scrollTrigger: {
               trigger: ".toProduto",  // elemento que vai ativar a timeline
-              start: "top bottom",
             }
           });
         // Adiciona animações à timeline
@@ -38,8 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
             .to(".iconHeart", {y: 0, clearProps: "all" })
 
             timeline2
-        /* Produto e sugestão*/ 
-
+            /* sugestão*/ 
+            .from(".sugestaoContainer ", { y: 100, opacity: 0})
+            .to(".sugestaoContainer ", { y: 0, opacity: 1, duration: 0.5 })
+            /* produto*/ 
+            timeline3
             .from(".toProduto ", { y: 100, opacity: 0})
             .to(".toProduto ", { y: 0, opacity: 1, duration: 0.5 })
     
