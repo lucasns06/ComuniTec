@@ -1,17 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger) 
     const welcome = document.querySelector('.Welcome-title')
-    const welcome2 = document.querySelector('.Welcome-title2')
-
     /* Inicio */
     if(welcome){
-        welcome.style.transform = 'translateX(-50px)';
-        welcome.style.opacity = '0';
-        welcome2.style.transform = 'translateX(50px)';
-        welcome2.style.opacity = '0';
         var tl = gsap.timeline();
-        tl.to(".Welcome-title", {  duration: 1.5, x: 0, opacity: 1 }) 
-        .to(".Welcome-title2", {  x: 0, opacity: 1 });
+        tl.from(".Welcome-title", {x: -50, opacity: 0}) 
+        .from(".Welcome-title2", {  x: 50, opacity: 0 });
     
         /* QUEM SOMOS */
     
@@ -28,15 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
         // Adiciona animações à timeline
           timeline
             .from(".contProp1", { y: 100, opacity: 0})
-            .to(".contProp1", { y: 0, opacity: 1, duration: 0.5 })
-    
+            .from(".iconMission", {y: -20})
+            .to(".contProp1", { y: 0, opacity: 1 }, "<")
+            .to(".iconMission", {y: 0, clearProps: "all" }, "<0.1")
+           
             .from(".contProp2", { y: -100, opacity: 0})
-            .to(".contProp2", { y: 0, opacity: 1, duration: 0.5 })
-    
+            .from(".iconFlag", {y: -20})
+            .to(".contProp2", { y: 0, opacity: 1 }, "<")
+            .to(".iconFlag", {y: 0, clearProps: "all" }, "<0.1")
+
             .from(".contProp3", { y: 100, opacity: 0})
-            .to(".contProp3", { y: 0, opacity: 1, duration: 0.5 })
+            .from(".iconHeart", {y: -20})
+            .to(".contProp3", { y: 0, opacity: 1 })
+            .to(".iconHeart", {y: 0, clearProps: "all" })
+
             timeline2
-        /* Produto e sugestão*/
+        /* Produto e sugestão*/ 
             .from(".toProduto ", { y: 100, opacity: 0})
             .to(".toProduto ", { y: 0, opacity: 1, duration: 0.5 })
     

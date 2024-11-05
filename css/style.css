@@ -76,7 +76,7 @@ button {
 button:after{
     border-radius: 1rem;
     content: '';
-    background-color: #00000052;
+    background-color: #757dfe;
     width: 0px;
     height: 0px;
     position: absolute;
@@ -229,22 +229,6 @@ a:hover {
     -webkit-text-fill-color: transparent;
     color: var(--cor-destaque);
 }
-/* 
-SECAO DE TEXSTE
-*/
-.iconFlagFill,
-.iconHeartFill,
-.iconMission {
-    fill: var(--cor-texto);
-
-    .st0 {
-        stroke: var(--cor-texto);
-    }
-}
-
-/* 
-SECAO DE TEXSTE
-*/
 .iconMission:hover {
     transform: translate(0px, -10px);
     transition: all 0.2s;
@@ -252,7 +236,7 @@ SECAO DE TEXSTE
 
 .iconMission:hover .st0 {
     transition: all 0.2s;
-    stroke: rgb(255, 203, 108);
+    stroke: rgb(255, 243, 79);
 }
 
 .iconFlag:hover {
@@ -262,19 +246,19 @@ SECAO DE TEXSTE
 
 .iconFlag:hover .iconFlagFill {
     transition: all 0.2s;
+    fill: rgb(255, 243, 79);
+}
+.iconFlagFill {
     fill: rgb(79, 81, 255);
 }
-
 .iconHeart:hover {
     transform: translate(0px, -10px);
     transition: all 0.2s;
 }
-
-.iconHeartFill:hover {
-    fill: red;
+.iconHeartFill:hover{
     transition: all 0.2s;
+    fill: yellow;
 }
-
 #cor-select {
     font-family: 'Kanit';
     outline: 0;
@@ -320,10 +304,6 @@ section button {
     font-family: "Baby";
 }
 
-.text p {
-    color: var(--cor-texto2);
-}
-
 /* QUEM SOMOS */
 .quem-somos {
     padding: 80px;
@@ -357,11 +337,16 @@ section button {
     width: 300px;
 }
 
+.containerproposito:nth-child(1){
+    border-left: 2px solid var(--cor-texto);
+}
 .containerproposito:nth-child(2) {
     border-left: 2px solid var(--cor-texto);
     border-right: 2px solid var(--cor-texto);
 }
-
+.containerproposito:nth-child(3){
+    border-right: 2px solid var(--cor-texto);
+}
 .containerproposito p,
 li {
     font-size: 20px;
@@ -531,6 +516,7 @@ textarea{
 }
 /* RESPONSIVIDADE */
 section img {
+    filter: saturate(0.7);
     max-width: 500px;
     width: 90%;
     transform: translateY(-40px);
