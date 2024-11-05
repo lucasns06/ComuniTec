@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const timeline2 = gsap.timeline({
             scrollTrigger: {
               trigger: ".toProduto",  // elemento que vai ativar a timeline
+              start: "top bottom",
             }
           });
         // Adiciona animações à timeline
@@ -38,11 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             timeline2
         /* Produto e sugestão*/ 
+
             .from(".toProduto ", { y: 100, opacity: 0})
             .to(".toProduto ", { y: 0, opacity: 1, duration: 0.5 })
     
-            .from(".sugestaoContainer ", { y: 100, opacity: 0})
-            .to(".sugestaoContainer ", { y: 0, opacity: 1, duration: 0.5 })    
     }
 
       /* ABA PRODUTOS*/
