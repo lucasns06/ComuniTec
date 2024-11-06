@@ -429,6 +429,7 @@ footer .logo img{
 }
 
 .sectionProduct {
+    height: 90vh;
     align-items: center;
     display: flex;
     margin: auto;
@@ -533,6 +534,7 @@ section img {
     ul{
         list-style-type: none;
     }
+  
 }
 
 @media (max-width: 900px) {
@@ -546,10 +548,9 @@ section img {
 
     .sectionProduct {
         flex-direction: column;
-
-        img {
-            transform: translate(0);
-        }
+    }
+    .sectionProduct{
+        height: max-content;
     }
 }
 @media (max-width: 780px) {
