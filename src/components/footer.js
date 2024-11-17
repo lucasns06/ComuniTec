@@ -37,7 +37,7 @@ const Footer = () => {
                     </div>
                     <div className="container contFooter">
                         <br />
-                        <a href='QuemSomos'>Quem Somos</a>
+                        <a href='ComuniTec/QuemSomos'>Quem Somos</a>
                         <div className="bar"></div>
                     </div>
                     <div className="container contFooter">

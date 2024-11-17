@@ -26,7 +26,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/ComuniTec" element={<><Home /><Produto />  </>} />
+          <Route path="/" element={<><Home /><Produto />  </>} />
           <Route path="/QuemSomos" element={<><QuemSomos /> <Sugestao /></>} />
         </Routes>
         <Footer />

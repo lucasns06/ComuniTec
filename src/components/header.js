@@ -39,17 +39,17 @@ const Header = () => {
                 <nav>
                     <ul>
                         <div className="container">
-                            <Link to="/ComuniTec" state={{ scrollTo: 'inicioId' }}>Inicio</Link>
+                            <Link to="/" state={{ scrollTo: 'inicioId' }}>Inicio</Link>
                             <div className="bar"></div>
                         </div>
                         <div className="container">
-                            <a  href='/QuemSomos'> Quem Somos
+                            <a  href='/ComuniTec/QuemSomos'> Quem Somos
                                 {/* <Link to="/">Quem Somos</Link> */}
                             </a>
                             <div className="bar"></div>
                         </div>
                         <div className="container">
-                            <Link to="/ComuniTec" state={{ scrollTo: 'sectionProduct' }}><button >Produto</button></Link>
+                            <Link to="/" state={{ scrollTo: 'sectionProduct' }}><button >Produto</button></Link>
                         </div>
                         <div className="settings">
                             <img src={currentConfigImg} width="28px" style={{ transform: 'translate(0px, 2px)' }} id="configId" />
