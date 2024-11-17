@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ComuniTec/static/css/main.bd91b60e.css",
-    "main.js": "/ComuniTec/static/js/main.e28dad5c.js",
+    "main.css": "/ComuniTec/static/css/main.7f6367da.css",
+    "main.js": "/ComuniTec/static/js/main.e6e2a2c8.js",
     "static/js/453.fa6158ae.chunk.js": "/ComuniTec/static/js/453.fa6158ae.chunk.js",
     "static/media/QS.gif": "/ComuniTec/static/media/QS.cdb50912c6cfa9928ab1.gif",
     "static/media/Kanit-Regular.ttf": "/ComuniTec/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
@@ -13,12 +13,12 @@
     "static/media/playstore.svg": "/ComuniTec/static/media/playstore.42c50b016694677639b2f1121041be5f.svg",
     "static/media/dark.svg": "/ComuniTec/static/media/dark.84c0c135b218b7381db7ab4260a3fd67.svg",
     "index.html": "/ComuniTec/index.html",
-    "main.bd91b60e.css.map": "/ComuniTec/static/css/main.bd91b60e.css.map",
-    "main.e28dad5c.js.map": "/ComuniTec/static/js/main.e28dad5c.js.map",
+    "main.7f6367da.css.map": "/ComuniTec/static/css/main.7f6367da.css.map",
+    "main.e6e2a2c8.js.map": "/ComuniTec/static/js/main.e6e2a2c8.js.map",
     "453.fa6158ae.chunk.js.map": "/ComuniTec/static/js/453.fa6158ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd91b60e.css",
-    "static/js/main.e28dad5c.js"
+    "static/css/main.7f6367da.css",
+    "static/js/main.e6e2a2c8.js"
   ]
 }
