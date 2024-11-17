@@ -2,10 +2,11 @@
 <html>
   <head>
     <script type="text/javascript">
-      // Redireciona para index.html, mantendo o caminho original
+      // Preserva a URL ao redirecionar para index.html
       var pathname = window.location.pathname;
-      if (!pathname.includes('index.html')) {
-        window.location.replace('/ComuniTec/index.html' + window.location.search + window.location.hash);
+      if (!pathname.includes('index.html') && !pathname.includes('404.html')) {
+        // Preserva a URL após "/ComuniTec"
+        window.location.replace('/ComuniTec/index.html' + window.location.pathname + window.location.search + window.location.hash);
       }
     </script>
   </head>
