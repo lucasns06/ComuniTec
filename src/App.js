@@ -27,7 +27,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/ComuniTec" element={<><Home /><Produto />  </>} />
-          <Route path="/ComuniTec/QuemSomos" element={<><QuemSomos /> <Sugestao /></>} />
+          <Route path="/QuemSomos" element={<><QuemSomos /> <Sugestao /></>} />
         </Routes>
         <Footer />
       </div>
