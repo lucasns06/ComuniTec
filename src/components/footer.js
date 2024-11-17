@@ -32,7 +32,7 @@ const Footer = () => {
                     <h1>Seções</h1>
                     <div className="container contFooter">
                         <br />
-                        <a href="index.html">Inicio</a>
+                        <a href='/ComuniTec'>Inicio</a>
                         <div className="bar"></div>
                     </div>
                     <div className="container contFooter">
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
                     <div className="container contFooter">
                         <br />
-                        <a href="Produto.html">Produto</a>
+                        <a href="/ComuniTec">Produto</a>
                         <div className="bar"></div>
                     </div>
                 </nav>
