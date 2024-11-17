@@ -14,4 +14,6 @@ Feito no [Visual Studio Code](https://code.visualstudio.com/)
 Desenvolvido com as seguintes tecnologias:
 - HTML
 - CSS
-- JavaScript, com [GSAP](https://gsap.com/)
+- JavaScript
+- React 
+- GSAP
