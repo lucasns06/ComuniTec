@@ -526,8 +526,9 @@ footer .logo img {
   text-align: left;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.205);
   margin: auto;
-  padding: 40px 256px;
-  width: max-content;
+  max-width: 600px;
+  height: 420px;
+  padding: 20px;
 }
 .Contato label, .contatoSubmit{
   font-size: 24px;
