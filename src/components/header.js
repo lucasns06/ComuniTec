@@ -43,7 +43,7 @@ const Header = () => {
                             <div className="bar"></div>
                         </div>
                         <div className="container">
-                            <a  href='QuemSomos'> Quem Somos
+                            <a  href='/ComuniTec/QuemSomos'> Quem Somos
                                 {/* <Link to="/">Quem Somos</Link> */}
                             </a>
                             <div className="bar"></div>
