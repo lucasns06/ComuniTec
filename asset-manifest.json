@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/lucasns06/ComuniTec/static/css/main.e894bd4e.css",
+    "main.js": "/lucasns06/ComuniTec/static/js/main.6c5163e7.js",
+    "static/js/453.fa6158ae.chunk.js": "/lucasns06/ComuniTec/static/js/453.fa6158ae.chunk.js",
+    "static/media/QS.gif": "/lucasns06/ComuniTec/static/media/QS.cdb50912c6cfa9928ab1.gif",
+    "static/media/Kanit-Regular.ttf": "/lucasns06/ComuniTec/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
+    "static/media/aplicativologo.png": "/lucasns06/ComuniTec/static/media/aplicativologo.621885f239f402898ed6.png",
+    "static/media/Baby Doll.otf": "/lucasns06/ComuniTec/static/media/Baby Doll.95e87234f901060d1149.otf",
+    "static/media/logo.png": "/lucasns06/ComuniTec/static/media/logo.6c857cf2ff5740c6cdd1.png",
+    "static/media/ods10.svg": "/lucasns06/ComuniTec/static/media/ods10.d1e68ef5cd1b675edeb65cdacba624c9.svg",
+    "static/media/mac.svg": "/lucasns06/ComuniTec/static/media/mac.be70fddd4207a7c72c2e921935c9fc58.svg",
+    "static/media/playstore.svg": "/lucasns06/ComuniTec/static/media/playstore.42c50b016694677639b2f1121041be5f.svg",
+    "static/media/dark.svg": "/lucasns06/ComuniTec/static/media/dark.84c0c135b218b7381db7ab4260a3fd67.svg",
+    "index.html": "/lucasns06/ComuniTec/index.html",
+    "main.e894bd4e.css.map": "/lucasns06/ComuniTec/static/css/main.e894bd4e.css.map",
+    "main.6c5163e7.js.map": "/lucasns06/ComuniTec/static/js/main.6c5163e7.js.map",
+    "453.fa6158ae.chunk.js.map": "/lucasns06/ComuniTec/static/js/453.fa6158ae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e894bd4e.css",
+    "static/js/main.6c5163e7.js"
+  ]
+}
