@@ -4,12 +4,12 @@ import darkImg from '../assets/img/dark.svg'
 import configLightImg from '../assets/img/configLight.png';
 import configImg from '../assets/img/config.png'
 import logoImg from '../assets/img/logo.png'
-import { Link } from 'react-router-dom'; // Importando Link para navegação interna
+import { Link } from 'react-router-dom'; 
+
 const Header = () => {
     const [isDarkTheme, setIsDarkTheme] = useState(false); // Estado para controlar o tema
     const [currentConfigImg, setCurrentConfigImg] = useState(configImg);
     const [currentthemeImg, setCurrentthemeImg] = useState(darkImg);
-
     const toggleTheme = () => {
         setIsDarkTheme(prevState => !prevState); // Alterna entre true/false
     };
@@ -25,7 +25,6 @@ const Header = () => {
             setCurrentthemeImg(darkImg)
         }
     }, [isDarkTheme]); // O efeito será disparado sempre que isDarkTheme mudar
-
 
     return (
         <div className="HeaderBorder">
@@ -43,13 +42,15 @@ const Header = () => {
                             <div className="bar"></div>
                         </div>
                         <div className="container">
-                            <a  href='/ComuniTec/QuemSomos'> Quem Somos
-                                {/* <Link to="/">Quem Somos</Link> */}
-                            </a>
+                            <Link to="/" state={{ scrollTo: 'sectionProduct' }}>Produto</Link>
                             <div className="bar"></div>
                         </div>
                         <div className="container">
-                            <Link to="/" state={{ scrollTo: 'sectionProduct' }}><button >Produto</button></Link>
+                                <Link to="/QuemSomos">Sobre Nós</Link>
+                            <div className="bar"></div>
+                        </div>
+                        <div className="container">
+                                <Link to="/Contato"><button >Contato</button></Link>
                         </div>
                         <div className="settings">
                             <img src={currentConfigImg} width="28px" style={{ transform: 'translate(0px, 2px)' }} id="configId" />

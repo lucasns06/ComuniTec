@@ -3,6 +3,7 @@ import playImg from '../assets/img/playstore.svg'
 import macImg from '../assets/img/mac.svg'
 import appLogo from '../assets/img/aplicativologo.png'
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 import { useLayoutEffect } from 'react';
 
 const Produto = () => {
@@ -52,9 +53,9 @@ const Produto = () => {
         </div>
         <div className="ProductText" style={{textAlign: 'center', marginBottom: '2rem'}}>
             <p>Quer saber mais da nossa empresa?</p> <br />
-            <a href='QuemSomos'>
-            <button style={{fontSize: '22px', width: 'max-content'}}>Quem somos</button> <br />
-            </a>
+            <Link to="/QuemSomos">
+                <button style={{fontSize: '22px', width: 'max-content'}}>Quem somos</button> 
+            </Link> <br />
         </div>
         </>
     );

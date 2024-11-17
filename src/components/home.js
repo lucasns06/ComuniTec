@@ -3,7 +3,7 @@ import React from "react";
 import gifHome from '../assets/img/QS.gif'
 import odsImg from '../assets/img/ods10.svg'
 import gsap from "gsap";
-
+import { Link } from 'react-router-dom';
 const Home = () => {
 
     useLayoutEffect(() => {
@@ -37,9 +37,9 @@ const Home = () => {
                         Conheça nossa historia e nossas soluções!! </p>
 
                     <br /> <br /> <br /> <br />
-                    <a href="#odsContainer" className="link">
+                    <Link to="/" state={{ scrollTo: 'odsContainer' }} className="link">
                         <button>Saber Mais</button>
-                    </a>
+                        </Link>
                 </div>
                 <img src={gifHome} alt="imagem home" className='gifHome' />
             </section>

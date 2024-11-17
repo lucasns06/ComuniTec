@@ -3,9 +3,8 @@ import logo from "../assets/img/logo.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from "react";
-
+import { Link } from "react-router-dom";
 const QuemSomos = () => {
-
   useLayoutEffect(() => {
     const contProp1 = document.querySelector('.contProp1')
     const contProp2 = document.querySelector('.contProp2')
@@ -60,7 +59,7 @@ const QuemSomos = () => {
   return (
     <>
       <div className="quem-somos" id="quemSomos">
-        <h1>Quem somos</h1>
+        {/* <h1>Quem somos</h1> */}
         <br />
         <br />
         <br />
@@ -77,7 +76,7 @@ const QuemSomos = () => {
         <p>
           Nossa origem foi na ETEC Horácio Augusto da Silveira, para o TCC em Desenvolvimento de Sistemas.
         </p>
-        <h1>Nossa missão</h1>
+        <h1>Identidade</h1>
       </div>
 
       <div className="empresaMissao">
@@ -164,6 +163,7 @@ const QuemSomos = () => {
           <p>Acessibilidade</p>
         </div>
       </div>
+      <Link to="/Contato"><button className="ContatoQuemsomosBtn">Contato</button></Link>
     </>
   );
 };

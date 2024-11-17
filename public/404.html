@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL=./index.html" />
+    <script type="text/javascript">
+      // Preserva a URL ao redirecionar para index.html
+      var pathname = window.location.pathname;
+      if (!pathname.includes('index.html') && !pathname.includes('404.html')) {
+        // Preserva a URL após "/ComuniTec"
+        window.location.replace('/ComuniTec/index.html' + window.location.pathname + window.location.search + window.location.hash);
+      }
+    </script>
   </head>
+  <body></body>
 </html>

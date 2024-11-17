@@ -1,5 +1,7 @@
 import React from "react";
 import logoImg from '../assets/img/logo.png'
+import { Link } from 'react-router-dom'; 
+
 const Footer = () => {
 
 
@@ -32,17 +34,17 @@ const Footer = () => {
                     <h1>Seções</h1>
                     <div className="container contFooter">
                         <br />
-                        <a href='/ComuniTec'>Inicio</a>
+                        <Link to="/" state={{ scrollTo: 'inicioId' }}>Inicio</Link>
                         <div className="bar"></div>
                     </div>
                     <div className="container contFooter">
                         <br />
-                        <a href='ComuniTec/QuemSomos'>Quem Somos</a>
+                        <Link to="/QuemSomos">Quem Somos</Link>
                         <div className="bar"></div>
                     </div>
                     <div className="container contFooter">
                         <br />
-                        <a href="/ComuniTec">Produto</a>
+                        <Link to="/" state={{ scrollTo: 'sectionProduct' }}>Produto</Link>
                         <div className="bar"></div>
                     </div>
                 </nav>
