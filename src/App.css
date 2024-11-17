@@ -523,7 +523,7 @@ footer .logo img {
 }
 .Contato form{
   background: var(--cor-fundo);
-  text-align: left;
+  text-align: center;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.205);
   margin: auto;
   max-width: 600px;
