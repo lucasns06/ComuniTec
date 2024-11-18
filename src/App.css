@@ -114,11 +114,9 @@ button:hover::after {
   background-color: var(--cor-destaque);
   transition: width 0.3s ease;
 }
-
-.container {
-  margin-right: 82px;
+.container{
+  width: max-content;
 }
-
 .container:hover .bar {
   width: 100%;
 }
@@ -138,6 +136,7 @@ header {
 header ul {
   display: flex;
   align-items: center;
+  gap: 5rem;
 }
 
 ul a {
@@ -618,20 +617,22 @@ footer .logo img {
     list-style-type: none;
   }
 
-}
 
-@media (max-width: 900px) {
-  .gifHome{
-    max-width: 200px;
+}
+@media (max-width: 1000px){
+  header .logo {
+    display: none;
   }
   header {
     justify-content: center;
   }
+}
+@media (max-width: 900px) {
 
-  header .logo {
-    display: none;
+  .gifHome{
+    max-width: 200px;
   }
-
+ 
   .sectionProduct {
     flex-direction: column-reverse;
   }
@@ -642,7 +643,6 @@ footer .logo img {
 }
 
 @media (max-width: 780px) {
-
   .Welcome-title,
   .Product-title {
     font-size: 2rem;
@@ -653,9 +653,16 @@ footer .logo img {
     gap: 2rem;
   }
 }
+@media (max-width: 700px) {
 
+  header ul{
+    gap: 3rem;
+  }
+}
 @media (max-width: 560px) {
-
+  header ul{
+    gap: 1.5rem;
+  }
   .Welcome-title,
   .Product-title {
     font-size: 1.5rem;
@@ -700,11 +707,7 @@ footer .logo img {
 
   .light,
   .dark {
-    --texto-header: 10px;
-  }
-
-  .container {
-    margin-right: 12px;
+    --texto-header: 12px;
   }
 
   .quem-somos h1 {
