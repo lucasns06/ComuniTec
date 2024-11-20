@@ -7,13 +7,18 @@ import logoImg from '../assets/img/logo.png'
 import { Link } from 'react-router-dom'; 
 
 const Header = () => {
-    const [isDarkTheme, setIsDarkTheme] = useState(false); // Estado para controlar o tema
+    const savedTheme = localStorage.getItem("isDarkTheme") === "true"; 
+    const [isDarkTheme, setIsDarkTheme] = useState(savedTheme); // Estado para controlar o tema
     const [currentConfigImg, setCurrentConfigImg] = useState(configImg);
     const [currentthemeImg, setCurrentthemeImg] = useState(darkImg);
+
     const toggleTheme = () => {
         setIsDarkTheme(prevState => !prevState); // Alterna entre true/false
     };
+
     useEffect(() => {
+        localStorage.setItem("isDarkTheme", isDarkTheme);
+        
         const body = document.body;
         if (isDarkTheme) {
             body.classList.add('dark');
