@@ -82,3 +82,70 @@ header ul {
   text-align: center;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
+
+.menuSvg {
+  display: none;
+  margin: auto;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  header .logo {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 725px) {
+  header ul {
+    gap: 2rem;
+  }
+
+}
+
+@media (max-width: 530px) {
+
+  .light,
+  .dark {
+    --texto-header: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  header {
+    display: block;
+  }
+
+  .menuSvg {
+    display: block;
+  }
+
+  header ul {
+    flex-direction: column;
+  }
+  
+.menu-open {
+  display: block;
+}
+
+.menu-closed {
+  display: none;
+}
+
+.menu-hidden {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu-hidden.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-hidden.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+}

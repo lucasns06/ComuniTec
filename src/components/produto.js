@@ -37,10 +37,12 @@ const Produto = () => {
                         <li>Mostre o que você quer com as imagens selecionadas</li>
                         <li>Peça ajuda em situações de desespero</li>
                     </ul>
-                    <br /> <br />
-                    <p>Veja abaixo como funciona o aplicativo</p>
+                  
 
                 </div>
+            </div>
+            <div className="ProductText">
+                <p style={{textAlign: 'center'}}>Veja abaixo como funciona o aplicativo</p>  <br /> <br />
             </div>
             <div className="sectionProduct2">
                 <div className="sectionProduct2-texto">

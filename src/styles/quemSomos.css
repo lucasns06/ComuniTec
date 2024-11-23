@@ -1,5 +1,4 @@
 .quem-somos {
-    padding: 80px;
     text-align: center;
   }
   .ContatoQuemsomosBtn{
@@ -69,6 +68,40 @@
     animation: tituloqs 3s infinite ease-in-out;
   }
 
+  .iconMission:hover {
+    transform: translate(0px, -10px);
+    transition: all 0.2s;
+  }
+  
+  .iconMission:hover .st0 {
+    transition: all 0.2s;
+    stroke: rgb(255, 243, 79);
+  }
+  
+  .iconFlag:hover {
+    transform: translate(0px, -10px);
+    transition: all 0.2s;
+  }
+  
+  .iconFlag:hover .iconFlagFill {
+    transition: all 0.2s;
+    fill: rgb(255, 243, 79);
+  }
+  
+  .iconFlagFill {
+    fill: rgb(79, 81, 255);
+  }
+  
+  .iconHeart:hover {
+    transform: translate(0px, -10px);
+    transition: all 0.2s;
+  }
+  
+  .iconHeartFill:hover {
+    transition: all 0.2s;
+    fill: yellow;
+  }
+  
   @keyframes tituloqs {
     50% {
       letter-spacing: 2px;
@@ -79,4 +112,11 @@
     }
   }
   
-    
+  @media (max-width: 660px) {
+    .containerproposito p, li {
+        font-size: .8rem;
+    }
+    .containerproposito{
+      padding: 4px;
+    }
+}

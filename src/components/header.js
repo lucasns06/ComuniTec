@@ -4,22 +4,26 @@ import darkImg from '../assets/img/dark.svg'
 import configLightImg from '../assets/img/configLight.png';
 import configImg from '../assets/img/config.png'
 import logoImg from '../assets/img/logo.png'
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import '../styles/header.css'
 
 const Header = () => {
-    const savedTheme = localStorage.getItem("isDarkTheme") === "true"; 
+    const savedTheme = localStorage.getItem("isDarkTheme") === "true";
     const [isDarkTheme, setIsDarkTheme] = useState(savedTheme); // Estado para controlar o tema
     const [currentConfigImg, setCurrentConfigImg] = useState(configImg);
     const [currentthemeImg, setCurrentthemeImg] = useState(darkImg);
+    const [currentMenu, setcurrentMenu] = useState(false);
 
     const toggleTheme = () => {
         setIsDarkTheme(prevState => !prevState); // Alterna entre true/false
     };
+    const toggleMenu = () => {
+        setcurrentMenu(prevState => !prevState); 
+    };
 
     useEffect(() => {
         localStorage.setItem("isDarkTheme", isDarkTheme);
-        
+
         const body = document.body;
         if (isDarkTheme) {
             body.classList.add('dark');
@@ -32,6 +36,10 @@ const Header = () => {
         }
     }, [isDarkTheme]); // O efeito será disparado sempre que isDarkTheme mudar
 
+    useEffect(() =>{
+
+    },[currentMenu])
+
     return (
         <div className="HeaderBorder">
             <header>
@@ -41,8 +49,12 @@ const Header = () => {
                         <p className="destaque">ComuniTec</p>
                     </a>
                 </div>
-                <nav>
+                <svg width="28px" height="28px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none" className='menuSvg' onClick={toggleMenu}>
+                            <path fill="var(--cor-texto)" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z" />
+                </svg>
+                <nav className={`menu ${currentMenu ? 'menu-open' : 'menu-closed'}`}>
                     <ul>
+                 
                         <div className="container">
                             <Link to="/" state={{ scrollTo: 'inicioId' }}>Inicio</Link>
                             <div className="bar"></div>
@@ -52,11 +64,11 @@ const Header = () => {
                             <div className="bar"></div>
                         </div>
                         <div className="container">
-                                <Link to="/QuemSomos">Sobre Nós</Link>
+                            <Link to="/QuemSomos">Sobre Nós</Link>
                             <div className="bar"></div>
                         </div>
                         <div className="container">
-                                <Link to="/Contato"><button >Contato</button></Link>
+                            <Link to="/Contato"><button >Contato</button></Link>
                         </div>
                         <div className="settings">
                             <img src={currentConfigImg} width="28px" style={{ transform: 'translate(0px, 2px)' }} id="configId" />
@@ -68,6 +80,7 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
+                  
                     </ul>
                 </nav>
             </header>

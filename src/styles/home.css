@@ -30,4 +30,16 @@
     filter: saturate(0.7);
     max-width: 500px;
     transform: translateY(-40px);
+    width: 100%;
+}
+@media (max-width: 850px) {
+    .gifHome{
+        max-width: 300px;
+    }
+}
+@media (max-width: 660px) {
+    section {
+        flex-direction: column;
+        gap: 0;
+    }
 }

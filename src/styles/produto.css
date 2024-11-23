@@ -1,5 +1,4 @@
 .sectionProduct {
-    height: 90vh;
     align-items: center;
     display: flex;
     margin: auto;
@@ -8,7 +7,6 @@
     justify-content: center;
     gap: 3rem;
     padding-top: 5rem;
-    padding-bottom: 5rem;
 }
 
 .sectionProductImg1 {
@@ -17,6 +15,7 @@
 
 .ProductText {
     text-align: center;
+    padding-bottom: 5rem;
 }
 
 .ProductText p {
@@ -103,6 +102,36 @@
 .downloadBtn strong {
     font-size: 1.5em
 }
+
 .downloadIcon {
     width: 40px;
-  }
+}
+@media (max-width: 900px) {
+    .ProductText {
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 770px) {
+    .appTela{
+        max-width: 200px;
+    }
+}
+@media (max-width: 710px) {
+    .containerappTela{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 490px) {
+    .sectionProduct2{
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 540px) {
+    .downloadBtn{
+        font-size: 1rem;
+    }
+    .downloadBtn strong{
+        font-size: 1rem;
+    }
+}
