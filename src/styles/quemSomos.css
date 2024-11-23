@@ -1,0 +1,82 @@
+.quem-somos {
+    padding: 80px;
+    text-align: center;
+  }
+  .ContatoQuemsomosBtn{
+    margin: auto;
+    display: block;
+    margin-bottom: 4rem;
+  }
+  .quem-somos h1 {
+    font-size: 3.5rem;
+  }
+  
+  .quem-somos p {
+    font-size: 24px;
+    padding: 2rem;
+  }
+  
+  .quem-somos img {
+    max-width: 380px;
+    width: 100%;
+  }
+  
+  .empresaMissao {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 5rem;
+  }
+  
+  .containerproposito {
+    padding: 24px;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .containerproposito:nth-child(1) {
+    border-left: 2px solid var(--cor-texto);
+  }
+  
+  .containerproposito:nth-child(2) {
+    border-left: 2px solid var(--cor-texto);
+    border-right: 2px solid var(--cor-texto);
+  }
+  
+  .containerproposito:nth-child(3) {
+    border-right: 2px solid var(--cor-texto);
+  }
+  
+  .containerproposito p,
+  li {
+    font-size: 20px;
+    font-family: "Kanit";
+    font-weight: 200;
+  }
+  
+  .containerproposito img {
+    margin-bottom: 8px;
+  }
+  
+  /*  Animação dos icones da missao visao valores*/
+  .containerproposito img:hover {
+    transform: translate(0px, -10px);
+    transition: 0.2s transform ease;
+  }
+  
+  .TituloQS {
+    animation: tituloqs 3s infinite ease-in-out;
+  }
+
+  @keyframes tituloqs {
+    50% {
+      letter-spacing: 2px;
+    }
+  
+    100% {
+      letter-spacing: 0px;
+    }
+  }
+  
+    

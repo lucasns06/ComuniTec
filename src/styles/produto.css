@@ -1,0 +1,108 @@
+.sectionProduct {
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    width: 90rem;
+    max-width: 90%;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.sectionProductImg1 {
+    margin-top: 2rem;
+}
+
+.ProductText {
+    text-align: center;
+}
+
+.ProductText p {
+    font-size: 1.5rem;
+}
+
+.ProductText h1 {
+    font-size: 3rem;
+}
+
+.sectionProduct2 {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    width: 90rem;
+    max-width: 90%;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 5rem;
+}
+
+.sectionProduct2-texto {
+    max-width: 512px;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.appTela {
+    max-width: 300px;
+    width: 100%;
+}
+
+.appTela2 {
+    max-width: 200px;
+    width: 100%;
+}
+
+.sectionProduct3 {
+    text-align: center;
+    margin: auto;
+    width: 90rem;
+    max-width: 90%;
+    padding-bottom: 5rem;
+    gap: 2rem;
+    font-size: 22px;
+}
+
+.containerappTela {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.sectionProduct3-texto {
+    max-width: 800px;
+    font-size: 22px;
+    text-align: justify;
+    justify-content: center;
+    justify-self: center;
+}
+
+.downloadButtons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.downloadBtn {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    width: max-content;
+    font-size: 1em;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+    padding: 6px;
+}
+
+.downloadBtn:hover {
+    color: white;
+}
+
+.downloadBtn strong {
+    font-size: 1.5em
+}
+.downloadIcon {
+    width: 40px;
+  }

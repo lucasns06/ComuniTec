@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'; // Importando Link para navegação interna
+import '../styles/contato.css'
 
 const Contato = () => {
 

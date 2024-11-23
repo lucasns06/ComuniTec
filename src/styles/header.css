@@ -1,0 +1,84 @@
+.HeaderBorder {
+  background-color: var(--cor-header-fundo);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  top: 0;
+  z-index: 1000;
+  /* background: var(--cor-fundo); */
+  position: sticky;
+  padding: 0.5rem;
+}
+
+header {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90rem;
+  max-width: 90%;
+
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.logo p {
+  text-align: center;
+  color: var(--cor-destaque);
+  margin-left: 8px;
+  font-family: "Baby";
+  font-weight: bolder;
+  font-size: var(--texto-header);
+}
+
+.container {
+  width: max-content;
+}
+
+.bar {
+  height: 2px;
+  width: 0;
+  background-color: var(--cor-destaque);
+  transition: width 0.3s ease;
+}
+
+.container:hover .bar {
+  width: 100%;
+}
+
+.settings {
+  cursor: pointer;
+  position: relative;
+}
+
+.settings:hover .menu-hidden {
+  display: block;
+}
+
+.menu-hidden {
+  padding: 4px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+  background-color: var(--cor-header-fundo);
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  list-style: none;
+  margin: 0;
+  width: max-content;
+  z-index: 1;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}

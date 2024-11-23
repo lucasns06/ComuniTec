@@ -1,0 +1,33 @@
+.text {
+    text-align: center;
+}
+
+.Welcome-title,
+.Welcome-title2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.odsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    height: max-content;
+}
+
+.odsContainer img {
+    border-radius: 12px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.363);
+}
+
+.odsTexto {
+    text-align: justify;
+    max-width: 600px;
+}
+
+.gifHome {
+    z-index: -1;
+    filter: saturate(0.7);
+    max-width: 500px;
+    transform: translateY(-40px);
+}

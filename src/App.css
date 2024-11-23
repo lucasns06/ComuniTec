@@ -98,47 +98,6 @@ button:hover::after {
   scale: 200;
 }
 
-.HeaderBorder {
-  background-color: var(--cor-header-fundo);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  top: 0;
-  z-index: 1000;
-  /* background: var(--cor-fundo); */
-  position: sticky;
-  padding: 0.5rem;
-}
-
-.bar {
-  height: 2px;
-  width: 0;
-  background-color: var(--cor-destaque);
-  transition: width 0.3s ease;
-}
-.container{
-  width: max-content;
-}
-.container:hover .bar {
-  width: 100%;
-}
-
-header {
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90rem;
-  max-width: 90%;
-
-}
-
-header ul {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-}
-
 ul a {
 
   position: relative;
@@ -152,19 +111,6 @@ a:hover {
   transition: all 0.3s;
 }
 
-.logo a {
-  display: flex;
-  align-items: center;
-}
-
-.logo p {
-  text-align: center;
-  color: var(--cor-destaque);
-  margin-left: 8px;
-  font-family: "Baby";
-  font-weight: bolder;
-  font-size: var(--texto-header);
-}
 
 .tech {
   font-family: 'kanit';
@@ -179,14 +125,7 @@ a:hover {
   background-color: white;
 }
 
-.settings {
-  cursor: pointer;
-  position: relative;
-}
 
-.settings:hover .menu-hidden {
-  display: block;
-}
 
 .mudar-cor:hover #cor-select {
   display: block;
@@ -201,24 +140,6 @@ a:hover {
   font-family: "Kanit";
 }
 
-.menu-hidden {
-  padding: 4px;
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  right: 0;
-  background-color: var(--cor-header-fundo);
-  border-bottom-right-radius: 20%;
-  border-bottom-left-radius: 20%;
-  list-style: none;
-  margin: 0;
-  width: max-content;
-  z-index: 1;
-  text-align: center;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-}
 
 #ImgTheme {
   padding-top: 8px;
@@ -282,13 +203,6 @@ a:hover {
   list-style: none;
   text-align: center;
 }
-
-.Welcome-title,
-.Welcome-title2 {
-  text-align: center;
-  font-size: 3rem;
-}
-
 section {
   height: 820px;
   align-items: center;
@@ -310,303 +224,6 @@ section button {
   width: max-content;
   font-family: "Baby";
 }
-
-.gifHome {
-  z-index: -1;
-  filter: saturate(0.7);
-  max-width: 500px;
-  transform: translateY(-40px);
-}
-
-/* ODS*/
-.odsContainer {
-  display: flex;
-  justify-content: center;
-  gap: 4em;
-  height: max-content;
-}
-
-.odsContainer img {
-  border-radius: 12px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.363);
-}
-
-.odsTexto {
-  text-align: justify;
-  max-width: 600px;
-}
-
-/* QUEM SOMOS */
-.quem-somos {
-  padding: 80px;
-  text-align: center;
-}
-.ContatoQuemsomosBtn{
-  margin: auto;
-  display: block;
-  margin-bottom: 4rem;
-}
-.quem-somos h1 {
-  font-size: 3.5rem;
-}
-
-.quem-somos p {
-  font-size: 24px;
-  padding: 2rem;
-}
-
-.quem-somos img {
-  max-width: 380px;
-  width: 100%;
-}
-
-.empresaMissao {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding-bottom: 5rem;
-}
-
-.containerproposito {
-  padding: 24px;
-  align-items: center;
-  text-align: center;
-  width: 300px;
-}
-
-.containerproposito:nth-child(1) {
-  border-left: 2px solid var(--cor-texto);
-}
-
-.containerproposito:nth-child(2) {
-  border-left: 2px solid var(--cor-texto);
-  border-right: 2px solid var(--cor-texto);
-}
-
-.containerproposito:nth-child(3) {
-  border-right: 2px solid var(--cor-texto);
-}
-
-.containerproposito p,
-li {
-  font-size: 20px;
-  font-family: "Kanit";
-  font-weight: 200;
-}
-
-.containerproposito img {
-  margin-bottom: 8px;
-}
-
-/*  Animação dos icones da missao visao valores*/
-.containerproposito img:hover {
-  transform: translate(0px, -10px);
-  transition: 0.2s transform ease;
-}
-
-.TituloQS {
-  animation: tituloqs 3s infinite ease-in-out;
-}
-
-footer {
-  padding: 4rem;
-  background: #08080c;
-  height: max-content;
-}
-footer h1{
-  color: white;
-}
-
-footer .logo {
-  padding: 3rem;
-}
-
-footer .logo a {
-  justify-content: center;
-  filter: grayscale(1) brightness(2);
-}
-
-footer .logo img {
-  width: 100px;
-}
-
-.contFooter {
-  width: max-content;
-  margin-right: 0;
-}
-
-.container-texto-footer {
-  margin-top: 1rem;
-  display: flex;
-  gap: 4rem;
-  justify-content: center;
-}
-.container-texto-footer-meio{
-  cursor: pointer;
-}
-.container-texto-footer-esquerda,.container-texto-footer-direita, .container-texto-footer-meio {
-  border-top: 2px solid #ffffff;
-}
-.container-texto-footer p,
-.container-texto-footer nav,
-.container-texto-footer a {
-  /* margin-top: 1rem;  */
-  color: #ffffff;
-
-  a {
-    color: #ffffff;
-  }
-}
-
-@keyframes tituloqs {
-  50% {
-    letter-spacing: 2px;
-  }
-
-  100% {
-    letter-spacing: 0px;
-  }
-}
-
-.ProductText {
-  text-align: center;
-}
-
-.sectionProduct {
-  height: 90vh;
-  align-items: center;
-  display: flex;
-  margin: auto;
-  width: 90rem;
-  max-width: 90%;
-  justify-content: center;
-  gap: 3rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.sectionProductImg1 {
-  margin-top: 2rem;
-}
-
-.ProductText p {
-  font-size: 1.5rem;
-}
-
-.ProductText h1 {
-  font-size: 3rem;
-}
-/* CONTATO*/
-.Contato{
-  height: 800px;
-  text-align: center;
-  position: relative;
-}
-.Contato::before{
-  z-index: -1;
-  position: absolute;
-  content: '';
-  top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(157deg, transparent 50%, var(--cor-destaque) 50%), var(--cor-fundo);
-    background-size: 100% 100%;
-}
-.Contato h1{
-  font-size: 40px;
-}
-.Contato h2{
-  
-  font-weight: 400;
-}
-.Contato form{
-  background: var(--cor-fundo);
-  text-align: center;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.205);
-  margin: auto;
-  max-width: 600px;
-  height: 420px;
-  padding: 20px;
-}
-.Contato label, .contatoSubmit{
-  font-size: 24px;
-}
-.Contato input{
-  padding: 4px;
-  border-radius: 4px;
-  outline: 0;
-  border: 1px solid rgba(0, 0, 0, 0.349);
-  width: 264px;
-}
-.Contato textarea{
-  height: 100px;
-  border: 1px solid rgba(0, 0, 0, 0.349);
-  width: 264px;
-  padding: 4px;
-}
-.Contato textarea:focus-visible, input:focus-visible{
-  outline: 1px solid var(--cor-destaque);
-  border-radius: 4px;
-}
-.contatoSubmit{
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.404);
-  cursor: pointer;
-  padding: 8px;
-  font-size: 20px;
-  background-color: var(--cor-destaque);
-  color: white;
-  outline: 0;
-  border: 0;
-  border-radius: 10px;
-  font-family: "Baby";
-}
-.contatoSubmit:hover{
-  background: #757dfe;
-}
-.contatoVoltar{
-  color: var(--cor-texto);
-  background: var(--cor-fundo);
-}
-.contatoVoltar:hover{
-  color: var(--cor-fundo);
-  background: var(--cor-texto);
-}
-/* CONTATO*/
-
-.downloadButtons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.downloadBtn:hover {
-  color: white;
-}
-
-.downloadBtn {
-  display: flex;
-  align-items: center;
-  border-radius: 4px;
-  width: max-content;
-  font-size: 1em;
-  background-color: black;
-  font-family: sans-serif;
-  color: white;
-  padding: 6px;
-}
-
-.downloadBtn strong {
-  font-size: 1.5em
-}
-
-.downloadIcon {
-  width: 40px;
-}
-
-/* RESPONSIVIDADE */
-
-
 .text {
   text-align: center;
 }

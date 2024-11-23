@@ -4,6 +4,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
+import '../styles/quemSomos.css'
+
 const QuemSomos = () => {
   useLayoutEffect(() => {
     const contProp1 = document.querySelector('.contProp1')

@@ -4,6 +4,7 @@ import gifHome from '../assets/img/QS.gif'
 import odsImg from '../assets/img/ods10.svg'
 import gsap from "gsap";
 import { Link } from 'react-router-dom';
+import '../styles/home.css';
 const Home = () => {
 
     useLayoutEffect(() => {

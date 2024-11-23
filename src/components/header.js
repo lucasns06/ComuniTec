@@ -5,6 +5,7 @@ import configLightImg from '../assets/img/configLight.png';
 import configImg from '../assets/img/config.png'
 import logoImg from '../assets/img/logo.png'
 import { Link } from 'react-router-dom'; 
+import '../styles/header.css'
 
 const Header = () => {
     const savedTheme = localStorage.getItem("isDarkTheme") === "true"; 

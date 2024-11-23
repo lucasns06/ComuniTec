@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useEffect } from 'react';
 import Header from './components/header';
-import Home from './components/home';
+import Home from './components/home.js';
 import QuemSomos from './components/quemSomos';
 import { Routes, Route } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
