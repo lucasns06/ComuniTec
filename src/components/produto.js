@@ -8,18 +8,27 @@ import appTela3 from '../assets/img/TelaApp3.png'
 import '../styles/produto.css'
 import gsap from "gsap";
 import { Link } from "react-router-dom";
-import { useLayoutEffect } from 'react';
+import { useEffect } from 'react';
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Produto = () => {
-    useLayoutEffect(() => {
-        const productSection = document.querySelector('.sectionProductImg1')
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
 
-        gsap.from(productSection, { duration: 1, x: -100 })
-        gsap.to(productSection, { duration: 1, x: 0 })
-        gsap.from(".ProductText", { duration: 1, y: 100 })
-        gsap.to(".ProductText", { duration: 1, y: 0 });
+        const productSection = document.querySelector('.sectionProduct');
 
-    }, [])
+        gsap.fromTo(productSection, { opacity: 0, },
+            {
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    start: "top 60%",
+                    trigger: productSection
+                },
+            });
+
+    }, []);
+
 
     return (
         <>
@@ -37,12 +46,12 @@ const Produto = () => {
                         <li>Mostre o que você quer com as imagens selecionadas</li>
                         <li>Peça ajuda em situações de desespero</li>
                     </ul>
-                  
+
 
                 </div>
             </div>
             <div className="ProductText">
-                <p style={{textAlign: 'center'}}>Veja abaixo como funciona o aplicativo</p>  <br /> <br />
+                <p style={{ textAlign: 'center' }}>Veja abaixo como funciona o aplicativo</p>  <br /> <br />
             </div>
             <div className="sectionProduct2">
                 <div className="sectionProduct2-texto">
@@ -68,7 +77,7 @@ const Produto = () => {
                     <p>Na ComuniTec, acreditamos que a comunicação é um direito de
                         todos. Com o Comunica, queremos quebrar barreiras e criar
                         um mundo onde cada pessoa tenha sua voz, independentemente dos desafios que enfrenta.</p>
-                        <br />
+                    <br />
                     <p>Baixe agora e descubra como nosso app pode fazer a diferença.</p>
                 </div>
                 <br />

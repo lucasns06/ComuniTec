@@ -6,13 +6,7 @@
 
 @font-face {
   font-family: "Baby";
-  src: url(./assets/fonts/Baby\ Doll.otf);
-}
-
-@font-face {
-  font-family: "Kanit";
   src: url(./assets/fonts/Kanit-Regular.ttf);
-  font-weight: 400;
 }
 
 ::-webkit-scrollbar {
@@ -53,7 +47,6 @@ h1,
 li {
   color: var(--cor-texto);
   text-decoration: none;
-  /* font-family: "Kanit", sans-serif; */
 }
 
 button {
@@ -140,7 +133,7 @@ a:hover {
 }
 
 section {
-  height: 820px;
+  height: 740px;
   align-items: center;
   display: flex;
   margin-left: auto;
@@ -264,11 +257,6 @@ section button {
     margin-top: 3rem;
     font-size: 2.5rem;
 
-  }
-
-  .quem-somos {
-    margin-top: 36px;
-    padding: 6px;
   }
 
   .quem-somos p {

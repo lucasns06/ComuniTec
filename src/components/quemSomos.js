@@ -5,34 +5,41 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import '../styles/quemSomos.css'
+import { useRef } from "react";
 
 const QuemSomos = () => {
+  
   useLayoutEffect(() => {
+    
     const contProp1 = document.querySelector('.contProp1')
     const contProp2 = document.querySelector('.contProp2')
     const contProp3 = document.querySelector('.contProp3')
-    
+
     const iconMission = document.querySelector('.iconMission')
     const iconFlag = document.querySelector('.iconFlag')
     const iconHeart = document.querySelector('.iconHeart')
-    
+
+    const QuemSomosH1 = document.querySelector('.QuemSomosH1')
+
+    gsap.to(QuemSomosH1, {scale: 1, opacity: 1, duration: 1.5})
+
     gsap.registerPlugin(ScrollTrigger)
     const timeline = gsap.timeline({
       scrollTrigger: {
-        trigger: ".containerproposito",  
+        trigger: ".containerproposito",
       }
     });
     const timeline2 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".sugestaoContainer",  
+        trigger: ".sugestaoContainer",
       }
     });
     const timeline3 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".toProduto",  
+        trigger: ".toProduto",
       }
     });
-    
+
     timeline
       .from(contProp1, { y: 100, opacity: 0 })
       .from(iconMission, { y: -20 })
@@ -61,24 +68,21 @@ const QuemSomos = () => {
   return (
     <>
       <div className="quem-somos" id="quemSomos">
-        {/* <h1>Quem somos</h1> */}
+        <div className="quem-somos-hero">
+          <h1 className="QuemSomosH1">Quem Somos</h1>
+        </div>
         <br />
-        <br />
-        <br />
-        <img src={logo} alt="Logo" />
-        <h1 className="TituloQS destaque" style={{ margin: "auto", width: "max-content" }}>
-          ComuniTec
-        </h1>
         <p>
           Nós somos a ComuniTec, uma <br />
           empresa de tecnologia de Desenvolvimento <br />
-          de Softwares. Facilitamos a sua comunicação!
+          de Softwares.<br />
+           Facilitamos a sua comunicação!
         </p>
-
+      <p>Fundada em 2024</p>
         <p>
           Nossa origem foi na ETEC Horácio Augusto da Silveira, para o TCC em Desenvolvimento de Sistemas.
         </p>
-        <h1>Identidade</h1>
+        <h1>Identidade</h1> <br/>
       </div>
 
       <div className="empresaMissao">

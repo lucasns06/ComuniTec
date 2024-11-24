@@ -1,122 +1,156 @@
+.quem-somos-hero{
+  width: 100%;
+  height: 500px;
+  background: url(../assets/img/background.avif);
+  background-position: 0;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.quem-somos-hero::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2; 
+}
+.quem-somos-hero h1 {
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  color: white;
+  scale: 0.5;
+  opacity: 0;
+}
 .quem-somos {
-    text-align: center;
-  }
-  .ContatoQuemsomosBtn{
-    margin: auto;
-    display: block;
-    margin-bottom: 4rem;
-  }
-  .quem-somos h1 {
-    font-size: 3.5rem;
-  }
-  
-  .quem-somos p {
-    font-size: 24px;
-    padding: 2rem;
-  }
-  
-  .quem-somos img {
-    max-width: 380px;
-    width: 100%;
-  }
-  
-  .empresaMissao {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding-bottom: 5rem;
-  }
-  
-  .containerproposito {
-    padding: 24px;
-    align-items: center;
-    text-align: center;
-    width: 300px;
-  }
-  
-  .containerproposito:nth-child(1) {
-    border-left: 2px solid var(--cor-texto);
-  }
-  
-  .containerproposito:nth-child(2) {
-    border-left: 2px solid var(--cor-texto);
-    border-right: 2px solid var(--cor-texto);
-  }
-  
-  .containerproposito:nth-child(3) {
-    border-right: 2px solid var(--cor-texto);
-  }
-  
-  .containerproposito p,
-  li {
-    font-size: 20px;
-    font-family: "Kanit";
-    font-weight: 200;
-  }
-  
-  .containerproposito img {
-    margin-bottom: 8px;
-  }
-  
-  /*  Animação dos icones da missao visao valores*/
-  .containerproposito img:hover {
-    transform: translate(0px, -10px);
-    transition: 0.2s transform ease;
-  }
-  
-  .TituloQS {
-    animation: tituloqs 3s infinite ease-in-out;
+  text-align: center;
+}
+
+.ContatoQuemsomosBtn {
+  margin: auto;
+  display: block;
+  margin-bottom: 4rem;
+  font-size: 20px;
+}
+
+.quem-somos h1 {
+  font-size: 3.5rem;
+}
+
+.quem-somos p {
+  font-size: 24px;
+  padding: 2rem;
+}
+
+.quem-somos img {
+  max-width: 380px;
+  width: 100%;
+}
+
+.empresaMissao {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
+
+.containerproposito {
+  padding: 24px;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+
+.containerproposito:nth-child(1) {
+  border-left: 2px solid var(--cor-texto);
+}
+
+.containerproposito:nth-child(2) {
+  border-left: 2px solid var(--cor-texto);
+  border-right: 2px solid var(--cor-texto);
+}
+
+.containerproposito:nth-child(3) {
+  border-right: 2px solid var(--cor-texto);
+}
+
+.containerproposito p,
+li {
+  font-size: 20px;
+  font-family: "Baby";
+  font-weight: 200;
+}
+
+.containerproposito img {
+  margin-bottom: 8px;
+}
+
+/*  Animação dos icones da missao visao valores*/
+.containerproposito img:hover {
+  transform: translate(0px, -10px);
+  transition: 0.2s transform ease;
+}
+
+.TituloQS {
+  animation: tituloqs 3s infinite ease-in-out;
+}
+
+.iconMission:hover {
+  transform: translate(0px, -10px);
+  transition: all 0.2s;
+}
+
+.iconMission:hover .st0 {
+  transition: all 0.2s;
+  stroke: rgb(255, 243, 79);
+}
+
+.iconFlag:hover {
+  transform: translate(0px, -10px);
+  transition: all 0.2s;
+}
+
+.iconFlag:hover .iconFlagFill {
+  transition: all 0.2s;
+  fill: rgb(255, 243, 79);
+}
+
+.iconFlagFill {
+  fill: rgb(79, 81, 255);
+}
+
+.iconHeart:hover {
+  transform: translate(0px, -10px);
+  transition: all 0.2s;
+}
+
+.iconHeartFill:hover {
+  transition: all 0.2s;
+  fill: yellow;
+}
+
+@keyframes tituloqs {
+  50% {
+    letter-spacing: 2px;
   }
 
-  .iconMission:hover {
-    transform: translate(0px, -10px);
-    transition: all 0.2s;
+  100% {
+    letter-spacing: 0px;
   }
-  
-  .iconMission:hover .st0 {
-    transition: all 0.2s;
-    stroke: rgb(255, 243, 79);
+}
+
+@media (max-width: 660px) {
+
+  .containerproposito p,
+  .containerproposito li {
+    font-size: .8rem;
   }
-  
-  .iconFlag:hover {
-    transform: translate(0px, -10px);
-    transition: all 0.2s;
+
+  .containerproposito {
+    padding: 4px;
   }
-  
-  .iconFlag:hover .iconFlagFill {
-    transition: all 0.2s;
-    fill: rgb(255, 243, 79);
-  }
-  
-  .iconFlagFill {
-    fill: rgb(79, 81, 255);
-  }
-  
-  .iconHeart:hover {
-    transform: translate(0px, -10px);
-    transition: all 0.2s;
-  }
-  
-  .iconHeartFill:hover {
-    transition: all 0.2s;
-    fill: yellow;
-  }
-  
-  @keyframes tituloqs {
-    50% {
-      letter-spacing: 2px;
-    }
-  
-    100% {
-      letter-spacing: 0px;
-    }
-  }
-  
-  @media (max-width: 660px) {
-    .containerproposito p, li {
-        font-size: .8rem;
-    }
-    .containerproposito{
-      padding: 4px;
-    }
 }

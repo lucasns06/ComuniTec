@@ -1,13 +1,15 @@
-import { useLayoutEffect } from 'react';
+import { useEffect } from 'react';
 import React from "react";
 import gifHome from '../assets/img/QS.gif'
 import odsImg from '../assets/img/ods10.svg'
 import gsap from "gsap";
 import { Link } from 'react-router-dom';
 import '../styles/home.css';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
 const Home = () => {
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         const welcome = document.querySelector('.Welcome-title')
         gsap.from(welcome, { x: -50, opacity: 0 })
         gsap.to(welcome, { duration: 2, x: 0, opacity: 1 })
@@ -23,6 +25,20 @@ const Home = () => {
         const text = document.querySelector('.text')
         gsap.from(text, { opacity: 0 })
         gsap.to(text, { duration: 2, opacity: 1 })
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const odsContainer = document.querySelector('.odsContainer');
+
+        gsap.fromTo(odsContainer, { opacity: 0, },
+            {
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    start: "top 60%",
+                    trigger: odsContainer
+                },
+            });
 
 
     }, [])
