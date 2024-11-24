@@ -88,6 +88,12 @@ header ul {
   margin: auto;
   cursor: pointer;
 }
+.menuMobile{
+  display: none;
+  overflow: hidden;
+  margin-top: 1rem;
+
+}
 @media (max-width: 1000px) {
   header .logo {
     display: none;
@@ -118,6 +124,9 @@ header ul {
     display: block;
   }
 
+  .menuPc{
+    display: none;
+  }
   .menuSvg {
     display: block;
   }
@@ -125,27 +134,27 @@ header ul {
   header ul {
     flex-direction: column;
   }
-  
-.menu-open {
-  display: block;
-}
 
-.menu-closed {
-  display: none;
-}
+  .menu-open {
+    display: block;
+  }
 
-.menu-hidden {
-  transition: opacity 0.3s ease-in-out;
-}
+  .menu-closed {
+    display: none;
+  }
 
-.menu-hidden.hide {
-  opacity: 0;
-  pointer-events: none;
-}
+  .menu-hidden {
+    transition: opacity 0.3s ease-in-out;
+  }
 
-.menu-hidden.show {
-  opacity: 1;
-  pointer-events: auto;
-}
+  .menu-hidden.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .menu-hidden.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
 
 }
