@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ComuniTec/static/css/main.97fa4356.css",
-    "main.js": "/ComuniTec/static/js/main.50e609f0.js",
+    "main.js": "/ComuniTec/static/js/main.15078e02.js",
     "static/js/453.fa6158ae.chunk.js": "/ComuniTec/static/js/453.fa6158ae.chunk.js",
     "static/media/QS.gif": "/ComuniTec/static/media/QS.cdb50912c6cfa9928ab1.gif",
     "static/media/background.avif": "/ComuniTec/static/media/background.0c12ceb705a43f547c2d.avif",
-    "static/media/TelaApp.png": "/ComuniTec/static/media/TelaApp.861f27a54cc2c53d5181.png",
-    "static/media/Necessidades.png": "/ComuniTec/static/media/Necessidades.34d86ace5327fdccc0b4.png",
     "static/media/Kanit-Regular.ttf": "/ComuniTec/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
-    "static/media/TelaApp3.png": "/ComuniTec/static/media/TelaApp3.9d0258ccaf79e2817251.png",
+    "static/media/TelaApp.png": "/ComuniTec/static/media/TelaApp.1da2ab834dab8be81593.png",
+    "static/media/Necessidades.png": "/ComuniTec/static/media/Necessidades.e8ada582d79d1005f3bb.png",
+    "static/media/TelaApp3.png": "/ComuniTec/static/media/TelaApp3.907529023263c8e57a1b.png",
     "static/media/aplicativologo.png": "/ComuniTec/static/media/aplicativologo.621885f239f402898ed6.png",
     "static/media/logo.png": "/ComuniTec/static/media/logo.6c857cf2ff5740c6cdd1.png",
     "static/media/ods10.svg": "/ComuniTec/static/media/ods10.d1e68ef5cd1b675edeb65cdacba624c9.svg",
@@ -17,11 +17,11 @@
     "static/media/dark.svg": "/ComuniTec/static/media/dark.84c0c135b218b7381db7ab4260a3fd67.svg",
     "index.html": "/ComuniTec/index.html",
     "main.97fa4356.css.map": "/ComuniTec/static/css/main.97fa4356.css.map",
-    "main.50e609f0.js.map": "/ComuniTec/static/js/main.50e609f0.js.map",
+    "main.15078e02.js.map": "/ComuniTec/static/js/main.15078e02.js.map",
     "453.fa6158ae.chunk.js.map": "/ComuniTec/static/js/453.fa6158ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.97fa4356.css",
-    "static/js/main.50e609f0.js"
+    "static/js/main.15078e02.js"
   ]
 }
