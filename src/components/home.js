@@ -54,8 +54,8 @@ const Home = () => {
                         Conheça nossa historia e nossas soluções!! </p>
 
                     <br /> <br /> <br /> <br />
-                    <Link to="/" state={{ scrollTo: 'odsContainer' }} className="link">
-                        <button>Saber Mais</button>
+                        <Link to="/" state={{ scrollTo: 'odsContainer' }} className="link">
+                            <button>Saber Mais</button>
                         </Link>
                 </div>
                 <img src={gifHome} alt="imagem home" className='gifHome' />

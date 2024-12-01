@@ -84,8 +84,8 @@ const Header = () => {
                             <div className="bar"></div>
                         </div>
                         <div className="container">
-                            <Link to="/Contato"><button >Contato</button></Link>
-                        </div>
+                                <Link to="/Contato"><button >Contato</button></Link>
+                            </div>
                         <div className="settings">
                             <img src={currentConfigImg} width="28px" style={{ transform: 'translate(0px, 2px)' }} id="configId" />
                             <div className="menu-hidden">
@@ -114,7 +114,7 @@ const Header = () => {
                             <div className="bar"></div>
                         </div>
                         <div className="container">
-                            <Link to="/Contato"><button >Contato</button></Link>
+                            <Link to="/Contato"><button >Contato</button></Link> 
                         </div>
                         <div className="mudar-tema">
                             <a id="toggle-theme" onClick={toggleTheme} >

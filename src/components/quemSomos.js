@@ -72,6 +72,7 @@ const QuemSomos = () => {
           <h1 className="QuemSomosH1">Quem Somos</h1>
         </div>
         <br />
+        <img src={logo} />
         <p>
           Nós somos a ComuniTec, uma <br />
           empresa de tecnologia de Desenvolvimento <br />

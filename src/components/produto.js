@@ -101,8 +101,9 @@ const Produto = () => {
             <div className="ProductText" style={{ textAlign: 'center', marginBottom: '2rem' }}>
                 <p>Quer saber mais da nossa empresa?</p> <br />
                 <Link to="/QuemSomos">
-                    <button style={{ fontSize: '22px', width: 'max-content' }}>Quem somos</button>
-                </Link> <br />
+                        <button style={{ fontSize: '22px', width: 'max-content' }}>Quem somos</button>
+                </Link>
+                <br />
             </div>
         </>
     );
