@@ -27,10 +27,10 @@
 
 .dark {
   /* TEMA ESCURO */
-  --cor-fundo: #15151c;
+  --cor-fundo: #131316;
   --cor-texto: #fafafa;
   --cor-texto2: rgb(180, 180, 180);
-  --cor-header-fundo: #1a1a22;
+  --cor-header-fundo: #1a1a1f;
   --cor-texto-botao: #000000;
 
 }
