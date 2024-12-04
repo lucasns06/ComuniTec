@@ -1,7 +1,7 @@
 <div align="center">
 
   # ComuniTec 
-  <img src="https://github.com/user-attachments/assets/ef99636d-302b-43e2-8801-2a22ced9097a" height="150em">
+  <img src="src/assets/img/logo.png" height="150em">
 </div>
 <br><br>
 
