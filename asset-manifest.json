@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/ComuniTec/static/css/main.7294b06e.css",
-    "main.js": "/ComuniTec/static/js/main.6d1ab77a.js",
+    "main.css": "/ComuniTec/static/css/main.ffb5f14a.css",
+    "main.js": "/ComuniTec/static/js/main.5c429ee6.js",
     "static/js/453.fa6158ae.chunk.js": "/ComuniTec/static/js/453.fa6158ae.chunk.js",
     "static/media/QS.gif": "/ComuniTec/static/media/QS.cdb50912c6cfa9928ab1.gif",
     "static/media/TelaApp.png": "/ComuniTec/static/media/TelaApp.88c7742556a8d70810e3.png",
     "static/media/background.avif": "/ComuniTec/static/media/background.0c12ceb705a43f547c2d.avif",
+    "static/media/logo.png": "/ComuniTec/static/media/logo.6021a9f3e72264aa0f1c.png",
     "static/media/Kanit-Regular.ttf": "/ComuniTec/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
     "static/media/Necessidades.png": "/ComuniTec/static/media/Necessidades.a87d189947d895806cd6.png",
+    "static/media/aplicativologo.png": "/ComuniTec/static/media/aplicativologo.9d97137ea47830fcd713.png",
     "static/media/TelaApp3.png": "/ComuniTec/static/media/TelaApp3.654f54765c31b6c90184.png",
-    "static/media/logo.png": "/ComuniTec/static/media/logo.cc326c9259bf1b0d4bc2.png",
-    "static/media/aplicativologo.png": "/ComuniTec/static/media/aplicativologo.621885f239f402898ed6.png",
     "static/media/ods10.svg": "/ComuniTec/static/media/ods10.d1e68ef5cd1b675edeb65cdacba624c9.svg",
     "static/media/mac.svg": "/ComuniTec/static/media/mac.be70fddd4207a7c72c2e921935c9fc58.svg",
     "static/media/playstore.svg": "/ComuniTec/static/media/playstore.42c50b016694677639b2f1121041be5f.svg",
     "static/media/dark.svg": "/ComuniTec/static/media/dark.84c0c135b218b7381db7ab4260a3fd67.svg",
     "index.html": "/ComuniTec/index.html",
-    "main.7294b06e.css.map": "/ComuniTec/static/css/main.7294b06e.css.map",
-    "main.6d1ab77a.js.map": "/ComuniTec/static/js/main.6d1ab77a.js.map",
+    "main.ffb5f14a.css.map": "/ComuniTec/static/css/main.ffb5f14a.css.map",
+    "main.5c429ee6.js.map": "/ComuniTec/static/js/main.5c429ee6.js.map",
     "453.fa6158ae.chunk.js.map": "/ComuniTec/static/js/453.fa6158ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7294b06e.css",
-    "static/js/main.6d1ab77a.js"
+    "static/css/main.ffb5f14a.css",
+    "static/js/main.5c429ee6.js"
   ]
 }
