@@ -21,7 +21,7 @@
   --cor-texto2: rgb(80, 80, 80);
   --cor-header-fundo: rgb(255, 255, 255);
   --cor-texto-botao: #ffffff;
-  --cor-destaque: #5156AE !important;
+  --cor-destaque: #3387FF !important;
   --texto-header: 22px;
 }
 
@@ -61,7 +61,7 @@ button {
   width: 108px;
   outline: 0;
   border: 0;
-  border-radius: 10px;
+  border-radius: 22px;
   font-family: "Baby";
   z-index: 0;
 }
@@ -69,7 +69,7 @@ button {
 button:after {
   border-radius: 1rem;
   content: '';
-  background-color: #757dfe;
+  background-color: #1b59af;
   width: 0px;
   height: 0px;
   position: absolute;
@@ -125,11 +125,13 @@ a:hover {
 }
 
 .destaque {
-  background: linear-gradient(-90deg, rgb(50, 53, 143) 0%, rgb(152, 124, 255) 100%);
+  background: linear-gradient(-90deg, #23559b 0%, #539bff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--cor-destaque);
+  margin: auto;
+  width: max-content;
 }
 
 section {

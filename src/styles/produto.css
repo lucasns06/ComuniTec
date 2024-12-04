@@ -75,6 +75,7 @@
     text-align: justify;
     justify-content: center;
     justify-self: center;
+    margin: auto;
 }
 
 .downloadButtons {

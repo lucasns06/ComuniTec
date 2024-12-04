@@ -7,7 +7,6 @@
     text-align: center;
     font-size: 3rem;
 }
-
 .odsContainer {
     padding-top: 120px;
     display: flex;
@@ -28,7 +27,7 @@
 
 .gifHome {
     z-index: -1;
-    filter: saturate(0.7);
+    filter: hue-rotate(323deg);
     max-width: 500px;
     transform: translateY(-40px);
     width: 100%;

@@ -36,7 +36,7 @@ const Produto = () => {
 
                 <img src={appLogo} className="sectionProductImg1" width="400px" />
                 <div className="ProductText">
-                    <h1 className="Product-title">Comunica</h1>
+                    <h1 className="Product-title destaque">Comunica</h1>
                     <br />
                     <p>Nós desenvolvemos um aplicativo com o intuito de ajudar <br />
                         pessoas com dificuldade de se comunicar </p><br /> <br />
