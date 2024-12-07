@@ -68,11 +68,15 @@ const QuemSomos = () => {
   return (
     <>
       <div className="quem-somos" id="quemSomos">
-        <div className="quem-somos-hero">
-          <h1 className="QuemSomosH1">Quem Somos</h1>
-        </div>
+      <br />
+      <br />
+      <h1>Sobre a ComuniTec</h1>
+      <p>A comunicação é um direito para todos!</p>
+      <br />
+        <div className="quem-somos-hero"></div>
         <br />
-        <img src={logo} />
+        <br />
+        <img src={logo} className="QSLogo" />
         <p>
           Nós somos a ComuniTec, uma <br />
           empresa de tecnologia de Desenvolvimento <br />
