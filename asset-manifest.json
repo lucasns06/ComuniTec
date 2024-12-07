@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ComuniTec/static/css/main.ffb5f14a.css",
-    "main.js": "/ComuniTec/static/js/main.5c429ee6.js",
+    "main.css": "/ComuniTec/static/css/main.b87c2318.css",
+    "main.js": "/ComuniTec/static/js/main.8d64e46f.js",
     "static/js/453.fa6158ae.chunk.js": "/ComuniTec/static/js/453.fa6158ae.chunk.js",
     "static/media/QS.gif": "/ComuniTec/static/media/QS.cdb50912c6cfa9928ab1.gif",
     "static/media/TelaApp.png": "/ComuniTec/static/media/TelaApp.88c7742556a8d70810e3.png",
@@ -16,12 +16,12 @@
     "static/media/playstore.svg": "/ComuniTec/static/media/playstore.42c50b016694677639b2f1121041be5f.svg",
     "static/media/dark.svg": "/ComuniTec/static/media/dark.84c0c135b218b7381db7ab4260a3fd67.svg",
     "index.html": "/ComuniTec/index.html",
-    "main.ffb5f14a.css.map": "/ComuniTec/static/css/main.ffb5f14a.css.map",
-    "main.5c429ee6.js.map": "/ComuniTec/static/js/main.5c429ee6.js.map",
+    "main.b87c2318.css.map": "/ComuniTec/static/css/main.b87c2318.css.map",
+    "main.8d64e46f.js.map": "/ComuniTec/static/js/main.8d64e46f.js.map",
     "453.fa6158ae.chunk.js.map": "/ComuniTec/static/js/453.fa6158ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffb5f14a.css",
-    "static/js/main.5c429ee6.js"
+    "static/css/main.b87c2318.css",
+    "static/js/main.8d64e46f.js"
   ]
 }
