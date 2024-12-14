@@ -66,7 +66,7 @@ const QuemSomos = () => {
   }, [])
 
   return (
-    <>
+    <div className="quemSomosBody">
       <div className="quem-somos" id="quemSomos">
       <br />
       <br />
@@ -174,8 +174,8 @@ const QuemSomos = () => {
           <p>Acessibilidade</p>
         </div>
       </div>
-      <Link to="/Contato"><button className="ContatoQuemsomosBtn">Contato</button></Link>
-    </>
+      <Link to="/Contato" className="ContatoQuemsomosA"><button className="ContatoQuemsomosBtn">Contato</button></Link>
+    </div>
   );
 };
 

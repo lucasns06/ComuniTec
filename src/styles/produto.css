@@ -62,7 +62,9 @@
     gap: 2rem;
     font-size: 22px;
 }
-
+.sectionProduct3 video{
+    width: 100%;
+}
 .containerappTela {
     display: flex;
     justify-content: center;

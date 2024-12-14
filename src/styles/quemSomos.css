@@ -1,4 +1,4 @@
-.quem-somos-hero{
+.quem-somos-hero {
   height: 500px;
   background: url(../assets/img/background.avif);
   background-position: center;
@@ -7,13 +7,22 @@
   margin-right: 2rem;
   border-radius: 4rem;
 }
+
 .quem-somos {
   text-align: center;
 }
+.quemSomosBody{
+  padding-bottom: 64px;
+}
+.ContatoQuemsomosA {
+  display: block;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 
 .ContatoQuemsomosBtn {
-  margin: auto;
-  display: block;
   font-size: 20px;
 }
 
