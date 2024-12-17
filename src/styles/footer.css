@@ -68,3 +68,9 @@ footer .logo img {
 .container:hover .bar {
     width: 100%;
 }
+@media (max-width: 780px) {
+    .container-texto-footer {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }

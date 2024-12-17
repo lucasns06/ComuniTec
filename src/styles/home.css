@@ -1,4 +1,10 @@
-
+#inicioId{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;    
+    min-height: 100dvh;
+}
 .waveBottom {
     position: absolute;
     bottom: 0;
@@ -88,12 +94,5 @@
 @media (max-width: 850px) {
     .gifHome {
         max-width: 300px;
-    }
-}
-
-@media (max-width: 660px) {
-    section {
-        flex-direction: column;
-        gap: 0;
     }
 }

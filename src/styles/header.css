@@ -115,6 +115,13 @@ header ul {
   }
 
 }
+@media (max-width: 700px) {
+
+  header ul {
+    gap: 3rem;
+  }
+}
+
 @media (max-width: 570px) {
   header {
     display: block;
@@ -154,4 +161,14 @@ header ul {
     pointer-events: auto;
   }
 
+}
+
+@media (max-width: 560px) {
+  header ul {
+    gap: 1.5rem;
+  }  
+  section img,
+  .sectionProduct img {
+    max-width: 200px;
+  }
 }

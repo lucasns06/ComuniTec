@@ -4,12 +4,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    justify-content: center;    
+    min-height: 100dvh;
+    margin: 0;
 }
+
 .wave {
     position: absolute;
-    top: 0;
+    top: 0%;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -27,12 +29,14 @@
 .wave .shape-fill {
     fill: var(--cor-destaque);
 }
-.sectionProduct{
+
+.sectionProduct {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
 }
+
 .sectionProductImg1 {
     margin-top: 2rem;
 }
@@ -140,9 +144,18 @@
     .ProductText {
         padding-bottom: 0;
     }
+
     .wave svg {
         height: 100px;
         transition: height 250ms ease;
+    }
+
+    .gifHome {
+        max-width: 200px;
+    }
+
+    .sectionProduct {
+        flex-direction: column-reverse;
     }
 }
 
@@ -169,14 +182,15 @@
         font-size: 1rem;
     }
 }
+
 @media (max-width: 490px) {
     .sectionProduct2 {
         flex-direction: column-reverse;
     }
 }
+
 @media (max-height: 820px) {
     .wave svg {
         height: 50px;
     }
 }
-

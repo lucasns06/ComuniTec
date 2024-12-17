@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 @font-face {
@@ -229,59 +230,6 @@ section button {
 .text {
   text-align: center;
 }
-
-@media (max-width: 1400px) {
-
-  ul {
-    list-style-type: none;
-  }
-
-
-}
-
-
-
-@media (max-width: 900px) {
-
-  .gifHome {
-    max-width: 200px;
-  }
-
-  .sectionProduct {
-    flex-direction: column-reverse;
-  }
-
-  .sectionProduct {
-    height: max-content;
-  }
-}
-
-@media (max-width: 780px) {
-
-  .container-texto-footer {
-    flex-direction: column;
-    gap: 2rem;
-  }
-}
-
-@media (max-width: 700px) {
-
-  header ul {
-    gap: 3rem;
-  }
-}
-
-@media (max-width: 560px) {
-  header ul {
-    gap: 1.5rem;
-  }
-
-  section img,
-  .sectionProduct img {
-    max-width: 200px;
-  }
-}
-
 @media (max-width: 535px) {
   .downloadBtn {
     font-size: 0.8em;

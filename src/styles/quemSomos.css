@@ -123,6 +123,11 @@ li {
   }
 }
 
+@media (max-width: 1400px) {
+  ul {
+    list-style-type: none;
+  }
+}
 @media (max-width: 660px) {
 
   .containerproposito p,

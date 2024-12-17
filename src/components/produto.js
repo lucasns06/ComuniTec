@@ -54,12 +54,12 @@ const Produto = () => {
                             <li>Peça ajuda em situações de desespero</li>
                         </ul>
                     </div>
-                    
+
                 </div>
                 <div className="ProductText">
                     <p style={{ textAlign: 'center' }}>Veja abaixo um video mostrando o aplicativo</p>  <br /> <br />
                 </div>
-                
+
             </div>
 
             <div className="sectionProduct3">
