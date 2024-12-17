@@ -309,36 +309,7 @@ section button {
     max-width: 350px;
   }
 
-  .quem-somos h1 {
-    font-size: 2.5rem;
 
-  }
-
-  .quem-somos p {
-    font-size: 18px;
-  }
-
-  .quem-somos img {
-    width: 50%;
-  }
-
-  .containerproposito p,
-  li {
-    font-size: 0.8rem;
-    list-style-type: none;
-  }
-
-  .containerproposito h1 {
-    font-size: 1rem;
-  }
-
-  .containerproposito svg {
-    width: 92px;
-  }
-
-  .containerproposito {
-    padding: 4px;
-  }
 }
 
 .container button {

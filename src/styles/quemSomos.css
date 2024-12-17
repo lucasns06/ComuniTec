@@ -32,7 +32,7 @@
 
 .quem-somos p {
   font-size: 24px;
-  padding: 2rem;
+  padding: 2rem 16px;
 }
 
 .quem-somos img {
@@ -51,19 +51,8 @@
   align-items: center;
   text-align: center;
   width: 300px;
-}
-
-.containerproposito:nth-child(1) {
-  border-left: 2px solid var(--cor-texto);
-}
-
-.containerproposito:nth-child(2) {
-  border-left: 2px solid var(--cor-texto);
-  border-right: 2px solid var(--cor-texto);
-}
-
-.containerproposito:nth-child(3) {
-  border-right: 2px solid var(--cor-texto);
+  background: #225cad0e ;
+  border-radius: 5vw;
 }
 
 .containerproposito p,
@@ -81,6 +70,9 @@ li {
 .containerproposito img:hover {
   transform: translate(0px, -10px);
   transition: 0.2s transform ease;
+}
+.containerproposito:hover {
+  background: #3584f31e ;
 }
 
 .TituloQS {
@@ -140,5 +132,40 @@ li {
 
   .containerproposito {
     padding: 4px;
+  }
+}
+@media (max-width: 535px) {
+  .quem-somos h1 {
+    font-size: 2.5rem;
+
+  }
+
+  .quem-somos p {
+    font-size: 18px;
+  }
+
+  .quem-somos img {
+    width: 50%;
+  }
+
+  .containerproposito p,
+  li {
+    font-size: 0.8rem;
+    list-style-type: none;
+  }
+
+  .containerproposito h1 {
+    font-size: 24px;
+  }
+  .empresaMissao{
+    gap: 2px;
+  }
+  .containerproposito svg {
+    width: 92px;
+  }
+
+  .containerproposito {
+    padding: 4px;
+
   }
 }
