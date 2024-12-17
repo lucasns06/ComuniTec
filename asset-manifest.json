@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ComuniTec/static/css/main.eaf18c05.css",
+    "main.css": "/ComuniTec/static/css/main.a64462bf.css",
     "main.js": "/ComuniTec/static/js/main.e854d353.js",
     "static/js/453.fa6158ae.chunk.js": "/ComuniTec/static/js/453.fa6158ae.chunk.js",
     "static/media/PitchComunica.mp4": "/ComuniTec/static/media/PitchComunica.e40c40d4fc170a9e8ec5.mp4",
@@ -17,12 +17,12 @@
     "static/media/playstore.svg": "/ComuniTec/static/media/playstore.42c50b016694677639b2f1121041be5f.svg",
     "static/media/dark.svg": "/ComuniTec/static/media/dark.84c0c135b218b7381db7ab4260a3fd67.svg",
     "index.html": "/ComuniTec/index.html",
-    "main.eaf18c05.css.map": "/ComuniTec/static/css/main.eaf18c05.css.map",
+    "main.a64462bf.css.map": "/ComuniTec/static/css/main.a64462bf.css.map",
     "main.e854d353.js.map": "/ComuniTec/static/js/main.e854d353.js.map",
     "453.fa6158ae.chunk.js.map": "/ComuniTec/static/js/453.fa6158ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eaf18c05.css",
+    "static/css/main.a64462bf.css",
     "static/js/main.e854d353.js"
   ]
 }
