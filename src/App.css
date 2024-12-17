@@ -61,11 +61,13 @@ li {
 .animationArea span {
   position: relative;
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background: var(--cor-texto);
   opacity: 5%;
   box-shadow: 0px 0px 20px black;
+  /* border-radius: 100px; */
+  filter: blur(5px);
 }
 
 .span1 {
@@ -93,27 +95,10 @@ li {
 }
 
 @keyframes backgroundAnima {
-  0% {
-    border-radius: 50px;
-  }
-
-  40% {
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-    transform: translateX(20px);
-  }
-
   50% {
-    top: 15%;
+    top: 0%;
   }
-
-  80% {
-    border-bottom-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-  }
-
   100% {
-    border-radius: 50px;
     transform: rotate(360deg);
   }
 }
@@ -229,6 +214,12 @@ section button {
 
 .text {
   text-align: center;
+}
+@media (max-width:900px) {
+  .animationArea span{
+    width: 80px;
+    height: 80px;
+  }
 }
 @media (max-width: 535px) {
   .downloadBtn {

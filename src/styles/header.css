@@ -6,7 +6,6 @@
   z-index: 99;
 }
 header {
-  
   background: var(--cor-header-fundo);  
   border-radius: 100px;
   padding: 16px;
@@ -17,9 +16,9 @@ header {
   margin-right: auto;
   width: 100rem;
   max-width: 90%;
-  -webkit-box-shadow: 0px 10px 22px 0px rgba(17, 0, 255, 0.2);
-  -moz-box-shadow: 0px 10px 22px 0px rgba(17, 0, 255, 0.2);
-  box-shadow: 0px 10px 22px 0px rgba(0, 17, 255, 0.2);
+  -webkit-box-shadow: 0px 10px 22px 0px rgba(0, 68, 255, 0.2);
+  -moz-box-shadow: 0px 10px 22px 0px rgba(0, 60, 255, 0.2);
+  box-shadow: 0px 10px 22px 0px rgba(0, 81, 255, 0.2);
 
 }
 
