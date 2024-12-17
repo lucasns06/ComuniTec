@@ -1,3 +1,54 @@
+
+.waveBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -10;
+}
+
+.waveBottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.waveBottom .shape-fill {
+    fill: var(--cor-destaque);
+}
+
+.a1 {
+
+    animation: a1 5s infinite reverse;
+}
+
+.a2 {
+    animation: a1 8s infinite alternate-reverse;
+}
+
+.a3 {
+    animation: a1 15s infinite both;
+}
+
+@keyframes a1 {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.08;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+
 .text {
     text-align: center;
 }
@@ -5,8 +56,9 @@
 .Welcome-title,
 .Welcome-title2 {
     text-align: center;
-    font-size: 3rem;
+    font: bold max(36px, 4vw) / max(48px, 5vw) sans-serif;
 }
+
 .odsContainer {
     padding-top: 120px;
     display: flex;
@@ -32,11 +84,13 @@
     transform: translateY(-40px);
     width: 100%;
 }
+
 @media (max-width: 850px) {
-    .gifHome{
+    .gifHome {
         max-width: 300px;
     }
 }
+
 @media (max-width: 660px) {
     section {
         flex-direction: column;

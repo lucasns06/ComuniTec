@@ -5,7 +5,7 @@ import '../styles/contato.css'
 const Contato = () => {
 
     return (
-       <div className="Contato"> <br/>
+       <div className="Contato"> <br/><br/><br/><br/><br/>
          <h1>Quer <span style={{ color: 'var(--cor-destaque)' }}>entrar em contato?</span></h1> <br/>
          <h2>Vamos criar algo juntos! </h2> <br/><br/>
          <form>
@@ -21,6 +21,7 @@ const Contato = () => {
             <input type="submit" className="contatoSubmit"/>
          </form> <br/> <br/><br/> <br/>
          <Link to="/" state={{ scrollTo: 'inicioId' }} className="contatoSubmit contatoVoltar">Página Inicial</Link>
+         <br/><br/>
        </div>
     )
 }

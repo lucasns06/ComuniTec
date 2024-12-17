@@ -58,12 +58,23 @@ const Header = () => {
     }, [currentMenu])
 
     return (
+        <>
+        <div className='animationArea'>
+                <span className='span1'></span>
+                <span className='span3'></span>
+                <span className='span2'></span>
+                <span className='span4'></span>
+                <span className='span1'></span>
+                <span className='span2'></span>
+                <span className='span3'></span>
+                <span className='span4'></span>
+            </div>
         <div className="HeaderBorder">
             <header>
                 <div className="logo">
                     <a href="index.html">
-                        <img src={logoImg} width="50" />
-                        <p className="destaque">ComuniTec</p>
+                        <img src={logoImg} width="80" />
+                        {/* <p className="destaque">ComuniTec</p> */}
                     </a>
                 </div>
                 <svg width="28px" height="28px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none" className='menuSvg' onClick={toggleMenu}>
@@ -127,6 +138,7 @@ const Header = () => {
                 </nav>
             </header>
         </div>
+        </>
     );
 }
 

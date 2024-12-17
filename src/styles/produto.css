@@ -1,14 +1,38 @@
-.sectionProduct {
-    align-items: center;
+.sectionProductBlock {
+    padding: 0px 5vw;
+    position: relative;
     display: flex;
-    margin: auto;
-    width: 90rem;
-    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 3rem;
-    padding-top: 5rem;
+    min-height: 100vh;
+}
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -10;
 }
 
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 180px;
+}
+
+.wave .shape-fill {
+    fill: var(--cor-destaque);
+}
+.sectionProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
 .sectionProductImg1 {
     margin-top: 2rem;
 }
@@ -62,9 +86,11 @@
     gap: 2rem;
     font-size: 22px;
 }
-.sectionProduct3 video{
+
+.sectionProduct3 video {
     width: 100%;
 }
+
 .containerappTela {
     display: flex;
     justify-content: center;
@@ -109,32 +135,48 @@
 .downloadIcon {
     width: 40px;
 }
+
 @media (max-width: 900px) {
     .ProductText {
         padding-bottom: 0;
     }
+    .wave svg {
+        height: 100px;
+        transition: height 250ms ease;
+    }
 }
+
 @media (max-width: 770px) {
-    .appTela{
+    .appTela {
         max-width: 200px;
     }
 }
+
 @media (max-width: 710px) {
-    .containerappTela{
+    .containerappTela {
         flex-direction: column;
         align-items: center;
     }
 }
+
+
+@media (max-width: 540px) {
+    .downloadBtn {
+        font-size: 1rem;
+    }
+
+    .downloadBtn strong {
+        font-size: 1rem;
+    }
+}
 @media (max-width: 490px) {
-    .sectionProduct2{
+    .sectionProduct2 {
         flex-direction: column-reverse;
     }
 }
-@media (max-width: 540px) {
-    .downloadBtn{
-        font-size: 1rem;
-    }
-    .downloadBtn strong{
-        font-size: 1rem;
+@media (max-height: 820px) {
+    .wave svg {
+        height: 50px;
     }
 }
+

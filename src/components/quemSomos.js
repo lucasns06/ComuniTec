@@ -70,6 +70,10 @@ const QuemSomos = () => {
       <div className="quem-somos" id="quemSomos">
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <h1>Sobre a ComuniTec</h1>
       <p>A comunicação é um direito para todos!</p>
       <br />
