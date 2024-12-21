@@ -114,12 +114,6 @@ header ul {
   }
 
 }
-@media (max-width: 700px) {
-
-  header ul {
-    gap: 3rem;
-  }
-}
 
 @media (max-width: 570px) {
   header {

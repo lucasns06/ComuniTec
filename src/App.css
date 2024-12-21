@@ -61,37 +61,34 @@ li {
 .animationArea span {
   position: relative;
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 50px;
+  height: 50px;
   background: var(--cor-texto);
-  opacity: 5%;
-  box-shadow: 0px 0px 20px black;
-  /* border-radius: 100px; */
-  filter: blur(5px);
+  opacity: 3%;
 }
 
 .span1 {
   top: 5%;
   left: 50%;
-  animation: backgroundAnima 5s infinite ease-in-out;
+  animation: backgroundAnima 25s infinite ease-in-out;
 }
 
 .span2 {
   top: 20%;
   left: 75%;
-  animation: backgroundAnima 5s infinite ease-in-out;
+  animation: backgroundAnima 25s infinite ease-in-out;
 }
 
 .span3 {
   top: 10%;
   left: 40%;
-  animation: backgroundAnima 5s infinite ease-in-out;
+  animation: backgroundAnima 25s infinite ease-in-out;
 }
 
 .span4 {
   top: 15%;
   left: 20%;
-  animation: backgroundAnima 5s infinite ease-in-out;
+  animation: backgroundAnima 25s infinite ease-in-out;
 }
 
 @keyframes backgroundAnima {
@@ -217,8 +214,8 @@ section button {
 }
 @media (max-width:900px) {
   .animationArea span{
-    width: 80px;
-    height: 80px;
+    width: 20px;
+    height: 20px;
   }
 }
 @media (max-width: 535px) {
