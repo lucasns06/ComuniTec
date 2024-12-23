@@ -2,8 +2,12 @@
   min-height: 100dvh;
   text-align: center;
   position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
-
 .Contato::before {
   z-index: -1;
   position: absolute;
@@ -15,52 +19,49 @@
   background: linear-gradient(157deg, transparent 50%, var(--cor-destaque) 50%), var(--cor-fundo);
   background-size: 100% 100%;
 }
-
+.contatoContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px;
+}
 .Contato h1 {
   font-size: 40px;
 }
-
 .Contato h2 {
-
   font-weight: 400;
 }
-
 .Contato form {
   background: var(--cor-fundo);
   text-align: center;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.205);
   margin: auto;
-  max-width: 600px;
-  height: 420px;
-  padding: 20px;
+  padding: 20px 120px;
+  border-radius: 12px;
 }
-
 .Contato label,
 .contatoSubmit {
   font-size: 24px;
 }
-
 .Contato input {
   padding: 4px;
   border-radius: 4px;
   outline: 0;
   border: 1px solid rgba(0, 0, 0, 0.349);
-  width: 264px;
 }
-
 .Contato textarea {
   height: 100px;
   border: 1px solid rgba(0, 0, 0, 0.349);
-  width: 264px;
   padding: 4px;
 }
-
+textarea::placeholder{
+  font-family: sans-serif;
+}
 .Contato textarea:focus-visible,
 input:focus-visible {
   outline: 1px solid var(--cor-destaque);
   border-radius: 4px;
 }
-
 .contatoSubmit {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.404);
   cursor: pointer;
@@ -71,7 +72,8 @@ input:focus-visible {
   outline: 0;
   border: 0;
   border-radius: 10px;
-  font-family: "Baby";
+  font-family: sans-serif;
+  
 }
 
 .contatoSubmit:hover {
@@ -79,22 +81,24 @@ input:focus-visible {
 }
 
 .contatoVoltar {
-  color: var(--cor-texto);
-  background: var(--cor-fundo);
-}
-
-.contatoVoltar:hover {
-  color: var(--cor-fundo);
-  background: var(--cor-texto);
+  background: white;
+  color: var(--cor-destaque);
 }
 
 @media (max-width: 680px) {
   .Contato form {
-    max-width: 400px;
+    padding: 20px 64px;
+    transition: padding 250ms ease-in-out;
   }
 }  
-@media (max-width: 460px ) {
-  .Contato form{
-    max-width: max-content;
+@media (max-width: 350px) {
+  .Contato form {
+    padding: 20px 28px;
+    transition: padding 250ms ease-in-out;
   }
-}
+}  
+@media (max-height: 826px) {
+  .contatoContainer{
+    margin-top: 72px;
+  }
+}  

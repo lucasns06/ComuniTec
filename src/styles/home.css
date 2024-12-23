@@ -61,10 +61,6 @@
 .text p{
     font: normal clamp(20px, 3vw, 22px) / clamp(32px, 4vw, 36px) sans-serif;
 }
-.text button{
-    font: normal clamp(20px, 3vw, 22px) / clamp(32px, 4vw, 36px) "Baby";
-    width: max-content;
-}
 .Welcome-title,
 .Welcome-title2 {
     text-align: center;

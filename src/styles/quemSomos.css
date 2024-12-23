@@ -58,7 +58,7 @@
 .containerproposito p,
 li {
   font-size: 20px;
-  font-family: "Baby";
+  font-family: sans-serif;
   font-weight: 200;
 }
 
@@ -146,7 +146,7 @@ li {
   }
 
   .quem-somos p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .quem-somos img {
@@ -155,7 +155,7 @@ li {
 
   .containerproposito p,
   li {
-    font-size: 0.8rem;
+    margin-bottom: 4px;
     list-style-type: none;
   }
 

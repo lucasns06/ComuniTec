@@ -10,8 +10,7 @@ import gsap from 'gsap';
 
 const Header = () => {
     const savedTheme = localStorage.getItem("isDarkTheme") === "true";
-    const [isDarkTheme, setIsDarkTheme] = useState(savedTheme); // Estado para controlar o tema
-    const [currentConfigImg, setCurrentConfigImg] = useState(configImg);
+    const [isDarkTheme, setIsDarkTheme] = useState(savedTheme);
     const [currentthemeImg, setCurrentthemeImg] = useState(darkImg);
     const [currentMenu, setcurrentMenu] = useState(false);
     const subMenu = useRef(null)
@@ -29,11 +28,9 @@ const Header = () => {
         const body = document.body;
         if (isDarkTheme) {
             body.classList.add('dark');
-            setCurrentConfigImg(configLightImg);
             setCurrentthemeImg(lightImg)
         } else {
             body.classList.remove('dark');
-            setCurrentConfigImg(configImg);
             setCurrentthemeImg(darkImg)
         }
     }, [isDarkTheme]); // O efeito será disparado sempre que isDarkTheme mudar
@@ -98,13 +95,10 @@ const Header = () => {
                                 <Link to="/Contato"><button >Contato</button></Link>
                             </div>
                             <div className="settings">
-                                <img src={currentConfigImg} width="28px" style={{ transform: 'translate(0px, 2px)' }} id="configId" />
-                                <div className="menu-hidden">
-                                    <div className="mudar-tema">
-                                        <a id="toggle-theme" onClick={toggleTheme} >
-                                            <img src={currentthemeImg} id="ImgTheme" alt={isDarkTheme ? 'Tema Claro' : 'Tema Escuro'} />
-                                        </a>
-                                    </div>
+                                <div className="mudar-tema">
+                                    <a id="toggle-theme" onClick={toggleTheme} >
+                                        <img src={currentthemeImg} id="ImgTheme" alt={isDarkTheme ? 'Tema Claro' : 'Tema Escuro'} />
+                                    </a>
                                 </div>
                             </div>
 
@@ -127,13 +121,9 @@ const Header = () => {
                             <div className="container">
                                 <Link to="/Contato"><button >Contato</button></Link>
                             </div>
-                            <div className="mudar-tema">
-                                <a id="toggle-theme" onClick={toggleTheme} >
-                                    <img src={currentthemeImg} id="ImgTheme" alt={isDarkTheme ? 'Tema Claro' : 'Tema Escuro'} />
-                                </a>
-                            </div>
-
-
+                            <a id="toggle-theme" onClick={toggleTheme} >
+                                <img src={currentthemeImg} id="ImgTheme" alt={isDarkTheme ? 'Tema Claro' : 'Tema Escuro'} />
+                            </a>
                         </ul>
                     </nav>
                 </header>

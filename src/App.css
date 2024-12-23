@@ -2,12 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
-}
-
-@font-face {
-  font-family: "Baby";
-  src: url(./assets/fonts/Kanit-Regular.ttf);
 }
 
 ::-webkit-scrollbar {
@@ -33,6 +27,7 @@
   --cor-texto2: rgb(180, 180, 180);
   --cor-header-fundo: #1a1a1f;
   --cor-texto-botao: #000000;
+  --cor-destaque: #496894 !important;
 
 }
 
@@ -101,26 +96,26 @@ li {
 }
 
 button {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.404);
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
-  font-size: 12px;
-  background-color: var(--cor-destaque);
+  padding: 10px 25px;
+  font-size: 22px;
+  background: linear-gradient(182deg, #3387FF, #73aaf8);
   color: white;
-  width: 108px;
+  width: max-content;
   outline: 0;
   border: 0;
-  border-radius: 22px;
-  font-family: "Baby";
+  border-radius: 10px;
+  font-family: sans-serif;
   z-index: 0;
+  box-shadow: 0px 10px 22px 0px rgba(26, 36, 53, 0.158);
 }
 
 button:after {
   border-radius: 1rem;
   content: '';
-  background-color: #1b59af;
+  background-color: #132e5552;
   width: 0px;
   height: 0px;
   position: absolute;
@@ -169,11 +164,6 @@ a:hover {
   background-color: white;
 }
 
-#ImgTheme {
-  padding-top: 8px;
-  width: 22px;
-  cursor: pointer;
-}
 
 .destaque {
   background: linear-gradient(-90deg, #23559b 0%, #539bff 100%);
@@ -247,11 +237,6 @@ section button {
 
 
 }
-
-.container button {
-  font-size: var(--texto-header);
-}
-
 .linkBtn {
   color: white;
   padding: 0;
