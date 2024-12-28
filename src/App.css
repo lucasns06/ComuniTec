@@ -18,6 +18,7 @@
   --cor-texto-botao: #ffffff;
   --cor-destaque: #3387FF !important;
   --texto-header: 22px;
+  --cor-footer: #101010;
 }
 
 .dark {
@@ -28,13 +29,12 @@
   --cor-header-fundo: #1a1a1f;
   --cor-texto-botao: #000000;
   --cor-destaque: #496894 !important;
-
+  --cor-footer: #00000047;
 }
 
 body {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
-  transition: background-color 0.3s, color 0.3s;
 }
 
 a,

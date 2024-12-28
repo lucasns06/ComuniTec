@@ -9,7 +9,7 @@ const Footer = () => {
         <footer>
             <div className="container-footer">
                 <div className="logo">
-                    <a href="index.html">
+                    <a href="index.html" className="logo">
                         <img src={logoImg} alt="ComuniTec Logo" />
                         <p>ComuniTec</p>
                     </a>
@@ -27,7 +27,7 @@ const Footer = () => {
                     <br /> <br />
                     <a href="">Comunica</a>
                 </div> <br />
-                <div >
+                <div>
                     <h1>SOCIAL</h1>
                     <a href="https://github.com/lucasns06/ComuniTec" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <br /> <br />
@@ -35,6 +35,10 @@ const Footer = () => {
                     <br /> <br />
                     <a href="">Linkedin</a>
                 </div>
+            </div>
+            <div className="container-footer-border">
+                <p>2025</p>
+                <p>Política de privacidade </p>
             </div>
         </footer>
     );

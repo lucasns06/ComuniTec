@@ -1,6 +1,5 @@
 footer {
-    padding: 4rem;
-    background: #08080c;
+    background: var(--cor-footer);
     height: max-content;
 }
 
@@ -12,11 +11,12 @@ footer h1 {
 }
 
 footer .logo {
-    padding: 3rem;
+    align-self: center;
 }
 
 footer .logo p  {
     font-family: sans-serif;
+    color: white;
 }
 
 footer .logo img {
@@ -25,37 +25,42 @@ footer .logo img {
 }
 
 .container-footer {
-    /* margin-top: 1rem; */
+    padding: 4rem;
     display: flex;
     gap: 2vw;
-    justify-content: center;
+    justify-content: space-between;
+    color: white;
 }
 
 footer p{
     cursor: pointer;
 }
-
-.container-footer p,
-.container-footer nav,
-.container-footer a {
-    /* margin-top: 1rem;  */
-    color: #ffffff;
-
-    a {
-        color: #ffffff;
-    }
+.container-footer div p,.container-footer div a {
+    color: white;
 }
+.container-footer-border{
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 36px 4rem;
+    margin: 0rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-footer-border p{
+    color: white;
 
+}
 @media (max-width: 780px) {
     .container-footer {
       flex-direction: column;
       gap: 2rem;
       max-width: max-content;
       margin: auto;
+      padding: 64px 16px;
     }
     footer{
         text-align: center;
-        padding: 64px 16px;
+        padding: 0;
     }
     footer .logo{
         margin: auto;
