@@ -40,7 +40,7 @@ footer p{
 }
 .container-footer-border{
     border-top: 1px solid rgb(255, 255, 255);
-    padding: 36px 4rem;
+    padding: 36px 0px;
     margin: 0rem 4rem;
     display: flex;
     align-items: center;
