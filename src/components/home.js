@@ -1,14 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import React from "react";
-import gifHome from '../assets/img/QS.gif'
-import odsImg from '../assets/img/ods10.svg'
 import gsap from "gsap";
 import { Link } from 'react-router-dom';
 import '../styles/home.css';
-import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const Home = () => {
-
+    const inicioP = useRef();
+    const inicioBtn = useRef();
     useEffect(() => {
         const welcome = document.querySelector('.Welcome-title')
         gsap.from(welcome, { x: -50, opacity: 0 })
@@ -18,29 +16,19 @@ const Home = () => {
         gsap.from(welcome2, { x: 50, opacity: 0 })
         gsap.to(welcome2, { duration: 2, x: 0, opacity: 1 })
 
-        const gifHome = document.querySelector('.gifHome')
-        gsap.from(gifHome, { opacity: 0 })
-        gsap.to(gifHome, { duration: 2, opacity: 1 })
+        setTimeout(() => {
+            gsap.fromTo(inicioP.current,
+                { y: 20 },
+                { opacity: 1, y: 0, duration: 2, ease: 'expo.out' }
+            )
+        }, 1000)
 
-        const text = document.querySelector('.text')
-        gsap.from(text, { opacity: 0 })
-        gsap.to(text, { duration: 2, opacity: 1 })
-
-        gsap.registerPlugin(ScrollTrigger);
-
-        const odsContainer = document.querySelector('.odsContainer');
-
-        gsap.fromTo(odsContainer, { opacity: 0, },
-            {
-                opacity: 1,
-                duration: 1,
-                scrollTrigger: {
-                    start: "top 60%",
-                    trigger: odsContainer
-                },
-            });
-
-
+        setTimeout(() => {
+            gsap.fromTo(inicioBtn.current,
+                { y: 20 },
+                { opacity: 1, y: 0, duration: 2, ease: 'expo.out' }
+            )
+        }, 1500)
     }, [])
 
     return (
@@ -50,11 +38,10 @@ const Home = () => {
                     <h1 className="Welcome-title">Comunicação para</h1>
                     <h1 className="destaque Welcome-title2">Todos</h1>
                     <br />
-                    <p>Facilitando a expressão para pessoas neurodivergentes não verbais </p>
-
+                    <p ref={inicioP} style={{opacity: 0}}>Facilitando a expressão para pessoas neurodivergentes não verbais </p>
                     <br /> <br /> <br /> <br />
                     <Link to="/" state={{ scrollTo: 'sectionProduct' }} className="link">
-                        <button>Saber Mais</button>
+                        <button ref={inicioBtn} style={{opacity: 0}}>Saber Mais</button>
                     </Link>
                 </div>
                 <div class="waveBottom">
