@@ -1,13 +1,17 @@
-.sectionProductBlock {
+.sectionProductBlock{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;   
-    padding-top: 192px;
-    margin: 0;
+    padding: 0 64px;
 }
-
+.sectionProduct {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;   
+    padding-top: 128px;
+    max-width: 1280px;
+    margin: auto;
+    gap: 2rem;
+}
 .wave {
     position: absolute;
     top: 0%;
@@ -28,24 +32,20 @@
 .wave .shape-fill {
     fill: var(--cor-destaque);
 }
-
-.sectionProduct {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 64px;
-}
-
-.sectionProductImg1 {
-    margin-top: 2rem;
+.sectionProductImg1 img{
+    max-width: 400px;
+    margin: auto;
 }
 
 .ProductText {
+    max-width: 580px;
     text-align: center;
-    padding: 10px;
 }
-
-.ProductText p {
+.ProductText2 {
+    margin: auto;
+    text-align: center;
+}
+.ProductText p, .ProductText2 p {
     font-size: 1.5rem;
 }
 
@@ -80,12 +80,13 @@
 
 .sectionProduct3 {
     text-align: center;
-    margin: 0px 92px;
-    padding-bottom: 5rem;
+    margin: auto;
+    padding: 128px 0;
     gap: 2rem;
     font-size: 22px;
     display: flex;
     align-items: center;
+    max-width: 1280px;
 }
 
 .sectionProduct3 video {
@@ -100,7 +101,6 @@
 }
 
 .sectionProduct3-texto {
-    max-width: 800px;
     font-size: 22px;
     text-align: justify;
     justify-content: center;
@@ -113,41 +113,30 @@
     justify-content: center;
     gap: 2rem;
 }
-
-.downloadBtn {
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    width: max-content;
-    font-size: 1em;
-    background-color: black;
-    font-family: sans-serif;
-    color: white;
-    padding: 6px;
+.downloadButtons img{
+    max-width: 250px;
+    width: 100%;
 }
 
-.downloadBtn:hover {
-    color: white;
-}
-
-.downloadBtn strong {
-    font-size: 1.5em
-}
-
-.downloadIcon {
-    width: 40px;
-}
 @media (max-width: 1370px) {
-    .sectionProduct3 video{
-        max-width: 500px;
+    .sectionProduct3 video {
+        max-width: 580px;
+    }
+    .sectionProductImg1 img{
+        max-width: 350px;
     }
 }
+
 @media (max-width: 1120px) {
-    .sectionProduct3{
+    .sectionProduct3, .sectionProduct {
         flex-direction: column;
-        margin: 0px 16px;
+    }
+    .sectionProductBlock {
+        position: relative;
+        padding: 0 16px;
     }
 }
+
 @media (max-width: 900px) {
     .ProductText {
         padding-bottom: 0;
@@ -163,12 +152,8 @@
     }
 
     .sectionProduct {
-        flex-direction: column-reverse;
-    }
-
-    .sectionProductBlock{
         padding-top: 64px;
-        
+
     }
 }
 
@@ -184,18 +169,12 @@
         align-items: center;
     }
 }
-
-
-@media (max-width: 540px) {
-    .downloadBtn {
-        font-size: 1rem;
-    }
-
-    .downloadBtn strong {
-        font-size: 1rem;
+@media (max-width: 530px){
+    .sectionProductImg1 img{
+        max-width: 300px;
+        margin: auto;
     }
 }
-
 @media (max-width: 490px) {
     .sectionProduct2 {
         flex-direction: column-reverse;
