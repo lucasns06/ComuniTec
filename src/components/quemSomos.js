@@ -8,9 +8,9 @@ import '../styles/quemSomos.css'
 import { useRef } from "react";
 
 const QuemSomos = () => {
-  
+
   useLayoutEffect(() => {
-    
+
     const contProp1 = document.querySelector('.contProp1')
     const contProp2 = document.querySelector('.contProp2')
     const contProp3 = document.querySelector('.contProp3')
@@ -21,7 +21,7 @@ const QuemSomos = () => {
 
     const QuemSomosH1 = document.querySelector('.QuemSomosH1')
 
-    gsap.to(QuemSomosH1, {scale: 1, opacity: 1, duration: 1.5})
+    gsap.to(QuemSomosH1, { scale: 1, opacity: 1, duration: 1.5 })
 
     gsap.registerPlugin(ScrollTrigger)
     const timeline = gsap.timeline({
@@ -68,16 +68,13 @@ const QuemSomos = () => {
   return (
     <div className="quemSomosBody">
       <div className="quem-somos" id="quemSomos">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>Sobre a ComuniTec</h1>
-      <p>A comunicação é um direito para todos!</p>
-      <br />
-        <div className="quem-somos-hero"></div>
+        <br />
+        <br />
+        <br />
+        <div className="quem-somos-hero">
+          <h1>Sobre a ComuniTec</h1>
+          <p>A comunicação é um direito para todos!</p>
+        </div>
         <br />
         <br />
         <img src={logo} className="QSLogo" />
@@ -85,13 +82,13 @@ const QuemSomos = () => {
           Nós somos a ComuniTec, uma <br />
           empresa de tecnologia de Desenvolvimento <br />
           de Softwares.<br />
-           Facilitamos a sua comunicação!
+          Facilitamos a sua comunicação!
         </p>
-      <p>Fundada em 2024</p>
+        <p>Fundada em 2024</p>
         <p>
           Nossa origem foi na ETEC Horácio Augusto da Silveira, para o TCC em Desenvolvimento de Sistemas.
         </p>
-        <h1>Identidade</h1> <br/>
+        <h1>Identidade</h1> <br />
       </div>
 
       <div className="empresaMissao">

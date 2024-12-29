@@ -67,21 +67,25 @@ const Produto = () => {
                     <source src={pitch} type="video/mp4" />
                     Seu navegador não suporta a tag de vídeo.
                 </video>
-                <div className="downloadButtons">
-                    <a href="https://play.google.com/store/apps?hl=pt-BR" target="_blank" className="downloadBtn">
-                        <img src={playImg} className="downloadIcon" />
-                        <div>
-                            DISPONÍVEL NO <br />
-                            <strong>Google Play</strong>
-                        </div>
-                    </a>
-                    <a href="https://www.apple.com/br/app-store/" target="_blank" className="downloadBtn">
-                        <img src={macImg} className="downloadIcon" />
-                        <div>
-                            Baixar na <br />
-                            <strong>App Store</strong>
-                        </div>
-                    </a>
+                <div className="sectionProduct3-texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <br />
+                    <div className="downloadButtons">
+                        <a href="https://play.google.com/store/apps?hl=pt-BR" target="_blank" className="downloadBtn">
+                            <img src={playImg} className="downloadIcon" />
+                            <div>
+                                DISPONÍVEL NO <br />
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                        <a href="https://www.apple.com/br/app-store/" target="_blank" className="downloadBtn">
+                            <img src={macImg} className="downloadIcon" />
+                            <div>
+                                Baixar na <br />
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="ProductText" style={{ textAlign: 'center', marginBottom: '2rem' }}>

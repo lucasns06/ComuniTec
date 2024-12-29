@@ -1,13 +1,14 @@
 .quem-somos-hero {
-  height: 500px;
-  background: url(../assets/img/background.avif);
+  height: 720px;
+  background: url(../assets/img/background.jpg);
   background-position: center;
   background-size: cover;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  border-radius: 4rem;
-}
+  align-content: center;
 
+}
+.quem-somos-hero h1, .quem-somos-hero p{
+  color: white;
+}
 .quem-somos {
   text-align: center;
 }
