@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 64px;
 }
 
 .sectionProductImg1 {
@@ -80,9 +80,7 @@
 
 .sectionProduct3 {
     text-align: center;
-    margin: auto;
-    width: 90rem;
-    max-width: 90%;
+    margin: 0px 92px;
     padding-bottom: 5rem;
     gap: 2rem;
     font-size: 22px;
@@ -147,6 +145,7 @@
 @media (max-width: 1120px) {
     .sectionProduct3{
         flex-direction: column;
+        margin: 0px 16px;
     }
 }
 @media (max-width: 900px) {
