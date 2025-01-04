@@ -55,22 +55,11 @@ const Header = () => {
     }, [currentMenu])
 
     return (
-        <>
-            <div className='animationArea'>
-                <span className='span1'></span>
-                <span className='span3'></span>
-                <span className='span2'></span>
-                <span className='span4'></span>
-                <span className='span1'></span>
-                <span className='span2'></span>
-                <span className='span3'></span>
-                <span className='span4'></span>
-            </div>
             <div className="HeaderBorder">
                 <header>
                     <div className="logo">
                         <a href="index.html">
-                            <img src={logoImg} width="80" />
+                            <img src={logoImg} width="80" alt='logo'/>
                             {/* <p className="destaque">ComuniTec</p> */}
                         </a>
                     </div>
@@ -94,14 +83,9 @@ const Header = () => {
                             <div className="container">
                                 <Link to="/Contato"><button >Contato</button></Link>
                             </div>
-                            <div className="settings">
-                                <div className="mudar-tema">
-                                    <a id="toggle-theme" onClick={toggleTheme} >
+                                    {/* <div id="toggle-theme" onClick={toggleTheme} >
                                         <img src={currentthemeImg} id="ImgTheme" alt={isDarkTheme ? 'Tema Claro' : 'Tema Escuro'} />
-                                    </a>
-                                </div>
-                            </div>
-
+                                    </div> */}
                         </ul>
                     </nav>
                     <nav ref={subMenu} className={`menuMobile ${currentMenu ? 'menu-open' : 'menu-closed'}`}>
@@ -121,14 +105,13 @@ const Header = () => {
                             <div className="container">
                                 <Link to="/Contato"><button >Contato</button></Link>
                             </div>
-                            <a id="toggle-theme" onClick={toggleTheme} >
+                            {/* <a id="toggle-theme" onClick={toggleTheme} >
                                 <img src={currentthemeImg} id="ImgTheme" alt={isDarkTheme ? 'Tema Claro' : 'Tema Escuro'} />
-                            </a>
+                            </a> */}
                         </ul>
                     </nav>
                 </header>
             </div>
-        </>
     );
 }
 

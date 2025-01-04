@@ -1,5 +1,5 @@
 footer {
-    background: var(--cor-footer);
+    background: var(--cor-destaque);
     height: max-content;
 }
 
@@ -21,7 +21,7 @@ footer .logo p  {
 
 footer .logo img {
     width: 100px;
-    filter: grayscale(1);
+    filter: brightness(2);
 }
 
 .container-footer {
@@ -30,10 +30,6 @@ footer .logo img {
     gap: 2vw;
     justify-content: space-between;
     color: white;
-}
-
-footer p{
-    cursor: pointer;
 }
 .container-footer div p,.container-footer div a {
     color: white;
@@ -49,6 +45,9 @@ footer p{
 .container-footer-border p{
     color: white;
 
+}
+.credits{
+    text-decoration: underline;
 }
 @media (max-width: 780px) {
     .container-footer {

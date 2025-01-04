@@ -55,10 +55,9 @@ header ul {
 .container:hover .bar {
   width: 100%;
 }
-
-#ImgTheme {
-  padding-top: 8px;
+#ImgTheme, #toggle-theme {
   width: 28px;
+  height: 28px;
   cursor: pointer;
 }
 

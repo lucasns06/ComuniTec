@@ -6,12 +6,11 @@ const Contato = () => {
 
    return (
       <div className="Contato">
-         <div className="contatoContainer">
-            {/* <br/><br/><br/><br/><br/> */}
-            <h1>Quer <span style={{ color: 'var(--cor-destaque)' }}>entrar em contato?</span></h1>
-            {/* <br/> */}
-            <h2>Vamos criar algo juntos! </h2>
-            {/* <br/><br/> */}
+            <div className="contato-texto">
+               <h1>Quer <span style={{ color: 'var(--cor-destaque)' }}>entrar em contato?</span></h1>
+               <h2>Vamos criar algo juntos! </h2> <br />
+               <h2>Estamos aqui para ajudar você a encontrar as melhores soluções para suas necessidades.</h2> <br />
+            </div>
             <form>
                <label>Nome</label>
                <br />
@@ -25,17 +24,11 @@ const Contato = () => {
 
                <label>Mensagem</label>
                <br />
-               <textarea required placeholder="Sua mensagem"></textarea>
+               <textarea required placeholder="Sua mensagem" rows={8}></textarea>
                <br /><br />
 
                <input type="submit" className="contatoSubmit" />
             </form>
-            <br /> <br /><br /> <br />
-            <Link to="/" state={{ scrollTo: 'inicioId' }} >
-               <button className="contatoVoltar">Página Inicial</button>
-            </Link>
-            {/* <br/><br/> */}
-         </div>
       </div>
    )
 }
