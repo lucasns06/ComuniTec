@@ -1,6 +1,7 @@
 .sectionProductBlock{
     position: relative;
     padding: 0 64px;
+    overflow: hidden;
 }
 .sectionProduct {
     display: flex;
