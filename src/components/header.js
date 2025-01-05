@@ -9,31 +9,31 @@ import '../styles/header.css'
 import gsap from 'gsap';
 
 const Header = () => {
-    const savedTheme = localStorage.getItem("isDarkTheme") === "true";
-    const [isDarkTheme, setIsDarkTheme] = useState(savedTheme);
-    const [currentthemeImg, setCurrentthemeImg] = useState(darkImg);
+    // const savedTheme = localStorage.getItem("isDarkTheme") === "true";
+    // const [isDarkTheme, setIsDarkTheme] = useState(savedTheme);
+    // const [currentthemeImg, setCurrentthemeImg] = useState(darkImg);
     const [currentMenu, setcurrentMenu] = useState(false);
     const subMenu = useRef(null)
 
-    const toggleTheme = () => {
-        setIsDarkTheme(prevState => !prevState); // Alterna entre true/false
-    };
+    // const toggleTheme = () => {
+    //     setIsDarkTheme(prevState => !prevState); // Alterna entre true/false
+    // };
     const toggleMenu = () => {
         setcurrentMenu(prevState => !prevState);
     };
 
-    useEffect(() => {
-        localStorage.setItem("isDarkTheme", isDarkTheme);
+    // useEffect(() => {
+    //     localStorage.setItem("isDarkTheme", isDarkTheme);
 
-        const body = document.body;
-        if (isDarkTheme) {
-            body.classList.add('dark');
-            setCurrentthemeImg(lightImg)
-        } else {
-            body.classList.remove('dark');
-            setCurrentthemeImg(darkImg)
-        }
-    }, [isDarkTheme]); // O efeito será disparado sempre que isDarkTheme mudar
+    //     const body = document.body;
+    //     if (isDarkTheme) {
+    //         body.classList.add('dark');
+    //         setCurrentthemeImg(lightImg)
+    //     } else {
+    //         body.classList.remove('dark');
+    //         setCurrentthemeImg(darkImg)
+    //     }
+    // }, [isDarkTheme]); // O efeito será disparado sempre que isDarkTheme mudar
 
     useEffect(() => {
         if (subMenu.current) {
