@@ -4,7 +4,7 @@
   background-position: center;
   background-size: cover;
   align-content: center;
-
+  position: relative;
 }
 .quem-somos-hero h1, .quem-somos-hero p{
   color: white;
@@ -45,13 +45,15 @@
   justify-content: center;
   gap: 1rem;
   padding-bottom: 5rem;
+  padding: 0 16px;
 }
 
 .containerproposito {
   padding: 24px;
   align-items: center;
   text-align: center;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   background: #225cad0e ;
   border-radius: 5vw;
 }
@@ -130,14 +132,9 @@ li {
   }
 }
 @media (max-width: 660px) {
-
-  .containerproposito p,
-  .containerproposito li {
-    font-size: .8rem;
-  }
-
-  .containerproposito {
-    padding: 4px;
+  .empresaMissao{
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 535px) {
@@ -152,26 +149,5 @@ li {
 
   .quem-somos img {
     width: 50%;
-  }
-
-  .containerproposito p,
-  li {
-    margin-bottom: 4px;
-    list-style-type: none;
-  }
-
-  .containerproposito h1 {
-    font-size: 24px;
-  }
-  .empresaMissao{
-    gap: 2px;
-  }
-  .containerproposito svg {
-    width: 92px;
-  }
-
-  .containerproposito {
-    padding: 4px;
-
   }
 }
