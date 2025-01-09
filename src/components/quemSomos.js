@@ -4,40 +4,38 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
-import '../styles/quemSomos.css'
+import "../styles/quemSomos.css";
 import { useRef } from "react";
 
 const QuemSomos = () => {
-
   useLayoutEffect(() => {
+    const contProp1 = document.querySelector(".contProp1");
+    const contProp2 = document.querySelector(".contProp2");
+    const contProp3 = document.querySelector(".contProp3");
 
-    const contProp1 = document.querySelector('.contProp1')
-    const contProp2 = document.querySelector('.contProp2')
-    const contProp3 = document.querySelector('.contProp3')
+    const iconMission = document.querySelector(".iconMission");
+    const iconFlag = document.querySelector(".iconFlag");
+    const iconHeart = document.querySelector(".iconHeart");
 
-    const iconMission = document.querySelector('.iconMission')
-    const iconFlag = document.querySelector('.iconFlag')
-    const iconHeart = document.querySelector('.iconHeart')
+    const QuemSomosH1 = document.querySelector(".QuemSomosH1");
 
-    const QuemSomosH1 = document.querySelector('.QuemSomosH1')
+    gsap.to(QuemSomosH1, { scale: 1, opacity: 1, duration: 1.5 });
 
-    gsap.to(QuemSomosH1, { scale: 1, opacity: 1, duration: 1.5 })
-
-    gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger);
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: ".containerproposito",
-      }
+      },
     });
     const timeline2 = gsap.timeline({
       scrollTrigger: {
         trigger: ".sugestaoContainer",
-      }
+      },
     });
     const timeline3 = gsap.timeline({
       scrollTrigger: {
         trigger: ".toProduto",
-      }
+      },
     });
 
     timeline
@@ -54,63 +52,70 @@ const QuemSomos = () => {
       .from(contProp3, { y: 100, opacity: 0 })
       .from(iconHeart, { y: -20 })
       .to(contProp3, { y: 0, opacity: 1, duration: 1 }, "<")
-      .to(iconHeart, { y: 0, duration: 1, clearProps: "all" }, "<0.1")
+      .to(iconHeart, { y: 0, duration: 1, clearProps: "all" }, "<0.1");
 
     timeline2
       .from(".sugestaoContainer ", { y: 100, opacity: 0 })
-      .to(".sugestaoContainer ", { y: 0, opacity: 1, duration: 1 })
+      .to(".sugestaoContainer ", { y: 0, opacity: 1, duration: 1 });
 
     timeline3
       .from(".toProduto ", { y: 100, opacity: 0 })
-      .to(".toProduto ", { y: 0, opacity: 1, duration: 1 })
-  }, [])
+      .to(".toProduto ", { y: 0, opacity: 1, duration: 1 });
+  }, []);
 
   return (
     <div className="quemSomosBody">
       <div className="quem-somos" id="quemSomos">
-        <br />
-        <br />
-        <br />
         <div className="quem-somos-hero">
           <h1>Sobre a ComuniTec</h1>
           <p>A comunicação é um direito para todos!</p>
           <div class="waveBottom">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-            opacity=".25"
-            class="shape-fill a1"
-          ></path>
-          <path
-            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-            opacity=".5"
-            class="shape-fill a2"
-          ></path>
-          <path
-            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-            class="shape-fill a3"
-          ></path>
-        </svg>
-      </div>
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25"
+                class="shape-fill a1"
+              ></path>
+              <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5"
+                class="shape-fill a2"
+              ></path>
+              <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill a3"
+              ></path>
+            </svg>
+          </div>
         </div>
         <br />
         <br />
-        <img src={logo} className="QSLogo" alt="logoQM" />
-        <p>
-          Nós somos a ComuniTec, uma <br />
-          empresa de tecnologia de Desenvolvimento <br />
-          de Softwares.<br />
-          Facilitamos a sua comunicação!
-        </p>
-        <p>Fundada em 2024</p>
-        <p>
-          Nossa origem foi na ETEC Horácio Augusto da Silveira, para o TCC em Desenvolvimento de Sistemas.
-        </p>
+        {/* <img src={logo} className="QSLogo" alt="logoQM" /> */}
+        <div className="quem-somos-texto">
+          <p>
+            Na ComuniTec, acreditamos que a tecnologia tem o poder de
+            transformar a maneira como as pessoas se comunicam. Fundada em 2024,
+            somos uma empresa dedicada ao desenvolvimento de soluções de
+            software inovadoras, com foco na criação de ferramentas que
+            facilitam a comunicação, especialmente para públicos com
+            necessidades específicas. <br /> <br />
+            Nossa história começa na ETEC Horácio Augusto da Silveira, onde
+            surgiu a ideia de desenvolver um projeto para o Trabalho de
+            Conclusão de Curso (TCC) em Desenvolvimento de Sistemas. Foi nesse
+            ambiente acadêmico que nasceu a <span style={{color: 'var(--cor-destaque)'}}>ComuniTec</span>, com a missão de
+            transformar a comunicação em uma experiência mais acessível e
+            inclusiva. <br /> <br />
+            Nosso compromisso é criar softwares que não só atendam,
+            mas superem as expectativas de nossos clientes, com soluções
+            criativas, eficazes e sempre em sintonia com as necessidades de um
+            mundo cada vez mais conectado e digital.
+          </p>
+        </div>
         <h1>Identidade</h1> <br />
       </div>
 
@@ -145,8 +150,10 @@ const QuemSomos = () => {
           <br />
           <br />
           <p>
-            Facilitar a comunicação e a inclusão de pessoas neurodivergentes não verbais por meio de tecnologia inovadora,
-            proporcionando ferramentas que promovam a expressão, o entendimento e a conexão com o mundo ao seu redor.
+            Facilitar a comunicação e a inclusão de pessoas neurodivergentes não
+            verbais por meio de tecnologia inovadora, proporcionando ferramentas
+            que promovam a expressão, o entendimento e a conexão com o mundo ao
+            seu redor.
           </p>
         </div>
         <div className="containerproposito contProp2">
@@ -170,8 +177,10 @@ const QuemSomos = () => {
           <br />
           <br />
           <p>
-            Ser a referência global em soluções de comunicação para pessoas neurodivergentes, transformando a forma como
-            interagem com o ambiente e entre si, e contribuindo para uma sociedade mais inclusiva e empática.
+            Ser a referência global em soluções de comunicação para pessoas
+            neurodivergentes, transformando a forma como interagem com o
+            ambiente e entre si, e contribuindo para uma sociedade mais
+            inclusiva e empática.
           </p>
         </div>
         <div className="containerproposito contProp3">
@@ -196,10 +205,12 @@ const QuemSomos = () => {
           <p>Inovação</p>
           <p>Empatia</p>
           <p>Acessibilidade</p>
-        </div> 
-      </div> 
+        </div>
+      </div>
       <br />
-      <Link to="/Contato" className="ContatoQuemsomosA"><button className="ContatoQuemsomosBtn">Contato</button></Link>
+      <Link to="/Contato" className="ContatoQuemsomosA">
+        <button className="ContatoQuemsomosBtn">Contato</button>
+      </Link>
     </div>
   );
 };

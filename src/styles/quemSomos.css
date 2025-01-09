@@ -1,5 +1,5 @@
 .quem-somos-hero {
-  height: 720px;
+  height: 640px;
   background: url(../assets/img/background.jpg);
   background-position: center;
   background-size: cover;
@@ -22,7 +22,12 @@
   align-items: center;
   margin: auto;
 }
-
+.quem-somos-texto{
+  margin: auto;
+  max-width: 1280px;
+  text-align: left;
+  padding: 32px 16px;
+}
 .ContatoQuemsomosBtn {
   font-size: 20px;
 }
@@ -33,7 +38,6 @@
 
 .quem-somos p {
   font-size: 24px;
-  padding: 2rem 16px;
 }
 
 .quem-somos img {
@@ -42,10 +46,11 @@
 
 .empresaMissao {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding-bottom: 5rem;
+  justify-content: space-between;
   padding: 0 16px;
+  max-width: 1280px;
+  margin: auto;
+  gap: 16px;
 }
 
 .containerproposito {
