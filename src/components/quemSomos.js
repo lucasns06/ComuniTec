@@ -67,8 +67,9 @@ const QuemSomos = () => {
     <div className="quemSomosBody">
       <div className="quem-somos" id="quemSomos">
         <div className="quem-somos-hero">
-          <h1>Sobre a ComuniTec</h1>
-          <p>A comunicação é um direito para todos!</p>
+          <div className="hero-background"></div>
+          <h1>Facilitando a comunicação</h1>
+
           <div class="waveBottom">
             <svg
               data-name="Layer 1"
