@@ -8,6 +8,7 @@ import "../styles/quemSomos.css";
 import { useRef } from "react";
 
 const QuemSomos = () => {
+  const heroH1 = useRef();
   useLayoutEffect(() => {
     const contProp1 = document.querySelector(".contProp1");
     const contProp2 = document.querySelector(".contProp2");
@@ -17,9 +18,17 @@ const QuemSomos = () => {
     const iconFlag = document.querySelector(".iconFlag");
     const iconHeart = document.querySelector(".iconHeart");
 
-    const QuemSomosH1 = document.querySelector(".QuemSomosH1");
-
-    gsap.to(QuemSomosH1, { scale: 1, opacity: 1, duration: 1.5 });
+    gsap.fromTo(heroH1.current, 
+      { 
+        y: 30,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1 
+      }
+        );
 
     gsap.registerPlugin(ScrollTrigger);
     const timeline = gsap.timeline({
@@ -68,8 +77,7 @@ const QuemSomos = () => {
       <div className="quem-somos" id="quemSomos">
         <div className="quem-somos-hero">
           <div className="hero-background"></div>
-          <h1>Facilitando a comunicação</h1>
-
+          <h1 ref={heroH1}>Facilitando a comunicação</h1>
           <div class="waveBottom">
             <svg
               data-name="Layer 1"
@@ -108,13 +116,14 @@ const QuemSomos = () => {
             Nossa história começa na ETEC Horácio Augusto da Silveira, onde
             surgiu a ideia de desenvolver um projeto para o Trabalho de
             Conclusão de Curso (TCC) em Desenvolvimento de Sistemas. Foi nesse
-            ambiente acadêmico que nasceu a <span style={{color: 'var(--cor-destaque)'}}>ComuniTec</span>, com a missão de
-            transformar a comunicação em uma experiência mais acessível e
-            inclusiva. <br /> <br />
-            Nosso compromisso é criar softwares que não só atendam,
-            mas superem as expectativas de nossos clientes, com soluções
-            criativas, eficazes e sempre em sintonia com as necessidades de um
-            mundo cada vez mais conectado e digital.
+            ambiente acadêmico que nasceu a{" "}
+            <span style={{ color: "var(--cor-destaque)" }}>ComuniTec</span>, com
+            a missão de transformar a comunicação em uma experiência mais
+            acessível e inclusiva. <br /> <br />
+            Nosso compromisso é criar softwares que não só atendam, mas superem
+            as expectativas de nossos clientes, com soluções criativas, eficazes
+            e sempre em sintonia com as necessidades de um mundo cada vez mais
+            conectado e digital.
           </p>
         </div>
         <h1>Identidade</h1> <br />
