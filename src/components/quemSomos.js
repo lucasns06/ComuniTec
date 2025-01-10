@@ -26,9 +26,9 @@ const QuemSomos = () => {
       {
         y: 0,
         opacity: 1,
-        duration: 1 
-      }
-        );
+        duration: 1,
+        clearProps: "all"
+      },);
 
     gsap.registerPlugin(ScrollTrigger);
     const timeline = gsap.timeline({
