@@ -67,7 +67,38 @@ const Produto = () => {
         );
       }, 500);
     });
-
+    const funcionalidades = document.querySelectorAll('.container_texto_funcionalidades');
+      if (funcionalidades) {
+        gsap.fromTo(
+          funcionalidades,
+            {opacity: 0, y: 80, },
+            {
+                scrollTrigger: {
+                    trigger: funcionalidades,
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: 'expo.out',
+                stagger: 0.2
+            },
+        );
+    }
+    const telaApp = document.querySelector('.telaApp');
+    gsap.fromTo(telaApp,
+      {
+        rotateY: 180
+      },
+      {
+        scrollTrigger: {
+            trigger: telaApp,
+            toggleActions: "play none none none"
+        },
+        rotateY: 0,
+        duration: 1.2
+      }
+    )
     gsap.fromTo(
       produtoVideo.current,
       { opacity: 0, x: 60 },
@@ -173,13 +204,10 @@ const Produto = () => {
           </video>
           <div className="sectionProduct3-texto" ref={produtoTexto}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute
-              iure reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              O utilizador informa o seu nome e o sexo, 
+              depois entra na pagina principal, as categorias, com um design acessível por botões grandes.
+              a tela principal já vem com algumas categorias prontas, e o usuário poderá criar mais. <br />
+              Baixe o aplicativo e facilite a comunicação de quem precisa!
             </p>
             <br />
             <div className="downloadButtons">
