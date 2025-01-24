@@ -1,181 +1,183 @@
-.sectionProductBlock{
-    position: relative;
-    padding: 0 64px;
-    overflow: hidden;
+.sectionProductBlock {
+  position: relative;
+  padding: 0 64px;
+  overflow: hidden;
 }
 .sectionProduct {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;   
-    padding-top: 128px;
-    max-width: 1280px;
-    margin: auto;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 128px;
+  max-width: 1280px;
+  margin: auto;
+  gap: 2rem;
 }
-.wave {
-    position: absolute;
-    top: 0%;
-    left: 0;
+.aplicativo_home{
     width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: -10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 128px 0;
 }
-
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 180px;
-}
-
-.wave .shape-fill {
-    fill: var(--cor-destaque);
-}
-.sectionProductImg1 img{
-    max-width: 400px;
-    margin: auto;
-}
-
-.ProductText {
-    max-width: 580px;
+.aplicativo_home_title{
+    font: bold max(36px, 3vw) / max(48px, 5vw) sans-serif;
+    max-width: 768px;
     text-align: center;
+}
+.aplicativo_home > img{
+    max-width: 256px;
+    width: 100%;
+}
+.setaBaixo{
+  width: 60px;
+  transition: 0.2s;
+}
+.setaBaixo:hover{
+  transform: scale(1.1);
+}
+.centralizar{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.app_funcionalidades {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 28px;
+}
+.container_texto_funcionalidades {
+  max-width: 384px;
+}
+.container_texto_funcionalidades p{
+    font-size: 22px;
+}
+.textLeft {
+  text-align: left;
+}
+.textRight {
+  text-align: right;
+}
+.telaApp {
+  max-width: 256px;
+  width: 100%;
+}
+.sectionProductImg1 img {
+  max-width: 400px;
+  margin: auto;
+}
+
+.produto_h1 {
+    text-align: center;
+    font-size: 42px;
+  }
+.ProductText {
+  max-width: 580px;
+  text-align: center;
 }
 .ProductText2 {
-    margin: auto;
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
-.ProductText p, .ProductText2 p {
-    font-size: 1.5rem;
+.ProductText p,
+.ProductText2 p {
+  font-size: 1.5rem;
 }
 
 .ProductText h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
-
-.sectionProduct2 {
-    align-items: center;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    gap: 3rem;
-    padding-bottom: 5rem;
-}
-
-.sectionProduct2-texto {
-    max-width: 512px;
-    font-size: 22px;
-    text-align: justify;
-}
-
-.appTela {
-    max-width: 300px;
-    width: 100%;
-}
-
-.appTela2 {
-    max-width: 200px;
-    width: 100%;
-}
-
-.sectionProduct3 {
-    text-align: center;
-    margin: auto;
+.container_section_product_3{
     padding: 128px 0;
-    gap: 2rem;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    max-width: 1280px;
-    overflow: hidden;
+}
+.sectionProduct3 {
+  text-align: center;
+  margin: auto;
+  gap: 2rem;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  max-width: 1280px;
+  overflow: hidden;
 }
 
 .sectionProduct3 video {
-    max-width: 720px;
-    width: 100%;
-}
-
-.containerappTela {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+  max-width: 720px;
+  width: 100%;
 }
 
 .sectionProduct3-texto {
-    font-size: 22px;
-    text-align: justify;
+  font-size: 22px;
+  text-align: justify;
 }
 
 .downloadButtons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
-.downloadButtons img{
-    max-width: 250px;
-    width: 100%;
+.downloadButtons img {
+  max-width: 250px;
+  width: 100%;
 }
 
 @media (max-width: 1370px) {
-    .sectionProduct3 video {
-        max-width: 580px;
-    }
-    .sectionProductImg1 img{
-        max-width: 350px;
-    }
+  .sectionProduct3 video {
+    max-width: 580px;
+  }
+  .sectionProductImg1 img {
+    max-width: 350px;
+  }
 }
 
 @media (max-width: 1120px) {
-    .sectionProduct3, .sectionProduct {
-        flex-direction: column;
-    }
-    .sectionProductBlock {
-        position: relative;
-        padding: 0 16px;
-    }
+  .sectionProduct3 {
+    flex-direction: column;
+  }
+  .app_funcionalidades {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .telaApp {
+    max-width: 128px;
+  }
+  .textLeft,
+  .textRight {
+    text-align: center;
+  }
+  .sectionProductBlock {
+    position: relative;
+    padding: 0 16px;
+  }
+  .aplicativo_home{
+    flex-direction: column-reverse;
+    padding: 64px 0;
+  }
 }
 
 @media (max-width: 900px) {
-    .ProductText {
-        padding-bottom: 0;
-    }
+  .ProductText {
+    padding-bottom: 0;
+  }
 
-    .wave svg {
-        height: 100px;
-        transition: height 250ms ease;
-    }
-
-    .gifHome {
-        max-width: 200px;
-    }
-
-    .sectionProduct {
-        padding-top: 64px;
-
-    }
+  .sectionProduct {
+    padding-top: 64px;
+  }
 }
 
-@media (max-width: 770px) {
-    .appTela {
-        max-width: 200px;
-    }
-}
+@media (max-width: 530px) {
+  .sectionProductImg1 img {
+    max-width: 300px;
+    margin: auto;
+  }
 
-@media (max-width: 710px) {
-    .containerappTela {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-@media (max-width: 530px){
-    .sectionProductImg1 img{
-        max-width: 300px;
-        margin: auto;
-    }
+  .produto_h1, .aplicativo_home_title {
+    font-size: 22px;
+  }
 }
 @media (max-width: 490px) {
-    .sectionProduct2 {
-        flex-direction: column-reverse;
-    }
+  .sectionProduct2 {
+    flex-direction: column-reverse;
+  }
 }

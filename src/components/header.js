@@ -1,39 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
-import lightImg from '../assets/img/light.png'
-import darkImg from '../assets/img/dark.svg'
-import configLightImg from '../assets/img/configLight.png';
-import configImg from '../assets/img/config.png'
 import logoImg from '../assets/img/logo.png'
 import { Link } from 'react-router-dom';
 import '../styles/header.css'
 import gsap from 'gsap';
 
 const Header = () => {
-    // const savedTheme = localStorage.getItem("isDarkTheme") === "true";
-    // const [isDarkTheme, setIsDarkTheme] = useState(savedTheme);
-    // const [currentthemeImg, setCurrentthemeImg] = useState(darkImg);
     const [currentMenu, setcurrentMenu] = useState(false);
     const subMenu = useRef(null)
-
-    // const toggleTheme = () => {
-    //     setIsDarkTheme(prevState => !prevState); // Alterna entre true/false
-    // };
     const toggleMenu = () => {
         setcurrentMenu(prevState => !prevState);
     };
-
-    // useEffect(() => {
-    //     localStorage.setItem("isDarkTheme", isDarkTheme);
-
-    //     const body = document.body;
-    //     if (isDarkTheme) {
-    //         body.classList.add('dark');
-    //         setCurrentthemeImg(lightImg)
-    //     } else {
-    //         body.classList.remove('dark');
-    //         setCurrentthemeImg(darkImg)
-    //     }
-    // }, [isDarkTheme]); // O efeito será disparado sempre que isDarkTheme mudar
 
     useEffect(() => {
         if (subMenu.current) {
@@ -60,7 +36,6 @@ const Header = () => {
                     <div className="logo">
                         <a href="index.html">
                             <img src={logoImg} width="80" alt='logo'/>
-                            {/* <p className="destaque">ComuniTec</p> */}
                         </a>
                     </div>
                     <svg width="28px" height="28px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none" className='menuSvg' onClick={toggleMenu}>
@@ -83,9 +58,6 @@ const Header = () => {
                             <div className="container">
                                 <Link to="/Contato"><button >Contato</button></Link>
                             </div>
-                                    {/* <div id="toggle-theme" onClick={toggleTheme} >
-                                        <img src={currentthemeImg} id="ImgTheme" alt={isDarkTheme ? 'Tema Claro' : 'Tema Escuro'} />
-                                    </div> */}
                         </ul>
                     </nav>
                     <nav ref={subMenu} className={`menuMobile ${currentMenu ? 'menu-open' : 'menu-closed'}`}>
@@ -105,9 +77,6 @@ const Header = () => {
                             <div className="container">
                                 <Link to="/Contato"><button >Contato</button></Link>
                             </div>
-                            {/* <a id="toggle-theme" onClick={toggleTheme} >
-                                <img src={currentthemeImg} id="ImgTheme" alt={isDarkTheme ? 'Tema Claro' : 'Tema Escuro'} />
-                            </a> */}
                         </ul>
                     </nav>
                 </header>
