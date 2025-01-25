@@ -67,6 +67,20 @@ const Produto = () => {
         );
       }, 500);
     });
+    const setaDireita = document.querySelector('.setaDireita');
+    gsap.fromTo(setaDireita,
+      {
+        rotate: 90
+      },
+      {
+        rotate: -90,
+        scrollTrigger: {
+          start: "top 90%",
+          trigger: setaDireita,
+        }
+
+      }
+    )
     const funcionalidades = document.querySelectorAll('.container_texto_funcionalidades');
       if (funcionalidades) {
         gsap.fromTo(
@@ -232,17 +246,15 @@ const Produto = () => {
         </div>
         <br />
         <br />
-        <div
-          className="ProductText2"
-          style={{ textAlign: "center", marginBottom: "2rem" }}
-        >
-          <p>Quer saber mais da nossa empresa?</p> <br />
-          <Link to="/QuemSomos">
-            <button style={{ fontSize: "22px", width: "max-content" }}>
-              Quem somos
-            </button>
-          </Link>
-          <br />
+        <div className="ProductText2">
+            <img className="setaDireita" src={setaBaixo} alt="setaDireita" />
+            <div>
+              <p>Quer saber mais da nossa empresa?</p> <br />
+              <Link to="/QuemSomos"> 
+                <button style={{ fontSize: "22px", width: "max-content" }}> Quem somos </button>
+              </Link>
+            </div>
+            <br />
         </div>
       </div>
     </div>
