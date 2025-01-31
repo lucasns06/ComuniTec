@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ComuniTec/static/css/main.fad0b981.css",
-    "main.js": "/ComuniTec/static/js/main.4eb3b5f5.js",
+    "main.css": "/ComuniTec/static/css/main.0f9221f7.css",
+    "main.js": "/ComuniTec/static/js/main.c60dcac6.js",
     "static/js/453.fa6158ae.chunk.js": "/ComuniTec/static/js/453.fa6158ae.chunk.js",
     "static/media/PitchComunica.mp4": "/ComuniTec/static/media/PitchComunica.e40c40d4fc170a9e8ec5.mp4",
     "static/media/backgroundHome.jpg": "/ComuniTec/static/media/backgroundHome.d2e5470e6c561783a05a.jpg",
@@ -11,13 +11,16 @@
     "static/media/telaApp.png": "/ComuniTec/static/media/telaApp.5153f8e3866e818482be.png",
     "static/media/aplicativologo.png": "/ComuniTec/static/media/aplicativologo.9d97137ea47830fcd713.png",
     "static/media/appstore.png": "/ComuniTec/static/media/appstore.70cb381e313c8198eb1b.png",
+    "static/media/flag.svg": "/ComuniTec/static/media/flag.df8bba5236c3352e330157cb432f6524.svg",
+    "static/media/mission.svg": "/ComuniTec/static/media/mission.7a2723cff710efbb05bc29e69002c686.svg",
     "index.html": "/ComuniTec/index.html",
-    "main.fad0b981.css.map": "/ComuniTec/static/css/main.fad0b981.css.map",
-    "main.4eb3b5f5.js.map": "/ComuniTec/static/js/main.4eb3b5f5.js.map",
+    "static/media/heart.svg": "/ComuniTec/static/media/heart.76d1b69a04924d231a9cc6ebdc816a2c.svg",
+    "main.0f9221f7.css.map": "/ComuniTec/static/css/main.0f9221f7.css.map",
+    "main.c60dcac6.js.map": "/ComuniTec/static/js/main.c60dcac6.js.map",
     "453.fa6158ae.chunk.js.map": "/ComuniTec/static/js/453.fa6158ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fad0b981.css",
-    "static/js/main.4eb3b5f5.js"
+    "static/css/main.0f9221f7.css",
+    "static/js/main.c60dcac6.js"
   ]
 }
