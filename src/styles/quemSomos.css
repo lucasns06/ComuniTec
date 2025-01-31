@@ -6,6 +6,8 @@
   align-content: center;
   position: relative;
   backdrop-filter: blur(3px);
+  max-width: 1280px;
+  margin: auto;
 }
 .hero-background{
   position: absolute;
@@ -88,52 +90,24 @@ li {
   font-weight: 200;
 }
 
-.containerproposito img {
+.containerproposito img, .containerproposito svg {
   margin-bottom: 8px;
-}
-
-/*  Animação dos icones da missao visao valores*/
-.containerproposito img:hover {
-  transform: translate(0px, -10px);
   transition: 0.2s transform ease;
 }
 
+.containerproposito img:hover, .containerproposito svg:hover {
+  transform: translateY(-10px);
+}
+.iconMission .st0{
+  fill: none;
+  stroke: rgb(255, 203, 108);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
 .TituloQS {
   animation: tituloqs 3s infinite ease-in-out;
-}
-
-.iconMission:hover {
-  transform: translate(0px, -10px);
-  transition: all 0.2s;
-}
-
-.iconMission:hover .st0 {
-  transition: all 0.2s;
-  stroke: rgb(255, 243, 79);
-}
-
-.iconFlag:hover {
-  transform: translate(0px, -10px);
-  transition: all 0.2s;
-}
-
-.iconFlag:hover .iconFlagFill {
-  transition: all 0.2s;
-  fill: rgb(255, 243, 79);
-}
-
-.iconFlagFill {
-  fill: rgb(79, 81, 255);
-}
-
-.iconHeart:hover {
-  transform: translate(0px, -10px);
-  transition: all 0.2s;
-}
-
-.iconHeartFill:hover {
-  transition: all 0.2s;
-  fill: yellow;
 }
 
 @keyframes tituloqs {
@@ -155,6 +129,10 @@ li {
   .empresaMissao{
     flex-direction: column;
     align-items: center;
+  }
+  .containerproposito{
+    max-width: none;
+    width: 98%;
   }
 }
 @media (max-width: 535px) {

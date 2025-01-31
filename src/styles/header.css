@@ -81,6 +81,13 @@ header ul {
   header {
     justify-content: center;
   }
+
+  .menuPc{
+      width: 100%;
+  }
+  .menuPc ul{
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 840px) {
@@ -90,7 +97,7 @@ header ul {
 
 }
 
-@media (max-width: 570px) {
+@media (max-width: 586px) {
   header {
     display: block;
   }
