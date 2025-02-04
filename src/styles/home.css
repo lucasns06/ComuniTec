@@ -72,13 +72,14 @@
     text-align: center;
 }
 .text p{
-    font: normal clamp(20px, 3vw, 22px) / clamp(32px, 4vw, 36px) sans-serif;
+    font-size: clamp(20px, calc(1vw + 0.5rem), 2rem);
     color: rgb(19, 19, 19);
 }
 .Welcome-title,
 .Welcome-title2 {
     text-align: center;
-    font: bold max(36px, 4vw) / max(48px, 5vw) sans-serif;
+    font-size: clamp(38px, calc(4vw + 1rem), 5rem);
+    font-family: sans-serif;
     color: rgb(19, 19, 19);
 }
 

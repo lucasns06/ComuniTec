@@ -20,16 +20,6 @@
   --cor-footer: #101010;
 }
 
-/* .dark {
-  --cor-fundo: #131316;
-  --cor-texto: #fafafa;
-  --cor-texto2: rgb(180, 180, 180);
-  --cor-header-fundo: #1a1a1f;
-  --cor-texto-botao: #000000;
-  --cor-destaque: #496894 !important;
-  --cor-footer: #00000047;
-} */
-
 body {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
