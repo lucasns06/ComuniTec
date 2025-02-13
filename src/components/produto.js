@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import playImg from "../assets/img/play.png";
 import macImg from "../assets/img/appstore.png";
 import appLogo from "../assets/img/aplicativologo.png";
-import appTela from "../assets/img/telaApp.png";
+import appTela from "../assets/img/TelaApp.png";
 import setaBaixo from "../assets/img/arrow.png";
 import pitch from "../assets/videos/PitchComunica.mp4";
 import "../styles/produto.css";
@@ -13,11 +13,70 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 const Produto = () => {
   const produtoVideo = useRef();
   const produtoTexto = useRef();
-
+  const produtoTitulo = useRef();
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    //setas
+    const setaBaixo = document.querySelectorAll(".setaBaixo");
+    const setaDireita = document.querySelector('.setaDireita');
 
+    setaBaixo.forEach((seta) => {
+      seta.style.opacity = 0;
+      gsap.fromTo(
+        seta,
+        { rotate: 180 },
+        {
+          opacity: 1,
+          rotate: 0,
+          duration: 1,
+          scrollTrigger: {
+            start: "top 90%",
+            trigger: seta,
+          },
+          ease: "expo.out",
+          clearProps: "all",
+        }
+      );
+    });
+    gsap.fromTo(setaDireita,
+      {
+        rotate: 90
+      },
+      {
+        rotate: -90,
+        scrollTrigger: {
+          start: "top 90%",
+          trigger: setaDireita,
+        }
+
+      }
+    )
+
+  }, []);
+  //Fim setas
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const titulo1 = document.querySelectorAll('.titulo1');
     const appHomeImg = document.querySelector(".aplicativo_home > img");
+    const appH1 = document.querySelector(".aplicativo_home > h1");
+    const funcH1 = document.querySelector('.h1_func');
+    const funcionalidades = document.querySelectorAll('.container_texto_funcionalidades');
+    const telaApp = document.querySelector('.telaApp');
+    //primeira parte 
+    gsap.fromTo(
+      titulo1,
+      { opacity: 0, y: 60 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          start: "top 70%",
+          trigger: titulo1,
+        },
+        ease: "expo.out",
+      }
+    );
     gsap.fromTo(
       appHomeImg,
       { opacity: 0, x: 60 },
@@ -32,8 +91,6 @@ const Produto = () => {
         ease: "expo.out",
       }
     );
-
-    const appH1 = document.querySelector(".aplicativo_home > h1");
     gsap.fromTo(
       appH1,
       { opacity: 0, x: -60 },
@@ -48,69 +105,55 @@ const Produto = () => {
         ease: "expo.out",
       }
     );
-    setTimeout(() => {
-      const setaBaixo = document.querySelectorAll(".setaBaixo");
-      setaBaixo.forEach((seta) => {
-        gsap.fromTo(
-          seta,
-          { rotate: 180 },
-          {
-            rotate: 0,
-            duration: 1,
-            scrollTrigger: {
-              start: "top 90%",
-              trigger: seta,
-            },
-            ease: "expo.out",
-            clearProps: "all",
-          }
-        );
-      }, 500);
-    });
-    const setaDireita = document.querySelector('.setaDireita');
-    gsap.fromTo(setaDireita,
-      {
-        rotate: 90
+    //segunda parte
+    var tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: funcH1,
+        toggleActions: "play none none none",
+        start: "top 70%",
       },
-      {
-        rotate: -90,
-        scrollTrigger: {
-          start: "top 90%",
-          trigger: setaDireita,
-        }
-
+      defaults: {
+        ease: "expo.out",
+        duration: 1,
       }
-    )
-    const funcionalidades = document.querySelectorAll('.container_texto_funcionalidades');
-      if (funcionalidades) {
-        gsap.fromTo(
-          funcionalidades,
-            {opacity: 0, y: 80, },
-            {
-                scrollTrigger: {
-                    trigger: funcionalidades,
-                    toggleActions: "play none none none"
-                },
-                y: 0,
-                opacity: 1,
-                duration: 1,
-                ease: 'expo.out',
-                stagger: 0.2
-            },
-        );
-    }
-    const telaApp = document.querySelector('.telaApp');
-    gsap.fromTo(telaApp,
+    });
+    tl.fromTo(funcH1,
+      { opacity: 0, y: -60 },
       {
-        rotateY: 180
-      },
-      {
-        scrollTrigger: {
-            trigger: telaApp,
-            toggleActions: "play none none none"
+        opacity: 1,
+        y: 0,
+      }).fromTo(telaApp,
+        {
+          opacity: 0,
+          rotateY: 180
         },
-        rotateY: 0,
-        duration: 1.2
+        {
+          opacity: 1,
+          rotateY: 0,
+          duration: 0.5,
+        }
+      ).fromTo(
+        funcionalidades,
+        { opacity: 0, y: 80, },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.2
+        },
+      );
+    //parte  final
+    gsap.fromTo(
+      produtoTitulo.current,
+      { opacity: 0, y: -60 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: produtoTitulo.current,
+          toggleActions: "play none none none",
+          start: "top 90%",
+        },
       }
     )
     gsap.fromTo(
@@ -120,11 +163,11 @@ const Produto = () => {
         opacity: 1,
         x: 0,
         duration: 1,
-        scrollTrigger: {
-          start: "top 90%",
-          trigger: produtoVideo.current,
-        },
         ease: "expo.out",
+        scrollTrigger: {
+          trigger: produtoVideo.current,
+          start: "top 90%",
+        },
       }
     );
     gsap.fromTo(
@@ -141,12 +184,11 @@ const Produto = () => {
         ease: "expo.out",
       }
     );
-  }, []);
-
+  }, [])
   return (
     <div className="sectionProductBlock">
       <div className="sectionProduct" id="sectionProduct">
-        <h1 className="produto_h1">
+        <h1 className="produto_h1 titulo1">
           Veja o nosso aplicativo <span className="destaque">COMUNICA</span>
         </h1>
         <div className="aplicativo_home">
@@ -162,7 +204,7 @@ const Produto = () => {
       </div>
       <div className="sectionProduct2_block">
         <div className="sectionProduct" id="sectionProduct2">
-          <h1 className="produto_h1">
+          <h1 className="produto_h1 h1_func">
             INCRÍVEIS <span className="destaque">FUNCIONALIDADES</span>
           </h1>
           <div className="app_funcionalidades">
@@ -199,14 +241,14 @@ const Produto = () => {
             </div>
           </div>
         </div>
-      <br />
-      <Link to="/" state={{ scrollTo: "sectionProduct3" }} className="link centralizar">
-        <img className="setaBaixo" src={setaBaixo} alt="setaBaixo" />
-      </Link>
+        <br />
+        <Link to="/" state={{ scrollTo: "sectionProduct3" }} className="link centralizar">
+          <img className="setaBaixo" src={setaBaixo} alt="setaBaixo" />
+        </Link>
       </div>
 
       <div className="container_section_product_3" id="sectionProduct3">
-        <h1 className="produto_h1">
+        <h1 className="produto_h1" ref={produtoTitulo}>
           SOBRE O <span className="destaque">APLICATIVO</span>
         </h1>
         <br />
@@ -218,7 +260,7 @@ const Produto = () => {
           </video>
           <div className="sectionProduct3-texto" ref={produtoTexto}>
             <p>
-              O utilizador informa o seu nome e o sexo, 
+              O utilizador informa o seu nome e o sexo,
               depois entra na pagina principal, as categorias, com um design acessível por botões grandes.
               a tela principal já vem com algumas categorias prontas, e o usuário poderá criar mais. <br />
               Baixe o aplicativo e facilite a comunicação de quem precisa!
@@ -247,14 +289,14 @@ const Produto = () => {
         <br />
         <br />
         <div className="ProductText2">
-            <img className="setaDireita" src={setaBaixo} alt="setaDireita" />
-            <div>
-              <p>Quer saber mais da nossa empresa?</p> <br />
-              <Link to="/QuemSomos"> 
-                <button style={{ fontSize: "22px", width: "max-content" }}> Quem somos </button>
-              </Link>
-            </div>
-            <br />
+          <img className="setaDireita" src={setaBaixo} alt="setaDireita" />
+          <div>
+            <p>Quer saber mais da nossa empresa?</p> <br />
+            <Link to="/QuemSomos">
+              <button style={{ fontSize: "22px", width: "max-content" }}> Quem somos </button>
+            </Link>
+          </div>
+          <br />
         </div>
       </div>
     </div>
