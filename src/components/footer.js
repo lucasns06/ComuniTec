@@ -19,7 +19,7 @@ const Footer = () => {
 
                     <p>ETEC Prof. Horácio Augusto da Silveira</p><br />
                     <p>Técnico em Desenvolvimento de Sistemas</p><br />
-                    <a className="credits" href="https://lucasns06.github.io" target="_blank" rel="noopener noreferrer">Criado por Lucas Nascimento</a>
+                    <a className="credits" href="https://lucasns06.github.io/portfolio" target="_blank" rel="noopener noreferrer">Criado por Lucas Nascimento</a>
                 </div> <br />
                 <div >
                     <h1>SERVIÇOS</h1>
