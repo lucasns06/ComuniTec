@@ -3,39 +3,43 @@ import React from "react";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
 import "../styles/home.css";
+import { useGSAP } from "@gsap/react";
 
 const Home = () => {
   const inicioP = useRef();
   const inicioBtn = useRef();
-  useEffect(() => {
+  const inicioContainer = useRef();
+
+  useGSAP(() => {
     const welcome = document.querySelector(".Welcome-title");
-    gsap.from(welcome, { x: -50, opacity: 0 });
-    gsap.to(welcome, { duration: 2, x: 0, opacity: 1 });
-
     const welcome2 = document.querySelector(".Welcome-title2");
-    gsap.from(welcome2, { x: 50, opacity: 0 });
-    gsap.to(welcome2, { duration: 2, x: 0, opacity: 1 });
+    var tl = gsap.timeline({
+      defaults:{
+        duration: 1.5
+      }
+    });
 
-    setTimeout(() => {
-      gsap.fromTo(
-        inicioP.current,
-        { y: 20 },
-        { opacity: 1, y: 0, duration: 2, ease: "expo.out" }
-      );
-    }, 1000);
+    tl.fromTo(welcome,
+      { x: -50, opacity: 0 },
+      { x: 0, opacity: 1 }
+    ).fromTo(welcome2,
+      { x: 50, opacity: 0 },
+      { x: 0, opacity: 1 }
+    ).fromTo(
+      inicioP.current,
+      { y: 20 },
+      { opacity: 1, y: 0, ease: "expo.out" }
+    ).fromTo(
+      inicioBtn.current,
+      { y: 20 },
+      { opacity: 1, y: 0, ease: "expo.out" }
+    );
 
-    setTimeout(() => {
-      gsap.fromTo(
-        inicioBtn.current,
-        { y: 20 },
-        { opacity: 1, y: 0, duration: 2, ease: "expo.out" }
-      );
-    }, 1500);
-  }, []);
+  }, { scope: inicioContainer })
 
   return (
-    <div id="inicioId">
-        <div className="background"></div>
+    <div ref={inicioContainer} id="inicioId">
+      <div className="background"></div>
       <div className="text">
         <h1 className="Welcome-title">Comunicação para</h1>
         <h1 className="destaque Welcome-title2">Todos</h1>
