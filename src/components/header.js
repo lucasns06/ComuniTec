@@ -35,8 +35,9 @@ const Header = () => {
         <div className="HeaderBorder">
             <header>
                 <div className="logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src={logoImg} width="80" alt='logo' />
+                        <p>ComuniTec</p>
                     </a>
                 </div>
                 <svg width="28px" height="28px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none" className='menuSvg' onClick={toggleMenu}>

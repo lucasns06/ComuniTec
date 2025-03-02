@@ -1,5 +1,5 @@
 footer {
-    background: var(--cor-destaque);
+    background: #323f51;
     height: max-content;
 }
 
@@ -21,7 +21,7 @@ footer .logo p  {
 
 footer .logo img {
     width: 100px;
-    filter: brightness(2);
+    filter: contrast(0.8);
 }
 
 .container-footer {

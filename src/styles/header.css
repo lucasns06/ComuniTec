@@ -35,7 +35,6 @@ header ul {
   text-align: center;
   color: var(--cor-destaque);
   margin-left: 8px;
-  font-family: "Baby";
   font-weight: bolder;
   font-size: var(--texto-header);
 }

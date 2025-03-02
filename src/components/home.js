@@ -15,7 +15,7 @@ const Home = () => {
     const welcome2 = document.querySelector(".Welcome-title2");
     var tl = gsap.timeline({
       defaults:{
-        duration: 1.5
+        duration: 1
       }
     });
 
@@ -28,11 +28,11 @@ const Home = () => {
     ).fromTo(
       inicioP.current,
       { y: 20 },
-      { opacity: 1, y: 0, ease: "expo.out" }
+      { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }
     ).fromTo(
       inicioBtn.current,
       { y: 20 },
-      { opacity: 1, y: 0, ease: "expo.out" }
+      { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }
     );
 
   }, { scope: inicioContainer })
