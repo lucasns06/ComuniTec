@@ -1,13 +1,13 @@
 .HeaderBorder{
   padding: 16px 64px;
-  background: var(--cor-header-fundo);  
+  /* background: var(--cor-header-fundo);   */
   width: 100%;
   justify-content: center;
   display: flex ;
   z-index: 99;
-  -webkit-box-shadow: 0px 10px 22px 0px rgba(48, 69, 121, 0.089);
+  /* -webkit-box-shadow: 0px 10px 22px 0px rgba(48, 69, 121, 0.089);
   -moz-box-shadow: 0px 10px 22px 0px rgba(48, 69, 121, 0.089);
-  box-shadow: 0px 10px 22px 0px rgba(48, 69, 121, 0.089);
+  box-shadow: 0px 10px 22px 0px rgba(48, 69, 121, 0.089); */
   position: absolute;
 }
 header {

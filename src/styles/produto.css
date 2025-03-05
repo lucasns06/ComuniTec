@@ -126,10 +126,16 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
+  padding: 24px 0;
 }
 .downloadButtons img {
   max-width: 250px;
   width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px;
+  transition: 0.10s ease-in-out;
+}
+.downloadButtons img:hover {
+    transform: scale(0.9);
 }
 @media (max-width: 1370px) {
   .sectionProduct3 video {

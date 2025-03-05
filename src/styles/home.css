@@ -5,6 +5,36 @@
     padding: 0px 16px;    
     min-height: 100dvh;
     position: relative;
+    gap: 32px;
+    /* background: #fff; */
+}
+.comunicaContainer{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.comunica-img{
+    max-width: 256px;
+    width: 100%;
+    border-radius: 18px;
+    border: 4px solid black;
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(-24deg) rotateZ(15deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    box-shadow: 24px 20px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.homeButtons{
+    display: flex;
+    gap: 18px;
+}
+.homeButtons a img {
+    max-width: 200px;
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px;
+    transition: 0.10s ease-in-out;
+}
+.homeButtons a img:hover {
+    transform: scale(0.9);
 }
 .background{
     position: absolute;
@@ -18,6 +48,7 @@
     filter: brightness(1.06);
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 .waveBottom {
     position: absolute;
@@ -69,7 +100,7 @@
 
 
 .text {
-    text-align: center;
+    text-align: left;
 }
 .text p{
     font-size: clamp(20px, calc(1vw + 0.5rem), 2rem);
@@ -77,39 +108,26 @@
 }
 .Welcome-title,
 .Welcome-title2 {
-    text-align: center;
+    text-align: left;
     font-size: clamp(38px, calc(4vw + 1rem), 5rem);
     font-family: sans-serif;
     color: rgb(19, 19, 19);
 }
-
-.odsContainer {
-    padding-top: 120px;
-    display: flex;
-    justify-content: center;
-    gap: 4em;
-    height: max-content;
+@media (max-width: 1024px) {
+    #inicioId{
+        flex-direction: column;
+        padding-top: 192px;
+    }
+    .comunicaContainer{
+        align-items: center;
+    }
 }
 
-.odsContainer img {
-    border-radius: 12px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.363);
-}
-
-.odsTexto {
-    text-align: justify;
-    max-width: 600px;
-}
-
-.gifHome {
-    z-index: -1;
-    filter: hue-rotate(323deg);
-    max-width: 500px;
-    transform: translateY(-40px);
-    width: 100%;
-}
-@media (max-width: 850px) {
-    .background {
-        background-position: 70%;
+@media (max-width: 768px) {
+    #inicioId{
+        padding-top: 92px;
+    }
+    .HeaderBorder {
+        background: var(--cor-header-fundo);
     }
 }

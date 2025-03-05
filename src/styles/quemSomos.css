@@ -19,6 +19,15 @@
   opacity: 0.1;
   z-index: -1;
 }
+.headerBackgroundQS{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+}
 .quem-somos-hero h1, .quem-somos-hero p{
   color: white;
 }
@@ -133,6 +142,9 @@ li {
   .containerproposito{
     max-width: none;
     width: 98%;
+  }
+  .headerBackgroundQS{
+    display: none;
   }
 }
 @media (max-width: 535px) {

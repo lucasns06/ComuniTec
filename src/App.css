@@ -16,7 +16,7 @@
   --cor-header-fundo: rgb(255, 255, 255);
   --cor-texto-botao: #ffffff;
   --cor-destaque: #3387FF !important;
-  --texto-header: 22px;
+  --texto-header: 18px;
   --cor-footer: #101010;
 }
 
@@ -50,9 +50,10 @@ button {
   box-shadow: 0px 10px 22px 0px rgba(26, 36, 53, 0.158);
 }
 
-button:hover{
+button:hover {
   background: linear-gradient(182deg, #3387FF, #3387FF);
 }
+
 ul a {
 
   position: relative;
@@ -118,12 +119,14 @@ section button {
 .text {
   text-align: center;
 }
+
 @media (max-width:900px) {
-  .animationArea span{
+  .animationArea span {
     width: 20px;
     height: 20px;
   }
 }
+
 @media (max-width: 535px) {
   .Welcome-title {
     font-size: 1.5rem;
@@ -138,10 +141,6 @@ section button {
     gap: 0;
   }
 
-  .odsContainer {
-    flex-direction: column-reverse;
-  }
-
   section img {
     transform: translateY(0px);
     max-width: 350px;
@@ -149,6 +148,7 @@ section button {
 
 
 }
+
 .linkBtn {
   color: white;
   padding: 0;

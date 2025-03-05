@@ -1,6 +1,7 @@
 footer {
     background: #323f51;
     height: max-content;
+    z-index: 2;
 }
 
 footer h1 {

@@ -66,7 +66,9 @@ const QuemSomos = () => {
     <div className="quemSomosBody">
       <div className="quem-somos" id="quemSomos">
         <div className="quem-somos-hero">
-          <div className="hero-background"></div>
+        <div className="headerBackgroundQS"></div>
+          <div className="hero-background">
+          </div>
           <h1 ref={heroH1}>Facilitando a comunicação</h1>
           <div className="waveBottom">
             <svg

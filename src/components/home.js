@@ -4,17 +4,30 @@ import gsap from "gsap";
 import { Link } from "react-router-dom";
 import "../styles/home.css";
 import { useGSAP } from "@gsap/react";
+import comunica from "../assets/img/comunica.jpg";
+import playImg from "../assets/img/play.png";
+import macImg from "../assets/img/appstore.png";
+import Particles from './Particles';
 
 const Home = () => {
   const inicioP = useRef();
-  const inicioBtn = useRef();
   const inicioContainer = useRef();
 
   useGSAP(() => {
+    const inicioBtn = document.querySelectorAll(".homeButtons a");
     const welcome = document.querySelector(".Welcome-title");
     const welcome2 = document.querySelector(".Welcome-title2");
+    const imagemApp = document.querySelector(".comunica-img");
+    gsap.fromTo(imagemApp, {
+      opacity: 0,
+      x: 50,
+    }, {
+      opacity: 1,
+      x: 0,
+      duration: 2
+    })
     var tl = gsap.timeline({
-      defaults:{
+      defaults: {
         duration: 1
       }
     });
@@ -30,29 +43,54 @@ const Home = () => {
       { y: 20 },
       { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }
     ).fromTo(
-      inicioBtn.current,
-      { y: 20 },
-      { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }
+      inicioBtn,
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 0.5, stagger: 0.2, ease: "expo.out" }
     );
 
   }, { scope: inicioContainer })
 
   return (
     <div ref={inicioContainer} id="inicioId">
-      <div className="background"></div>
+      {/* <div className="background"></div> */}
+      <div style={{ width: '100%', height: '100%', position: 'fixed', zIndex: -10 }}>
+        <Particles
+          particleColors={['#3387FF', '#3387FF']}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={250}
+          moveParticlesOnHover={false}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
       <div className="text">
         <h1 className="Welcome-title">Comunicação para</h1>
-        <h1 className="destaque Welcome-title2">Todos</h1>
+        <h1 style={{ margin: 0 }} className="destaque Welcome-title2">Todos</h1>
         <br />
         <p ref={inicioP} style={{ opacity: 0 }}>
           Facilitando a expressão para pessoas neurodivergentes não verbais{" "}
         </p>
-        <br /> <br /> <br /> <br />
-        <Link to="/" state={{ scrollTo: "sectionProduct" }} className="link">
-          <button ref={inicioBtn} style={{ opacity: 0 }}>
-            Saber Mais
-          </button>
-        </Link>
+        <br /> <br />
+        <div className="homeButtons">
+          <Link
+            state={{ scrollTo: "sectionProduct" }}
+            to="/"
+          >
+            <img src={playImg} alt="playstore" />
+          </Link>
+          <Link
+
+            state={{ scrollTo: "sectionProduct" }}
+            to="/"
+          >
+            <img src={macImg} alt="mac" />
+          </Link>
+        </div>
+      </div>
+      <div className="comunicaContainer">
+        <img className="comunica-img" src={comunica} alt="appImage" />
       </div>
       <div class="waveBottom">
         <svg
