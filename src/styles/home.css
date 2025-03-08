@@ -104,7 +104,8 @@
 }
 .text p{
     font-size: clamp(20px, calc(1vw + 0.5rem), 2rem);
-    color: rgb(19, 19, 19);
+    color: rgb(62, 62, 62);
+    opacity: 0;
 }
 .Welcome-title,
 .Welcome-title2 {

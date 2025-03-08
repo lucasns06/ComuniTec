@@ -69,8 +69,9 @@ const Home = () => {
         <h1 className="Welcome-title">Comunicação para</h1>
         <h1 style={{ margin: 0 }} className="destaque Welcome-title2">Todos</h1>
         <br />
-        <p ref={inicioP} style={{ opacity: 0 }}>
-          Facilitando a expressão para pessoas neurodivergentes não verbais{" "}
+        <p ref={inicioP}>
+          Facilitando a expressão para pessoas neurodivergentes não verbais, <br />
+          com a comunicação por troca de imagens.
         </p>
         <br /> <br />
         <div className="homeButtons">
