@@ -37,7 +37,7 @@ const Header = () => {
             <header>
                 <div className="logo">
                     <a href="/">
-                        <img src={logoImg} width="80" alt='logo' />
+                        <img src={logoImg} width="40" alt='logo' />
                         <p>ComuniTec</p>
                     </a>
                 </div>

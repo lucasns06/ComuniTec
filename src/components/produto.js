@@ -260,10 +260,11 @@ const Produto = () => {
           </video>
           <div className="sectionProduct3-texto" ref={produtoTexto}>
             <p>
-              O utilizador informa o seu nome e o sexo,
-              depois entra na pagina principal, as categorias, com um design acessível por botões grandes.
-              a tela principal já vem com algumas categorias prontas, e o usuário poderá criar mais. <br />
-              Baixe o aplicativo e facilite a comunicação de quem precisa!
+              O utilizador informa seu nome e email, e logo acessa a tela principal com
+              categorias visuais, organizadas em botões grandes e acessíveis.
+              A página inicial já traz algumas categorias prontas, e o usuário
+              pode adicionar novas conforme suas necessidades.
+              Baixe o aplicativo e facilite a comunicação de quem mais precisa!"
             </p>
             <br />
             <div className="downloadButtons">
