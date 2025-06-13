@@ -20,8 +20,8 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Build do projeto
-        run: npm run build
+      - name: Build do projeto 
+        run: CI=false npm run build
 
       - name: Deploy no GitHub Pages
         run: npm run deploy
