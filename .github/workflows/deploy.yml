@@ -29,12 +29,10 @@ jobs:
         run: |
           git config --global user.name  "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
-      - name: Deploy com gh-pages via npm run deploy
+      - name: Deploy com gh-pages via comando direto
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
-          git remote set-url origin "$REPO"
-          CI=false npm run deploy
+          npx gh-pages -d build -r "$REPO"
