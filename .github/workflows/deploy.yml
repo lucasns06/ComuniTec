@@ -20,6 +20,11 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
+      - name: Configurar Git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Build do projeto 
         run: CI=false npm run build
 
