@@ -11,7 +11,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Contato from './components/contato';
 
 function App() {
-//push
+
   const location = useLocation();
 
   useEffect(() => {
