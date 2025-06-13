@@ -24,6 +24,6 @@ jobs:
         run: CI=false npm run build
 
       - name: Deploy no GitHub Pages
-        run: npm run deploy
+        run: CI=false npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
